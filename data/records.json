@@ -1,1 +1,11 @@
-{"fetched_at":null,"source":"Harris County Clerk / HCAD","date_range":{"from":null,"to":null},"total":0,"with_address":0,"records":[]}
+{
+  "fetched_at": "2026-04-07T21:48:41.317563",
+  "source": "Harris County Clerk / HCAD",
+  "date_range": {
+    "from": "2026-03-31",
+    "to": "2026-04-07"
+  },
+  "total": 0,
+  "with_address": 0,
+  "records": []
+}
