@@ -2,11 +2,10 @@
 Harris County Address Enrichment Engine
 Multi-strategy lookup with confidence scoring.
 
-Strategy priority:
-1. Legal description match (subdivision + lot + block) - HIGH confidence
-2. Doc-type-aware name match (grantee for LP, grantor for others) - MEDIUM/LOW
-3. Fuzzy normalized name match - LOW
-4. No match - output HCAD lookup URL for manual verification
+Priority:
+1. Legal description match (subdivision + lot + block) -> HIGH
+2. Doc-type-aware name match -> MEDIUM/LOW
+3. No match -> HCAD lookup URL for manual verification
 """
 
 import re
@@ -17,39 +16,28 @@ from typing import Optional
 log = logging.getLogger(__name__)
 
 
-def parse_legal_description(legal: str) -> dict:
-    """
-    Parse clerk legal description into components.
-    Examples:
-      "Desc: FOXWOOD Sec: 4 Lot: 15 Block: 4"
-      "Desc: SUNDOWN GLEN Sec: 6 Lot: 23 Block: 6"
-    """
-    result = {"subdivision": "", "section": "", "lot": "", "block": "",
-              "abstract": "", "tract": ""}
+def parse_legal_description(legal):
+    result = {"subdivision": "", "section": "", "lot": "", "block": "", "abstract": "", "tract": ""}
     if not legal:
         return result
-
     legal = legal.upper().strip()
-
-    m = re.search(r'DESC[:\s]+([A-Z0-9 &\-\\']+?)(?:\s+SEC[:\s]|\s+LOT[:\s]|\s+BLK[:\s]|\s+BLOCK[:\s]|\s+TR[:\s]|\s+ABST[:\s]|$)', legal)
+    m = re.search(r'DESC[\s:]+(.+?)(?:\s+SEC[\s:]|\s+LOT[\s:]|\s+BLK[\s:]|\s+BLOCK[\s:]|\s+TR[\s:]|\s+ABST[\s:]|$)', legal)
     if m:
         result["subdivision"] = m.group(1).strip()
-
-    for key, pattern in [
-        ("section", r'SEC(?:TION)?[:\s]+(\w+)'),
-        ("lot",     r'LOT[:\s]+(\w+)'),
-        ("block",   r'(?:BLK|BLOCK)[:\s]+(\w+)'),
-        ("abstract",r'ABST(?:RACT)?[:\s]+(\w+)'),
-        ("tract",   r'(?:TR|TRACT)[:\s]+(\w+)'),
+    for key, pat in [
+        ("section",  r'SEC(?:TION)?[\s:]+(\w+)'),
+        ("lot",      r'LOT[\s:]+(\w+)'),
+        ("block",    r'(?:BLK|BLOCK)[\s:]+(\w+)'),
+        ("abstract", r'ABST(?:RACT)?[\s:]+(\w+)'),
+        ("tract",    r'(?:\bTR\b|TRACT)[\s:]+(\w+)'),
     ]:
-        m2 = re.search(pattern, legal)
+        m2 = re.search(pat, legal)
         if m2:
             result[key] = m2.group(1).strip()
-
     return result
 
 
-def legal_match_key(parsed: dict) -> Optional[str]:
+def legal_match_key(parsed):
     sub = parsed.get("subdivision", "").strip()
     sec = parsed.get("section", "").strip()
     lot = parsed.get("lot", "").strip()
@@ -61,34 +49,30 @@ def legal_match_key(parsed: dict) -> Optional[str]:
     return None
 
 
-STRIP_SUFFIXES = [
-    r'\bINC\\.?\b', r'\bINCORPORATED\b',
-    r'\bLLC\\.?\b', r'\bL\\.L\\.C\\.?\b',
-    r'\bLP\\.?\b',  r'\bL\\.P\\.?\b',
-    r'\bLTD\\.?\b', r'\bLIMITED\b',
-    r'\bCORP\\.?\b', r'\bCORPORATION\b',
-    r'\bTRUST\b', r'\bTRUSTEE\b',
-    r'\bATTN\\.?\b', r'\bC/O\b',
-    r'\bETAL\b', r'\bET AL\b', r'\bET UX\b',
-    r'\bJR\\.?\b', r'\bSR\\.?\b',
-    r'\bASSOC(?:IATION)?\b',
-    r'\bCOMMUNITY\b', r'\bHOMEOWNERS?\b',
+_STRIP_WORDS = [
+    "INCORPORATED", "CORPORATION", "ASSOCIATION", "COMMUNITY",
+    "HOMEOWNERS", "HOMEOWNER", "COMMITTEE", "FOUNDATION",
+    "TRUSTEE", "LIMITED", "OWNERS", "ASSOC", "ASSN",
+    "TRUST", "CORP", "INC", "LLC", "LTD", "LP",
+    "ETAL", "ET AL", "ET UX", "JR", "SR",
 ]
+_STRIP_RE = re.compile(
+    r'\b(' + '|'.join(re.escape(w) for w in _STRIP_WORDS) + r')\b',
+    re.IGNORECASE
+)
 
-STRIP_RE = re.compile('|'.join(STRIP_SUFFIXES), re.IGNORECASE)
 
-
-def normalize_name(name: str) -> str:
+def normalize_name(name):
     if not name:
         return ""
     n = name.upper().strip()
-    n = re.sub(r"[',\\.]", " ", n)
-    n = STRIP_RE.sub(" ", n)
+    n = re.sub(r"[',.]", " ", n)
+    n = _STRIP_RE.sub(" ", n)
     n = re.sub(r"\s+", " ", n).strip()
     return n
 
 
-def name_variants(name: str) -> list:
+def name_variants(name):
     n = normalize_name(name)
     if not n:
         return []
@@ -97,22 +81,16 @@ def name_variants(name: str) -> list:
     if len(parts) >= 2:
         variants.add(f"{parts[-1]} {' '.join(parts[:-1])}")
         variants.add(f"{parts[-1]}, {' '.join(parts[:-1])}")
-    return list(variants)
+    return [v for v in variants if len(v) > 2]
 
 
-def get_match_targets(rec: dict) -> list:
+def get_match_targets(rec):
     cat     = rec.get("cat", "")
-    grantor = (rec.get("owner") or rec.get("grantor") or "").strip()
+    grantor = (rec.get("owner") or "").strip()
     grantee = (rec.get("grantee") or "").strip()
-
-    if cat == "lp":
+    if cat in ("lp", "fc"):
         return [t for t in [grantee, grantor] if t]
-    elif cat in ("jud", "lien", "tax"):
-        return [t for t in [grantor, grantee] if t]
-    elif cat == "fc":
-        return [t for t in [grantee, grantor] if t]
-    else:
-        return [t for t in [grantor, grantee] if t]
+    return [t for t in [grantor, grantee] if t]
 
 
 class EnrichmentEngine:
@@ -128,102 +106,72 @@ class EnrichmentEngine:
             lookup[key] = []
         lookup[key].append(parcel)
 
-    def build_from_hcad(self, owners_records: list, acct_map: dict,
-                         parcel_tieback: dict = None):
+    def build_from_hcad(self, owners_records, acct_map, parcel_tieback=None):
         log.info("Building enrichment indexes...")
         for rec in owners_records:
-            acct = rec.get("acct", "").strip()
-            name = rec.get("name", "").strip()
-            aka  = rec.get("aka", "").strip()
-            if not acct:
-                continue
-            parcel = acct_map.get(acct)
-            if not parcel:
-                continue
-
-            self.acct_lookup[acct] = parcel
-
-            if parcel_tieback and acct in parcel_tieback:
-                pt  = parcel_tieback[acct]
-                key = legal_match_key(pt)
-                self._add(self.legal_lookup, key, parcel)
-
-            for raw in [name, aka]:
-                for v in name_variants(raw):
-                    if v and len(v) > 2:
+            try:
+                acct = (rec.get("acct") or "").strip()
+                name = (rec.get("name") or "").strip()
+                aka  = (rec.get("aka")  or "").strip()
+                if not acct:
+                    continue
+                parcel = acct_map.get(acct)
+                if not parcel:
+                    continue
+                self.acct_lookup[acct] = parcel
+                if parcel_tieback and acct in parcel_tieback:
+                    pt  = parcel_tieback[acct]
+                    key = legal_match_key(pt)
+                    if key:
+                        parcel["_owner_norm"] = normalize_name(name)
+                        self._add(self.legal_lookup, key, parcel)
+                for raw in [name, aka]:
+                    for v in name_variants(raw):
                         self._add(self.name_lookup, v, parcel)
-
-        log.info(f"  Name index:  {len(self.name_lookup)} keys")
-        log.info(f"  Legal index: {len(self.legal_lookup)} keys")
-        log.info(f"  Acct index:  {len(self.acct_lookup)} keys")
-
-    def build_parcel_tieback(self, parcel_tieback_records: list) -> dict:
-        """
-        Parse parcel_tieback.txt records into legal description lookup.
-        Returns acct -> {subdivision, section, lot, block}
-        """
-        result = {}
-        for rec in parcel_tieback_records:
-            r    = {k.strip().lower(): str(v).strip() if v else ""
-                    for k, v in rec.items()}
-            acct = r.get("acct", "").strip()
-            if not acct:
+            except Exception:
                 continue
-            result[acct] = {
-                "subdivision": r.get("subdv_cd", "") or r.get("subdivision", ""),
-                "section":     r.get("section",  "") or r.get("sec", ""),
-                "lot":         r.get("lot",       "") or r.get("lot_nbr", ""),
-                "block":       r.get("block",     "") or r.get("block_nbr", ""),
-            }
-        return result
+        log.info(f"  Name index:  {len(self.name_lookup):,} keys")
+        log.info(f"  Legal index: {len(self.legal_lookup):,} keys")
+        log.info(f"  Acct index:  {len(self.acct_lookup):,} keys")
 
-    def enrich(self, rec: dict) -> dict:
+    def enrich(self, rec):
         legal_raw   = rec.get("legal", "")
-        search_name = (rec.get("grantee") if rec.get("cat") == "lp"
+        search_name = (rec.get("grantee") if rec.get("cat") in ("lp", "fc")
                        else rec.get("owner") or "")
-        rec["hcad_url"] = self._hcad_url(search_name)
+        rec["hcad_url"] = self._hcad_url(legal_raw, search_name)
 
         # Strategy 1: Legal description match
         parsed    = parse_legal_description(legal_raw)
         legal_key = legal_match_key(parsed)
-
         if legal_key and legal_key in self.legal_lookup:
             matches = self.legal_lookup[legal_key]
             if len(matches) == 1:
-                return self._apply(rec, matches[0], "HIGH",
-                                   "Legal desc — unique")
-            # Multiple — try to narrow with name
-            targets = get_match_targets(rec)
-            for target in targets:
-                for v in name_variants(target):
-                    for m in matches:
-                        if v and v in m.get("_owner_norm", ""):
-                            return self._apply(rec, m, "HIGH",
-                                               "Legal + name — unique")
+                return self._apply(rec, matches[0], "HIGH", "Legal description — unique parcel")
+            # Try to narrow by name
+            for target in get_match_targets(rec):
+                norm = normalize_name(target)
+                for m in matches:
+                    if norm and norm == m.get("_owner_norm", ""):
+                        return self._apply(rec, m, "HIGH", "Legal + name — confirmed")
             return self._apply(rec, matches[0], "MEDIUM",
-                               f"Legal desc — {len(matches)} parcels, took first")
+                               f"Legal description — {len(matches)} parcels, took first")
 
         # Strategy 2: Name match
-        targets = get_match_targets(rec)
-        for target in targets:
+        for target in get_match_targets(rec):
             for v in name_variants(target):
-                if not v or len(v) < 3:
+                if v not in self.name_lookup:
                     continue
-                if v in self.name_lookup:
-                    matches = self.name_lookup[v]
-                    conf    = "MEDIUM" if len(matches) == 1 else "LOW"
-                    reason  = (f"Name — unique: {v}" if len(matches) == 1
-                               else f"Name — {len(matches)} duplicates: {v}")
-                    return self._apply(rec, matches[0], conf, reason)
+                matches = self.name_lookup[v]
+                conf   = "MEDIUM" if len(matches) == 1 else "LOW"
+                reason = (f"Name match — unique: {v}" if len(matches) == 1
+                          else f"Name match — {len(matches)} duplicates: {v}")
+                return self._apply(rec, matches[0], conf, reason)
 
         # No match
         rec.update({
-            "match_confidence": "NONE",
-            "match_reason":     "No match found",
-            "prop_address": "", "prop_city": "",
-            "prop_state":  "TX", "prop_zip": "",
-            "mail_address": "", "mail_city": "",
-            "mail_state":  "TX", "mail_zip": "",
+            "match_confidence": "NONE", "match_reason": "No match found",
+            "prop_address": "", "prop_city": "", "prop_state": "TX", "prop_zip": "",
+            "mail_address": "", "mail_city": "", "mail_state": "TX", "mail_zip": "",
         })
         return rec
 
@@ -245,8 +193,15 @@ class EnrichmentEngine:
             rec["mail_zip"]     = rec["prop_zip"]
         return rec
 
-    def _hcad_url(self, name: str) -> str:
-        base = "https://hcad.org/property-search/real-property/search-by-owner-name/"
+    def _hcad_url(self, legal, name):
+        parsed = parse_legal_description(legal)
+        sub = parsed.get("subdivision", "")
+        lot = parsed.get("lot", "")
+        blk = parsed.get("block", "")
+        if sub and lot:
+            params = urllib.parse.urlencode({"s": sub, "l": lot, "b": blk})
+            return f"https://hcad.org/property-search/real-property/?{params}"
         if name:
-            return base + "?name=" + urllib.parse.quote(str(name)[:50])
-        return base
+            params = urllib.parse.urlencode({"name": str(name)[:60]})
+            return f"https://hcad.org/property-search/real-property/search-by-owner-name/?{params}"
+        return "https://hcad.org/property-search/real-property/"
