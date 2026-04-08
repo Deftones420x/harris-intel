@@ -872,20 +872,21 @@ function renderTable() {
       <td class="mono">${esc(r.doc_type||'')}</td>
       <td class="mono" style="white-space:nowrap">${esc(r.filed||'')}</td>
       <td class="owner">
-        <div>${esc(r.contact||r.owner||'—')}</div>
-        ${r.contact && r.owner && r.contact !== r.owner ? 
-          `<div style="font-size:11px;color:var(--grey);font-family:var(--font-mono)">Grantor: ${esc(r.owner)}</div>` : ''}
-        ${r.match_confidence ? 
-          `<span style="font-size:9px;padding:1px 5px;border-radius:2px;font-family:var(--font-mono);
-            background:${r.match_confidence==='HIGH'?'rgba(33,160,107,0.15)':r.match_confidence==='MEDIUM'?'rgba(212,160,23,0.15)':r.match_confidence==='LOW'?'rgba(26,108,255,0.12)':'rgba(122,131,148,0.1)'};
-            color:${r.match_confidence==='HIGH'?'var(--green)':r.match_confidence==='MEDIUM'?'var(--gold2)':r.match_confidence==='LOW'?'var(--blue2)':'var(--grey)'}">
-            ${r.match_confidence}</span>` : ''}
+        <div style="font-weight:600;color:var(--white)">${esc(r.contact||r.owner||'—')}</div>
+        ${(r.contact && r.owner && r.contact !== r.owner) ? 
+          `<div style="font-size:10px;color:var(--grey);font-family:var(--font-mono);margin-top:2px">via: ${esc(r.owner.substring(0,30))}${r.owner.length>30?'…':''}</div>` : ''}
+        ${r.match_confidence && r.match_confidence !== 'NONE' ? 
+          `<span style="display:inline-block;margin-top:3px;font-size:9px;padding:1px 5px;border-radius:2px;font-family:var(--font-mono);letter-spacing:0.05em;
+            background:${r.match_confidence==='HIGH'?'rgba(33,160,107,0.2)':r.match_confidence==='MEDIUM'?'rgba(212,160,23,0.15)':'rgba(26,108,255,0.12)'};
+            color:${r.match_confidence==='HIGH'?'var(--green)':r.match_confidence==='MEDIUM'?'var(--gold2)':'var(--blue2)'}">${r.match_confidence}</span>` : ''}
       </td>
       <td>${prop_addr}</td>
       <td>${mail_addr}</td>
       <td class="amount-cell">${amount_str}</td>
       <td><div class="flags-wrap">${flags_html}</div></td>
-      <td class="mono" title="${esc(r.legal||'')}" style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(legal_short)}</td>
+      <td class="mono" title="${esc(r.legal||'')}" style="max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">
+        ${esc((r.legal||'').replace(/^(Grantor|Grantee)\s*:\s*/i,'').substring(0,40))||'—'}
+      </td>
       <td>${doc_link}</td>
     </tr>`;
   }).join('');
