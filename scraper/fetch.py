@@ -1293,6 +1293,50 @@ def enrich_records(raw: list, parcel: HCADParcelLookup) -> list:
              f"NONE={conf_counts['NONE']}")
     return enriched
 
+
+def _dedupe_pass(records: list, keyfn) -> list:
+    """Collapse records sharing keyfn(rec), keeping the earliest filed date.
+    keyfn returning None means 'always keep' (never merged)."""
+    kept, order = {}, []
+    for r in records:
+        k = keyfn(r)
+        if k is None:
+            k = ("_uniq", id(r))
+        if k in kept:
+            # earliest real filed date wins (empty dates sort last)
+            a = kept[k].get("filed") or "9999-99-99"
+            b = r.get("filed") or "9999-99-99"
+            if b < a:
+                kept[k] = r
+        else:
+            kept[k] = r
+            order.append(k)
+    return [kept[k] for k in order]
+
+
+def dedupe_records(records: list) -> list:
+    """De-duplicate before writing records.json (Issue 1). The RP index files
+    the same trustee-sale notice under multiple instrument entries, so the same
+    (owner, property, doc type) shows up as several rows with different doc
+    numbers. Collapse those, and also collapse any identical doc numbers."""
+    def _n(s):
+        return re.sub(r"\s+", " ", (s or "").strip().upper())
+
+    n0 = len(records)
+    # Pass 1: identical document number.
+    records = _dedupe_pass(
+        records,
+        lambda r: ("doc", r["doc_num"].strip())
+        if (r.get("doc_num") or "").strip() else None)
+    # Pass 2: same normalized grantor + property address + doc type.
+    def semkey(r):
+        g, a = _n(r.get("owner")), _n(r.get("prop_address"))
+        return ("sem", g, a, _n(r.get("doc_type"))) if (g and a) else None
+    records = _dedupe_pass(records, semkey)
+    log.info(f"Dedup: {n0} → {len(records)} records "
+             f"({n0 - len(records)} duplicates collapsed)")
+    return records
+
 # ─── New-lead detection (Bug 6) ───────────────────────────────────────────────
 # Persist every doc number ever seen. Each run, anything not already in the file
 # is stamped is_new=True so the dashboard can surface a "New" tab + badge.
@@ -1416,6 +1460,7 @@ async def main():
 
     log.info("\n[3/3] Enriching and scoring...")
     records = enrich_records(raw or [], parcel)
+    records = dedupe_records(records)
 
     # ── Sanity gate (Bug 4): fail loudly on silent partial scrapes ────────────
     log.info("\nPer-source row counts:")
