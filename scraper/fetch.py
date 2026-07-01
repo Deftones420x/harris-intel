@@ -57,13 +57,35 @@ DOC_TYPES = {
     "REL":    ("lp",      "Release"),
 }
 
-SCORE_BASE        = 30
-SCORE_PER_FLAG    = 10
-SCORE_LP_FC_COMBO = 20
-SCORE_AMOUNT_100K = 15
-SCORE_AMOUNT_50K  = 10
-SCORE_NEW_WEEK    = 5
-SCORE_HAS_ADDRESS = 5
+# ─── Scoring model ────────────────────────────────────────────────────────────
+# Weighted motivation model. Each distress signal contributes points that reflect
+# how strongly it predicts a motivated *individual* seller. Institutional owners
+# (LLC/corp/HOA) are penalized because they rarely sell under duress. The old
+# model gave a flat +10 per flag and treated "LLC/corp owner" as positive, which
+# pushed 80% of leads to "Hot" and made the tiers meaningless.
+DISTRESS_POINTS = {
+    "Foreclosure auction scheduled": 32,
+    "Pre-foreclosure":               32,
+    "Lis pendens":                   28,
+    "Tax lien":                      25,
+    "Probate / estate":              25,
+    "Bankruptcy":                    18,
+    "Judgment lien":                 18,
+    "Mechanic lien":                 12,
+}
+SCORE_ABSENTEE_OWNER = 12   # mailing address != property address (out-of-area owner)
+SCORE_HAS_ADDRESS    = 10   # actionable/skip-traceable — a lead we can't reach is worth little
+SCORE_HAS_OWNER      = 8    # a named individual owner (not blank, not institutional)
+SCORE_NEW_WEEK       = 8    # freshly filed within the lookback window
+SCORE_AMOUNT_100K    = 12
+SCORE_AMOUNT_50K     = 6
+SCORE_STACK_PER_SRC  = 18   # same property appears on N distress lists (N-1 extra * this)
+SCORE_STACK_MAX      = 36
+PENALTY_INSTITUTIONAL = -25  # LLC / corp / HOA / government owner — not a motivated seller
+
+SCORE_HOT  = 70   # tier thresholds (unchanged, but now meaningful)
+SCORE_WARM = 50
+SCORE_ACTIVE = 30
 
 OUTPUT_DIRS = [Path("dashboard"), Path("data")]
 
@@ -384,71 +406,131 @@ class HCADParcelLookup:
 
 
 # ─── Scoring ──────────────────────────────────────────────────────────────────
+INSTITUTIONAL_TOKENS = (
+    "LLC", "L L C", "INC", "CORP", "LTD", " LP", "L P", "TRUST", "TRUSTEE",
+    "ASSOC", "ASSN", "HOMEOWNER", "COMMUNITY", "PARTNERS", "PROPERTIES",
+    "HOLDINGS", "CAPITAL", "INVESTMENT", "REALTY", "BANK", "MORTGAGE",
+    "FEDERAL", "NATIONAL", "COMPANY", " CO ", "FUND", "GROUP", "VENTURES",
+    # Government / public plaintiffs — these appear as grantor on tax & judgment
+    # filings but are never the motivated seller.
+    "COUNTY", "CITY OF", "STATE OF", "DISTRICT", "AUTHORITY", "MUNICIPAL",
+    " ISD", "UNITED STATES", " USA", "DEPARTMENT", "COMMISSION", "UNIVERSITY",
+)
+
+
+def is_institutional(name: str) -> bool:
+    """True when the owner looks like a company/HOA/trust rather than a person."""
+    n = f" {(name or '').upper().strip()} "
+    return any(tok in n for tok in INSTITUTIONAL_TOKENS)
+
+
+def is_new(rec: dict, today: datetime, window_days: int = 7) -> bool:
+    """Filed within the last `window_days`. Future dates (foreclosure sale
+    dates) are NOT new — the old code flagged them because (today - future) < 0."""
+    filed = (rec.get("filed") or "")[:10]
+    try:
+        dt = datetime.strptime(filed, "%Y-%m-%d")
+    except Exception:
+        return False
+    delta = (today - dt).days
+    return 0 <= delta <= window_days
+
+
 def build_flags(rec: dict, today: datetime) -> list:
+    """Human-readable badges. Distress badges must match DISTRESS_POINTS keys."""
     flags = []
     try:
         cat      = rec.get("cat", "")
-        doc_type = rec.get("doc_type", "").upper()
-        owner    = (rec.get("owner") or "").upper()
-        filed    = rec.get("filed") or ""
+        doc_type = (rec.get("doc_type") or "").upper()
+        owner    = (rec.get("owner") or "")
 
         if cat == "lp" and "REL" not in doc_type:
             flags.append("Lis pendens")
         if cat == "fc":
-            if rec.get("source") == "FRCL":
+            if rec.get("source") == "FRCL" or "SALE" in doc_type:
                 flags.append("Foreclosure auction scheduled")
-                flags.append("Pre-foreclosure")
             else:
                 flags.append("Pre-foreclosure")
         if cat == "jud":
             flags.append("Judgment lien")
-        if doc_type in ("T/L", "LEVY"):
+        if doc_type in ("T/L", "LEVY") or "TAX" in doc_type:
             flags.append("Tax lien")
         if cat == "lien" and doc_type == "LIEN":
             flags.append("Mechanic lien")
+        if "BNKR" in doc_type or "BANKR" in doc_type:
+            flags.append("Bankruptcy")
         if cat == "probate":
             flags.append("Probate / estate")
-        if any(x in owner for x in
-               ("LLC", " LP", "INC", "CORP", "LTD", "TRUST", "ASSOC")):
-            flags.append("LLC / corp owner")
-        try:
-            dt = datetime.strptime(filed[:10], "%Y-%m-%d")
-            # BUG 2 FIX: require 0 <= age <= 7. The old `<= 7` was also true for
-            # future-dated records (foreclosure sale dates), falsely tagging them.
-            if 0 <= (today - dt).days <= 7:
-                flags.append("New this week")
-        except Exception:
-            pass
+
+        # Owner-type signal (affects score in compute_score, shown for context)
+        if is_institutional(owner):
+            flags.append("Institutional owner")
+
+        # Absentee: owner mails somewhere other than the property they own.
+        prop = (rec.get("prop_address") or "").strip().upper()
+        mail = (rec.get("mail_address") or "").strip().upper()
+        if prop and mail and prop != mail and not is_institutional(owner):
+            flags.append("Absentee owner")
+
+        if is_new(rec, today):
+            flags.append("New this week")
     except Exception:
         pass
     return flags
 
 
 def compute_score(rec: dict, flags: list) -> int:
+    """Weighted motivation score, 0-100. See DISTRESS_POINTS for rationale.
+    Also writes rec['score_breakdown'] for transparency in the dashboard."""
     try:
-        score = SCORE_BASE + len(flags) * SCORE_PER_FLAG
-        cat = rec.get("cat", "")
-        if "Lis pendens" in flags and "Pre-foreclosure" in flags:
-            score += SCORE_LP_FC_COMBO
-        elif cat in ("lp", "fc") and len(flags) >= 2:
-            score += SCORE_LP_FC_COMBO
-        amount = 0
+        breakdown = {}
+
+        # Distress signals — take the single strongest plus partial credit for
+        # additional distinct signals, so genuinely stacked distress ranks high
+        # without every extra badge blindly adding a flat amount.
+        distress = [(f, DISTRESS_POINTS[f]) for f in flags if f in DISTRESS_POINTS]
+        distress.sort(key=lambda x: x[1], reverse=True)
+        for i, (name, pts) in enumerate(distress):
+            add = pts if i == 0 else round(pts * 0.5)
+            if add:
+                breakdown[name] = add
+
+        if "Absentee owner" in flags:
+            breakdown["Absentee owner"] = SCORE_ABSENTEE_OWNER
+        if "New this week" in flags:
+            breakdown["New this week"] = SCORE_NEW_WEEK
+        if rec.get("prop_address"):
+            breakdown["Has address"] = SCORE_HAS_ADDRESS
+        owner = (rec.get("owner") or "").strip()
+        if owner and "Institutional owner" not in flags:
+            breakdown["Named owner"] = SCORE_HAS_OWNER
+
+        amount = 0.0
         try:
             amount = float(str(rec.get("amount") or "0")
                            .replace(",", "").replace("$", ""))
         except Exception:
             pass
         if amount >= 100_000:
-            score += SCORE_AMOUNT_100K
+            breakdown["Debt ≥ $100k"] = SCORE_AMOUNT_100K
         elif amount >= 50_000:
-            score += SCORE_AMOUNT_50K
-        if "New this week" in flags:
-            score += SCORE_NEW_WEEK
-        if rec.get("prop_address"):
-            score += SCORE_HAS_ADDRESS
-        return min(score, 100)
+            breakdown["Debt ≥ $50k"] = SCORE_AMOUNT_50K
+
+        # Stacking: same property on multiple distress lists (set in enrich_records)
+        extra_sources = max(0, int(rec.get("stack_count", 1)) - 1)
+        if extra_sources:
+            breakdown["Stacked lists"] = min(
+                extra_sources * SCORE_STACK_PER_SRC, SCORE_STACK_MAX)
+
+        # Penalty: institutional owners are rarely motivated sellers
+        if "Institutional owner" in flags:
+            breakdown["Institutional owner"] = PENALTY_INSTITUTIONAL
+
+        score = sum(breakdown.values())
+        rec["score_breakdown"] = breakdown
+        return max(0, min(score, 100))
     except Exception:
-        return SCORE_BASE
+        return 0
 
 
 # ─── Harris County Clerk Scraper ──────────────────────────────────────────────
@@ -1035,6 +1117,37 @@ class HarrisClerkScraper:
 
         return rows_out
 
+def _prop_key(rec: dict):
+    """Normalized (street, zip5) key for stacking the same property together."""
+    addr = re.sub(r"\s+", " ", (rec.get("prop_address") or "").strip().upper())
+    zp   = (rec.get("prop_zip") or "").strip()[:5]
+    if not addr:
+        return None
+    return (addr, zp)
+
+
+def apply_stacking(records: list) -> None:
+    """Annotate each record with how many *distinct* distress lists its property
+    appears on, and the set of source categories. Same property showing up as
+    both a tax lien and a foreclosure is a much stronger lead than either alone."""
+    groups = {}
+    for r in records:
+        k = _prop_key(r)
+        if k:
+            groups.setdefault(k, []).append(r)
+    for r in records:
+        r["stack_count"] = 1
+        r["sources"] = sorted({(r.get("cat") or "").upper()} - {""}) or \
+                       [("FRCL" if r.get("source") == "FRCL" else "RP")]
+    for k, grp in groups.items():
+        cats = sorted({(x.get("cat") or "").upper() for x in grp} - {""})
+        if len(cats) <= 1:
+            continue
+        for x in grp:
+            x["stack_count"] = len(cats)
+            x["sources"] = cats
+
+
 # ─── Enrich & Score ───────────────────────────────────────────────────────────
 def enrich_records(raw: list, parcel: HCADParcelLookup) -> list:
     today    = datetime.now()
@@ -1043,6 +1156,7 @@ def enrich_records(raw: list, parcel: HCADParcelLookup) -> list:
     engine   = getattr(parcel, "engine", None)
     conf_counts = {"HIGH": 0, "MEDIUM": 0, "LOW": 0, "NONE": 0}
 
+    # Phase 1: dedup + address enrichment
     for rec in raw:
         try:
             key = (rec.get("doc_num", ""), rec.get("doc_type", ""))
@@ -1066,10 +1180,19 @@ def enrich_records(raw: list, parcel: HCADParcelLookup) -> list:
                 rec["hcad_url"] = ""
 
             conf_counts[rec.get("match_confidence", "NONE")] += 1
+            enriched.append(rec)
+        except Exception as e:
+            log.warning(f"Enrich error: {e}")
+
+    # Phase 2: stacking (needs all enriched addresses first)
+    apply_stacking(enriched)
+
+    # Phase 3: flags + score
+    for rec in enriched:
+        try:
             flags        = build_flags(rec, today)
             rec["flags"] = flags
             rec["score"] = compute_score(rec, flags)
-            enriched.append(rec)
         except Exception as e:
             log.warning(f"Enrich error: {e}")
 
