@@ -92,6 +92,18 @@ def name_variants(name):
     return [v for v in variants if len(v) > 3]
 
 
+def is_placeholder_addr(addr):
+    """HCAD site addresses like '0 W LAKE HOUSTON' (street number 0) are
+    vacant/placeholder parcel rows. A name-prefix hit landing on one is almost
+    always a wrong match, so we treat it as no-address rather than a confident
+    fill. (Issue 2)"""
+    a = (addr or "").strip()
+    if not a:
+        return True
+    first = a.split()[0]
+    return first in ("0", "0.0") or a.startswith("0 ")
+
+
 def get_match_targets(rec):
     cat     = rec.get("cat", "")
     grantor = (rec.get("owner") or "").strip()
@@ -191,24 +203,36 @@ class EnrichmentEngine:
 
         # Strategy 2: Name match
         for target in get_match_targets(rec):
+            tnorm = normalize_name(target)
             for v in name_variants(target):
                 if v not in self.name_lookup:
                     continue
-                matches = self.name_lookup[v]
+                # Drop placeholder parcels ("0 ..." site addresses) up front —
+                # they are the wrong-match sink (Issue 2).
+                cands = [m for m in self.name_lookup[v]
+                         if not is_placeholder_addr(m.get("site_addr"))]
+                if not cands:
+                    continue
                 v_words = len(v.split())
-                if len(matches) == 1:
+                if len(cands) == 1:
                     conf   = "MEDIUM" if v_words >= 3 else "LOW"
                     reason = f"Name match ({v_words}w) — unique: {v}"
-                    return self._apply(rec, matches[0], conf, reason)
-                else:
-                    reason = f"Name match — {len(matches)} duplicates: {v}"
-                    return self._apply(rec, matches[0], "LOW", reason)
+                    return self._apply(rec, cands[0], conf, reason)
+                # Multiple candidates share this name/prefix. Do NOT assign an
+                # arbitrary parcel to everyone (Issue 2). Only accept when
+                # exactly one candidate matches the FULL normalized name.
+                exact = [m for m in cands if m.get("_owner_norm") == tnorm]
+                if len(exact) == 1:
+                    return self._apply(rec, exact[0], "MEDIUM",
+                                       f"Name match — exact owner among {len(cands)}: {v}")
+                # Otherwise ambiguous — fall through (try next variant, else NONE).
 
         # Strategy 3: Subdivision name from legal description
         parsed = parse_legal_description(legal_raw)
         sub    = parsed.get("subdivision", "").strip()
         if sub and len(sub) > 5 and sub in self.name_lookup:
-            matches = self.name_lookup[sub]
+            matches = [m for m in self.name_lookup[sub]
+                       if not is_placeholder_addr(m.get("site_addr"))]
             if len(matches) == 1:
                 return self._apply(rec, matches[0], "LOW", f"Subdivision match: {sub}")
 
@@ -221,6 +245,16 @@ class EnrichmentEngine:
         return rec
 
     def _apply(self, rec, parcel, confidence, reason):
+        # Final safety net: never ship a placeholder "0 ..." site address as a
+        # confident fill (Issue 2). Downgrade to NONE instead.
+        if is_placeholder_addr(parcel.get("site_addr")):
+            rec.update({
+                "match_confidence": "NONE",
+                "match_reason": "Rejected placeholder parcel (0-street-number)",
+                "prop_address": "", "prop_city": "", "prop_state": "TX", "prop_zip": "",
+                "mail_address": "", "mail_city": "", "mail_state": "TX", "mail_zip": "",
+            })
+            return rec
         rec["match_confidence"] = confidence
         rec["match_reason"]     = reason
         rec["prop_address"]     = parcel.get("site_addr", "")
