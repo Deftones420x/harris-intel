@@ -179,6 +179,19 @@ class EnrichmentEngine:
         log.info(f"  Legal index: {len(self.legal_lookup):,} keys")
         log.info(f"  Acct index:  {len(self.acct_lookup):,} keys")
 
+    @staticmethod
+    def _distinct_props(cands):
+        """Collapse candidate parcels to distinct (site_addr, zip5), dropping
+        placeholder '0 ...' parcels. Returns {addr_key: parcel}."""
+        props = {}
+        for m in cands or []:
+            if is_placeholder_addr(m.get("site_addr")):
+                continue
+            key = (re.sub(r"\s+", " ", (m.get("site_addr") or "").strip().upper()),
+                   (m.get("site_zip") or "").strip()[:5])
+            props.setdefault(key, m)
+        return props
+
     def enrich(self, rec):
         legal_raw   = rec.get("legal", "")
         search_name = (rec.get("grantee") if rec.get("cat") in ("lp", "fc", "release")
@@ -201,31 +214,36 @@ class EnrichmentEngine:
             return self._apply(rec, matches[0], "MEDIUM",
                                f"Legal description — {len(matches)} parcels, took first")
 
-        # Strategy 2: Name match
+        # Strategy 2: Tiered name match (coverage rebuild).
+        #
+        # NOTE: the RP index exposes no ZIP/address/legal on a record (only
+        # doc#, date, type, grantor, grantee), so the record has nothing to
+        # ZIP-match against. The safe disambiguator we DO have is the candidate
+        # set itself: many "multiple candidate" hits are the SAME property
+        # listed under several owners/AKAs, which collapse to one distinct
+        # address. We assign only when a name resolves to a SINGLE distinct
+        # property; a name spanning several DISTINCT properties stays NONE (that
+        # was the original wrong-parcel bug). Placeholder "0 ..." parcels are
+        # always dropped.
         for target in get_match_targets(rec):
             tnorm = normalize_name(target)
+
+            # Tier 1 (HIGH): exact full normalized name → single property.
+            exact_props = self._distinct_props(self.name_lookup.get(tnorm, []))
+            if len(exact_props) == 1:
+                return self._apply(rec, next(iter(exact_props.values())),
+                                   "HIGH", f"Exact name → single property: {tnorm}")
+
+            # Tier 2/3: a name variant/prefix that still resolves to exactly one
+            # distinct property. 3-word prefixes are specific enough for MEDIUM;
+            # 2-word prefixes are LOW.
             for v in name_variants(target):
-                if v not in self.name_lookup:
-                    continue
-                # Drop placeholder parcels ("0 ..." site addresses) up front —
-                # they are the wrong-match sink (Issue 2).
-                cands = [m for m in self.name_lookup[v]
-                         if not is_placeholder_addr(m.get("site_addr"))]
-                if not cands:
-                    continue
-                v_words = len(v.split())
-                if len(cands) == 1:
-                    conf   = "MEDIUM" if v_words >= 3 else "LOW"
-                    reason = f"Name match ({v_words}w) — unique: {v}"
-                    return self._apply(rec, cands[0], conf, reason)
-                # Multiple candidates share this name/prefix. Do NOT assign an
-                # arbitrary parcel to everyone (Issue 2). Only accept when
-                # exactly one candidate matches the FULL normalized name.
-                exact = [m for m in cands if m.get("_owner_norm") == tnorm]
-                if len(exact) == 1:
-                    return self._apply(rec, exact[0], "MEDIUM",
-                                       f"Name match — exact owner among {len(cands)}: {v}")
-                # Otherwise ambiguous — fall through (try next variant, else NONE).
+                props = self._distinct_props(self.name_lookup.get(v, []))
+                if len(props) == 1:
+                    conf = "MEDIUM" if len(v.split()) >= 3 else "LOW"
+                    return self._apply(rec, next(iter(props.values())),
+                                       conf, f"Name → single property ({len(v.split())}w): {v}")
+                # >1 distinct property and no ZIP to disambiguate → try next.
 
         # Strategy 3: Subdivision name from legal description
         parsed = parse_legal_description(legal_raw)

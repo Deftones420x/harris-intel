@@ -1217,6 +1217,38 @@ def _prop_key(rec: dict):
     return (addr, zp)
 
 
+def guard_shared_addresses(records: list, max_owners: int = 3) -> int:
+    """Revert enrichment for any property address assigned to more than
+    `max_owners` DISTINCT owner names — the signature of a bad shared match.
+    Joint owners (1-2 names) and a name variant are fine; dozens are not."""
+    groups, members = {}, {}
+    for r in records:
+        addr = re.sub(r"\s+", " ", (r.get("prop_address") or "").strip().upper())
+        if not addr:
+            continue
+        key   = (addr, (r.get("prop_zip") or "")[:5])
+        owner = re.sub(r"\s+", " ", (r.get("owner") or "").strip().upper())
+        groups.setdefault(key, set()).add(owner)
+        members.setdefault(key, []).append(r)
+
+    reverted, bad_addrs = 0, 0
+    for key, owners in groups.items():
+        if len(owners) > max_owners:
+            bad_addrs += 1
+            for r in members[key]:
+                r.update({
+                    "match_confidence": "NONE",
+                    "match_reason": f"Reverted — address shared by {len(owners)} distinct owners",
+                    "prop_address": "", "prop_city": "", "prop_state": "TX", "prop_zip": "",
+                    "mail_address": "", "mail_city": "", "mail_state": "TX", "mail_zip": "",
+                })
+                reverted += 1
+    if reverted:
+        log.info(f"Shared-address guard: reverted {reverted} records across "
+                 f"{bad_addrs} over-shared addresses (> {max_owners} owners each)")
+    return reverted
+
+
 def apply_stacking(records: list) -> None:
     """Annotate each record with how many *distinct* distress lists its property
     appears on, and the set of source categories. Same property showing up as
@@ -1274,6 +1306,12 @@ def enrich_records(raw: list, parcel: HCADParcelLookup) -> list:
             enriched.append(rec)
         except Exception as e:
             log.warning(f"Enrich error: {e}")
+
+    # Phase 1b: shared-address guard. Enforce "never one address across many
+    # distinct owners" as a net over the tiered matcher. A real property has one
+    # owner (or a couple of joint owners); a site address that ends up on many
+    # DISTINCT clerk owner names is almost certainly a bad match — revert it.
+    guard_shared_addresses(enriched)
 
     # Phase 2: stacking (needs all enriched addresses first)
     apply_stacking(enriched)
