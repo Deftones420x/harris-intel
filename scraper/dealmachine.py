@@ -34,7 +34,7 @@ import requests
 log = logging.getLogger(__name__)
 
 BASE_URL       = "https://api.v2.dealmachine.com/v1"
-CACHE_VERSION  = 2         # bump to re-fetch cached entries for new fields
+CACHE_VERSION  = 3         # bump to re-fetch cached entries for new fields
                            # (re-access within a billing cycle is free per docs)
 BATCH_SIZE     = 25        # addresses per request (well under any body limit)
 REQUEST_SPACING= 1.2       # seconds between requests -> ~50/min, under the 60/min cap
@@ -114,12 +114,12 @@ def _parse_property(prop: dict) -> dict:
     # schema; capture them defensively if the response includes them.
     mailing = _first(prop.get("mailing_address"), prop.get("owner_mailing_address"),
                      prop.get("mail_address"))
-    est_val = _first(prop.get("estimated_value"), prop.get("calculated_total_value"),
-                     prop.get("market_value"), prop.get("assessed_total_value"))
-    equity  = _first(prop.get("equity_percent"), prop.get("equity_percentage"),
-                     prop.get("estimated_equity_percent"), prop.get("equity"))
-    equity_d= _first(prop.get("equity_dollars"), prop.get("estimated_equity"),
-                     prop.get("equity_amount"))
+    # Field names confirmed from a live response (discovery log): DealMachine
+    # returns estimated_value / estimated_equity_percentage /
+    # estimated_equity_amount / last_sale_amount / last_sale_date.
+    est_val = _first(prop.get("estimated_value"), prop.get("total_assessed_value"))
+    equity  = _first(prop.get("estimated_equity_percentage"), prop.get("equity_percent"))
+    equity_d= _first(prop.get("estimated_equity_amount"), prop.get("equity_dollars"))
 
     # Capture EVERY top-level scalar field DealMachine returns (Change 2/4), so
     # value/equity/sale/owner-type/absentee/vacancy/tax indicators are all kept
@@ -145,8 +145,8 @@ def _parse_property(prop: dict) -> dict:
         "dm_estimated_value": est_val if est_val != "" else None,
         "dm_equity_percent":  equity if equity != "" else None,
         "dm_equity_dollars":  equity_d if equity_d != "" else None,
-        "dm_sale_price":      _first(prop.get("sale_price"), prop.get("last_sale_price")) or None,
-        "dm_sale_date":       _first(prop.get("sale_date"), prop.get("last_sale_date")) or "",
+        "dm_sale_price":      _first(prop.get("last_sale_amount"), prop.get("sale_price")) or None,
+        "dm_sale_date":       _first(prop.get("last_sale_date"), prop.get("sale_date")) or "",
         "dm_data":            dm_data,             # all scalar fields returned
         "dm_raw":             prop,                # FULL response payload — so no
                                                    # future field addition ever
