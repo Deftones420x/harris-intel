@@ -553,6 +553,24 @@ class HarrisClerkScraper:
         self.today      = datetime.now()
         self.start_date = self.today - timedelta(days=days_back)
         self.records: list = []
+        # Per-source row counts + page counts for the sanity gate (Bug 4).
+        self.per_source: dict = {}   # doc_code -> row count
+        self.page_counts: dict = {}  # doc_code -> pages fetched
+
+    async def _wait_overlay_hidden(self, page, timeout: int = 20000):
+        """ASP.NET UpdatePanel renders a loading overlay (div#overlay) that
+        intercepts clicks between pages and causes 'Element is not attached to
+        the DOM' errors — which silently stopped pagination at page 1. Wait for
+        it to reach the hidden state before interacting."""
+        for sel in ("#overlay", "div#overlay", "#ctl00_UpdateProgress1",
+                    ".updateProgress", ".overlay"):
+            try:
+                el = await page.query_selector(sel)
+                if el:
+                    await page.wait_for_selector(sel, state="hidden",
+                                                 timeout=timeout)
+            except Exception:
+                pass
 
     def _parse_results_page(self, html: str, doc_code: str,
                             cat: str, cat_label: str) -> list:
@@ -729,49 +747,84 @@ class HarrisClerkScraper:
             await page.wait_for_load_state("domcontentloaded", timeout=20000)
             await page.wait_for_timeout(2000)
 
-            page_num = 0
-            while True:
+            # BUG 4 FIX: paginate through ALL result pages. The old loop clicked
+            # NEXT then waited only for 'domcontentloaded' — but the results grid
+            # updates via an ASP.NET UpdatePanel (XHR postback), not a full nav,
+            # so it frequently read stale HTML or clicked a detached NEXT and
+            # silently stopped at page 1 (the exactly-200-rows signature). We now
+            # wait for the loading overlay to hide and confirm the page's first
+            # document number actually changed before parsing the next page.
+            page_num   = 0
+            row_count  = 0
+            seen_first = set()
+            MAX_PAGES  = 80
+            while page_num < MAX_PAGES:
                 page_num += 1
+                await self._wait_overlay_hidden(page)
                 html = await page.content()
-                # Debug: dump page snapshot on first L/P search only
-                if page_num == 1 and doc_code == "L/P":
-                    from bs4 import BeautifulSoup as _BS
-                    _s = _BS(html, "lxml")
-                    # Log first RP- match in full page text
-                    _txt = _s.get_text(" ")
-                    _idx = _txt.find("RP-20")
-                    if _idx >= 0:
-                        log.info(f"    FOUND RP- at index {_idx}: ...{_txt[_idx-50:_idx+200]}...")
-                    else:
-                        log.info(f"    NO RP- pattern in page text")
-                    # Log all table count and first table with RP-
-                    _tables = _s.find_all("table")
-                    log.info(f"    Tables on page: {len(_tables)}")
-                    for _i, _t in enumerate(_tables):
-                        if "RP-20" in _t.get_text():
-                            log.info(f"    First table with RP-: index {_i}")
-                            # Log its rows
-                            _rows = _t.find_all("tr")
-                            log.info(f"    That table has {len(_rows)} rows")
-                            for _r in _rows[:3]:
-                                _cells = _r.find_all("td")
-                                log.info(f"    Row cells ({len(_cells)}): {[_c.get_text(strip=True)[:30] for _c in _cells[:5]]}")
-                            break
                 rows = self._parse_results_page(html, doc_code, cat, cat_label)
-                log.info(f"    Page {page_num}: {len(rows)} rows")
+                first_doc = rows[0]["doc_num"] if rows else None
+                log.info(f"    Page {page_num}: {len(rows)} rows"
+                         f" (first={first_doc})")
                 self.records.extend(rows)
+                row_count += len(rows)
+
+                # Stop if this page repeats a page we've already parsed (the
+                # postback didn't advance) — prevents infinite loops / dupes.
+                if first_doc and first_doc in seen_first:
+                    log.info("    Page did not advance — stopping pagination")
+                    break
+                if first_doc:
+                    seen_first.add(first_doc)
 
                 next_btn = await page.query_selector(
-                    'input[value="NEXT"], input[value="Next"], '
+                    'input[value="NEXT"]:not([disabled]), '
+                    'input[value="Next"]:not([disabled]), '
                     'a:has-text("NEXT"), a:has-text("Next")')
                 if not next_btn:
                     break
-                await next_btn.click()
-                await page.wait_for_load_state("domcontentloaded", timeout=15000)
-                await page.wait_for_timeout(1000)
+
+                # Click NEXT, retrying once if the element detaches mid-postback.
+                clicked = False
+                for _try in range(2):
+                    try:
+                        await next_btn.click(timeout=10000)
+                        clicked = True
+                        break
+                    except Exception as e:
+                        log.info(f"    NEXT click retry ({e})")
+                        await self._wait_overlay_hidden(page)
+                        next_btn = await page.query_selector(
+                            'input[value="NEXT"]:not([disabled]), '
+                            'input[value="Next"]:not([disabled]), '
+                            'a:has-text("NEXT"), a:has-text("Next")')
+                        if not next_btn:
+                            break
+                if not clicked:
+                    break
+
+                # Wait for the grid to actually change to the next page.
+                await self._wait_overlay_hidden(page)
+                try:
+                    await page.wait_for_function(
+                        """(prev) => {
+                            const m = document.body.innerText.match(/RP-\\d{4}-\\d+/);
+                            return m && m[0] !== prev;
+                        }""",
+                        arg=first_doc, timeout=15000)
+                except Exception:
+                    # No change detected in time — likely the last page.
+                    await page.wait_for_timeout(1000)
+
+            self.per_source[doc_code]  = row_count
+            self.page_counts[doc_code] = page_num
+            log.info(f"    {doc_code}: {row_count} rows across {page_num} pages")
 
         except Exception as e:
             log.warning(f"  Error on {doc_code}: {e}")
+            # Record what we got so the sanity gate can see a shortfall.
+            self.per_source.setdefault(doc_code, len(
+                [r for r in self.records if r.get('cat') == cat]))
 
     async def scrape_all(self) -> list:
         log.info(f"Scraping: {self.start_date.date()} → {self.today.date()}")
@@ -982,6 +1035,7 @@ class HarrisClerkScraper:
                     log.warning(f"    FRCL [{search_type}] {year}-{month:02d} error: {e}")
                     continue
 
+        self.per_source["FRCL"] = frcl_count
         log.info(f"  FRCL total: {frcl_count} foreclosure postings")
 
     def _parse_frcl_page(self, html: str, year: int, month: int, search_type: str = "Sale Date") -> list:
@@ -1273,6 +1327,36 @@ def export_ghl_csv(records: list, today: datetime):
         log.info(f"GHL CSV → {path} ({len(rows)} rows)")
 
 
+# ─── Sanity gate (Bug 4) ──────────────────────────────────────────────────────
+# Core sources that must return data on a healthy run. If any is empty or a doc
+# type caps at exactly the page size (the "stopped at page 1" signature), the run
+# is a silent partial failure and must NOT overwrite good data / must exit non-0.
+GATE_PAGE_SIZE   = 200   # RP results page size — an exact multiple with no more
+GATE_MIN_TOTAL   = 400   # implausibly low overall record count
+GATE_REQUIRED    = ["L/P", "FRCL"]  # doc codes that should never be empty
+
+
+def sanity_gate(per_source: dict, page_counts: dict, total: int) -> list:
+    """Return a list of human-readable problems. Empty list == healthy run."""
+    problems = []
+    for code in GATE_REQUIRED:
+        if per_source.get(code, 0) == 0:
+            problems.append(f"required source '{code}' returned 0 rows")
+    for code, cnt in per_source.items():
+        # The page-1 cap signature: a doc type that returned exactly one full
+        # page of GATE_PAGE_SIZE rows and fetched no further pages — the
+        # ASP.NET overlay silently stopped pagination. (Large genuine counts
+        # that merely happen to be multiples of 200 are NOT flagged.)
+        pages = page_counts.get(code)
+        if pages is not None and pages <= 1 and cnt and cnt % GATE_PAGE_SIZE == 0:
+            problems.append(
+                f"'{code}' stopped at {pages} page of {cnt} rows — "
+                f"pagination truncated (page-1 cap signature)")
+    if total < GATE_MIN_TOTAL:
+        problems.append(f"total records {total} < floor {GATE_MIN_TOTAL}")
+    return problems
+
+
 # ─── Main ─────────────────────────────────────────────────────────────────────
 async def main():
     today     = datetime.now()
@@ -1292,13 +1376,31 @@ async def main():
 
     log.info("\n[2/3] Scraping Harris County Clerk...")
     raw = []
+    scraper = HarrisClerkScraper(days_back=days_back)
     try:
-        raw = await HarrisClerkScraper(days_back=days_back).scrape_all()
+        raw = await scraper.scrape_all()
     except Exception as e:
         log.error(f"Scraper error: {e}")
 
     log.info("\n[3/3] Enriching and scoring...")
     records = enrich_records(raw or [], parcel)
+
+    # ── Sanity gate (Bug 4): fail loudly on silent partial scrapes ────────────
+    log.info("\nPer-source row counts:")
+    for code, cnt in sorted(scraper.per_source.items()):
+        log.info(f"  {code:8} {cnt:6}  ({scraper.page_counts.get(code, '?')} pages)")
+    problems = sanity_gate(scraper.per_source, scraper.page_counts, len(records))
+    if problems:
+        log.error("✗ SANITY GATE FAILED — not overwriting good data:")
+        for p in problems:
+            log.error(f"    - {p}")
+        if os.environ.get("SKIP_SANITY_GATE") == "1":
+            log.warning("SKIP_SANITY_GATE=1 set — saving anyway.")
+        else:
+            log.error("Exiting non-zero. Set SKIP_SANITY_GATE=1 to override.")
+            sys.exit(1)
+    else:
+        log.info("✓ Sanity gate passed.")
 
     log.info("\nSaving outputs...")
     save_records(records, today, days_back)
