@@ -289,7 +289,11 @@
 
   /* ── TABLE ───────────────────────────────────────────────── */
   .table-wrap {
-    overflow-x: auto;
+    /* NOTE: no overflow here on desktop. `overflow-x: auto` forces a computed
+       `overflow-y: auto`, which turns this into a scroll container and BREAKS
+       the sticky <thead> (it scrolled off instead of pinning under the header,
+       hiding the column row + top lead — Issue 3). Horizontal scroll is
+       restored only on narrow screens via the mobile media query below. */
     border: 1px solid rgba(255,255,255,0.05);
   }
 
@@ -560,6 +564,9 @@
     header { padding: 0 14px; }
     .main  { padding: 14px; }
     .logo-sub { display: none; }
+    /* Contained horizontal scroll on small screens (sticky header matters less
+       here). See the .table-wrap note above (Issue 3). */
+    .table-wrap { overflow-x: auto; }
   }
 
   /* ── MODAL ───────────────────────────────────────────────── */
