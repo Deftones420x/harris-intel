@@ -148,6 +148,9 @@ def _parse_property(prop: dict) -> dict:
         "dm_sale_price":      _first(prop.get("sale_price"), prop.get("last_sale_price")) or None,
         "dm_sale_date":       _first(prop.get("sale_date"), prop.get("last_sale_date")) or "",
         "dm_data":            dm_data,             # all scalar fields returned
+        "dm_raw":             prop,                # FULL response payload — so no
+                                                   # future field addition ever
+                                                   # needs a re-call
     }
 
 
@@ -224,7 +227,8 @@ def enrich_addressed(records: list, cache_path: Path) -> dict:
     blanks an existing field. Returns a stats dict for the run report."""
     stats = {"considered": 0, "from_cache": 0, "newly_enriched": 0,
              "tier_contact": 0, "tier_address_only": 0, "tier_miss": 0,
-             "credits_used": 0, "requests": 0, "skipped": False}
+             "credits_used": 0, "requests": 0, "skipped": False,
+             "credits_before": None, "credits_after": None, "aborted": False}
 
     key = os.environ.get("DEALMACHINE_API_KEY")
     if not key:
@@ -245,16 +249,17 @@ def enrich_addressed(records: list, cache_path: Path) -> dict:
     if not addressed:
         return stats
 
-    remaining = _check_usage(key)
-    if remaining is not None and remaining <= 0:
-        log.warning("DealMachine credits exhausted — skipping enrichment this run")
+    # Credit balance BEFORE anything (Step 1).
+    log.info("DealMachine: checking credit balance BEFORE backfill...")
+    credits_before = _check_usage(key)
+    stats["credits_before"] = credits_before
+    can_call = not (credits_before is not None and credits_before <= 0)
+    if not can_call:
+        log.warning("DealMachine credits exhausted — skipping calls (apply cache only)")
         stats["skipped"] = "no_credits"
-        # still apply any cached data below
-    can_call = not (remaining is not None and remaining <= 0)
 
-    # Figure out which unique addresses still need a call: not cached at all, OR
-    # cached under an older schema version (re-fetched to backfill new fields —
-    # re-access within a billing cycle is free per the docs).
+    # Determine which unique addresses need a call: not cached, OR cached under
+    # an older schema version (re-fetch to backfill new fields).
     todo, todo_keys = [], set()
     for r in addressed:
         k = _addr_key(r)
@@ -264,38 +269,62 @@ def enrich_addressed(records: list, cache_path: Path) -> dict:
         if cached and cached.get("cache_v") == CACHE_VERSION:
             continue
         todo_keys.add(k); todo.append(r)
+    stale = sum(1 for k in todo_keys if k in cache)
     if todo:
-        stale = sum(1 for k in todo_keys if k in cache)
-        log.info(f"DealMachine: {len(todo_keys)} addresses to fetch "
-                 f"({stale} stale re-fetch for new fields, "
-                 f"{len(todo_keys)-stale} brand new)")
+        log.info(f"DealMachine: {len(todo)} addresses to fetch "
+                 f"({stale} stale re-fetch, {len(todo)-stale} brand new)")
+
+    def _persist():
+        try:
+            Path(cache_path).write_text(json.dumps(cache))
+        except Exception as e:
+            log.warning(f"Could not write DealMachine cache: {e}")
 
     if can_call and todo:
         todo = todo[:MAX_ADDRESSES]
-        if len(todo_keys) > MAX_ADDRESSES:
-            log.info(f"DealMachine: capping at {MAX_ADDRESSES} new addresses this "
-                     f"run ({len(todo_keys)} pending); rest fill on later runs")
-        for start in range(0, len(todo), BATCH_SIZE):
-            if stats["requests"] >= MAX_REQUESTS:
-                break
-            batch = todo[start:start + BATCH_SIZE]
-            out = _enrich_batch(key, batch)
-            cache.update(out["results"])
-            stats["requests"]      += 1
-            stats["credits_used"]  += out["credits"]
-            stats["newly_enriched"]+= len(out["results"])
-            # stop if we've burned the remaining credits
-            if remaining is not None:
-                remaining -= out["credits"]
-                if remaining <= 0:
-                    log.warning("DealMachine credits hit zero mid-run — stopping")
+        # ── CANARY (Step 2): prove re-access is FREE on the first few records
+        # before committing to all of them. Abort if the credit counter moves.
+        CANARY_N = 3
+        canary = todo[:CANARY_N]
+        log.info(f"DealMachine CANARY: enriching first {len(canary)} records to "
+                 f"test credit cost before the full backfill...")
+        out = _enrich_batch(key, canary)
+        cache.update(out["results"]); _persist()
+        stats["requests"]      += 1
+        stats["credits_used"]  += out["credits"]
+        stats["newly_enriched"]+= len(out["results"])
+        credits_after_canary = _check_usage(key)
+        delta = (credits_before - credits_after_canary) \
+            if (credits_before is not None and credits_after_canary is not None) else None
+        log.info(f"DealMachine CANARY result: credits_before={credits_before} "
+                 f"credits_after={credits_after_canary} delta={delta} "
+                 f"batch_credits_used={out['credits']}")
+        charged = (out["credits"] and out["credits"] > 0) or (delta is not None and delta > 0)
+        if charged:
+            log.error(f"✗ DealMachine CANARY: credits MOVED (delta={delta}, "
+                      f"batch={out['credits']}) — ABORTING. NOT re-fetching the "
+                      f"remaining {len(todo)-len(canary)} records.")
+            stats["aborted"] = True
+        elif os.environ.get("DM_CANARY_ONLY") in ("1", "true", "True"):
+            log.info("✓ DealMachine CANARY: 0 credits. DM_CANARY_ONLY set — "
+                     "stopping after the canary as requested.")
+        else:
+            log.info("✓ DealMachine CANARY: 0 credits — re-access is free; "
+                     "proceeding with the full backfill.")
+            rest = todo[CANARY_N:]
+            for start in range(0, len(rest), BATCH_SIZE):
+                if stats["requests"] >= MAX_REQUESTS:
+                    log.warning(f"Hit MAX_REQUESTS={MAX_REQUESTS} — stopping")
                     break
-            time.sleep(REQUEST_SPACING)
-        # persist cache (only new/updated keys added; misses cached too)
-        try:
-            Path(cache_path).write_text(json.dumps(cache, indent=0))
-        except Exception as e:
-            log.warning(f"Could not write DealMachine cache: {e}")
+                batch = rest[start:start + BATCH_SIZE]
+                out = _enrich_batch(key, batch)
+                cache.update(out["results"])
+                stats["requests"]      += 1
+                stats["credits_used"]  += out["credits"]
+                stats["newly_enriched"]+= len(out["results"])
+                time.sleep(REQUEST_SPACING)   # ~50 req/min, under the 60/min cap
+            _persist()
+        stats["credits_after"] = _check_usage(key)
 
     # Apply cache to every addressed record. Never blank existing good fields.
     for r in addressed:
@@ -335,10 +364,17 @@ def enrich_addressed(records: list, cache_path: Path) -> dict:
         log.info(f"DealMachine returned fields ({len(field_union)}): "
                  f"{sorted(field_union)}")
 
+    with_value = sum(1 for r in records if r.get("dm_estimated_value") is not None)
+    with_equity = sum(1 for r in records
+                      if r.get("dm_equity_percent") is not None
+                      or r.get("dm_equity_dollars") is not None)
     log.info(
         f"DealMachine Phase 1: considered={stats['considered']} "
-        f"newly_enriched={stats['newly_enriched']} from_cache={stats['from_cache']} "
+        f"newly_enriched={stats['newly_enriched']} "
         f"| tiers: contact={stats['tier_contact']} "
         f"address_only={stats['tier_address_only']} miss={stats['tier_miss']} "
-        f"| requests={stats['requests']} credits_used={stats['credits_used']}")
+        f"| value_populated={with_value} equity_populated={with_equity} "
+        f"| requests={stats['requests']} credits_used={stats['credits_used']} "
+        f"credits_before={stats['credits_before']} credits_after={stats['credits_after']} "
+        f"aborted={stats['aborted']}")
     return stats

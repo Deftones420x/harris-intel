@@ -10,6 +10,10 @@ on:
         description: "Number of days to look back"
         required: false
         default: "7"
+      dm_canary_only:
+        description: "DealMachine: enrich only the first 3 records (credit canary), then stop"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
@@ -62,6 +66,7 @@ jobs:
           # DealMachine enrichment key (optional). Read only from env; the
           # scraper skips enrichment gracefully if it's absent.
           DEALMACHINE_API_KEY: ${{ secrets.DEALMACHINE_API_KEY }}
+          DM_CANARY_ONLY: ${{ github.event.inputs.dm_canary_only || 'false' }}
 
       - name: Show scrape summary
         run: |
