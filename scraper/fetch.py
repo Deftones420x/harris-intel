@@ -87,6 +87,11 @@ SCORE_HOT  = 70   # tier thresholds (unchanged, but now meaningful)
 SCORE_WARM = 50
 SCORE_ACTIVE = 30
 
+# Bug 1: foreclosure-notice doc types scraped over a wider window so upcoming
+# trustee sales are captured with grantor names (then HCAD supplies addresses).
+FC_NOTICE_CODES         = {"NOTICE", "TRSALE"}
+FC_NOTICE_LOOKBACK_DAYS = 45
+
 OUTPUT_DIRS = [Path("dashboard"), Path("data")]
 
 
@@ -715,7 +720,8 @@ class HarrisClerkScraper:
         return rows_out
 
     async def _search_one(self, page, doc_code: str,
-                          cat: str, cat_label: str):
+                          cat: str, cat_label: str,
+                          lookback_days: int = None):
         log.info(f"  → {doc_code} ({cat_label})")
 
         for attempt in range(3):
@@ -730,7 +736,13 @@ class HarrisClerkScraper:
                     return
 
         try:
-            date_from = self.start_date.strftime("%m/%d/%Y")
+            # BUG 1: foreclosure notices (NOTICE/TRSALE) get a wider lookback so
+            # we capture upcoming trustee sales while the notice is fresh. TX
+            # Property Code §51.002 requires the notice filed >=21 days before
+            # the sale, so ~45 days reliably covers the next auction cycle.
+            start = (self.today - timedelta(days=lookback_days)
+                     if lookback_days else self.start_date)
+            date_from = start.strftime("%m/%d/%Y")
             date_to   = self.today.strftime("%m/%d/%Y")
 
             # Confirmed exact field IDs from debug log
@@ -841,7 +853,13 @@ class HarrisClerkScraper:
 
             for doc_code, (cat, cat_label) in DOC_TYPES.items():
                 try:
-                    await self._search_one(page, doc_code, cat, cat_label)
+                    # Foreclosure notices use a wider window so upcoming trustee
+                    # sales are captured with grantor names (Bug 1). This is the
+                    # enrichment source for foreclosures — the FRCL portal is
+                    # kept only as a supplementary (nameless) auction calendar.
+                    lb = FC_NOTICE_LOOKBACK_DAYS if doc_code in FC_NOTICE_CODES else None
+                    await self._search_one(page, doc_code, cat, cat_label,
+                                           lookback_days=lb)
                 except Exception as e:
                     log.error(f"Fatal error on {doc_code}: {e}")
 
