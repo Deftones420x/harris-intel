@@ -1328,10 +1328,20 @@ def dedupe_records(records: list) -> list:
         records,
         lambda r: ("doc", r["doc_num"].strip())
         if (r.get("doc_num") or "").strip() else None)
-    # Pass 2: same normalized grantor + property address + doc type.
+    # Pass 2: same normalized grantor + property address + doc type. When the
+    # address is blank (e.g. Issue 2 rejected a placeholder parcel), fall back
+    # to grantor + doc type + filed date + legal so the SAME notice filed twice
+    # (consecutive instrument numbers, no address) still collapses — while two
+    # genuinely different filings (different legal) stay separate.
     def semkey(r):
-        g, a = _n(r.get("owner")), _n(r.get("prop_address"))
-        return ("sem", g, a, _n(r.get("doc_type"))) if (g and a) else None
+        g = _n(r.get("owner"))
+        if not g:
+            return None
+        a = _n(r.get("prop_address"))
+        if a:
+            return ("sem", g, a, _n(r.get("doc_type")))
+        return ("sem2", g, _n(r.get("doc_type")),
+                (r.get("filed") or ""), _n(r.get("legal")))
     records = _dedupe_pass(records, semkey)
     log.info(f"Dedup: {n0} → {len(records)} records "
              f"({n0 - len(records)} duplicates collapsed)")
