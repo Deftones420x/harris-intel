@@ -363,16 +363,21 @@
 
   /* ── TABLE ───────────────────────────────────────────────── */
   .table-wrap {
-    /* NOTE: no overflow here on desktop. `overflow-x: auto` forces a computed
-       `overflow-y: auto`, which turns this into a scroll container and BREAKS
-       the sticky <thead> (it scrolled off instead of pinning under the header,
-       hiding the column row + top lead — Issue 3). Horizontal scroll is
-       restored only on narrow screens via the mobile media query below. */
+    /* CHANGE 1: scroll BOTH axes inside this container. Horizontal scroll shows
+       every column; vertical scroll keeps the sticky <thead> pinned to the top
+       of THIS container (top:0). This gives horizontal scroll AND a pinned
+       header at the same time — the page-relative sticky (top:56) couldn't,
+       because an overflow-x scroll container reparents the sticky context. */
+    overflow: auto;
+    max-height: calc(100vh - 340px);
     border: 1px solid rgba(255,255,255,0.05);
   }
 
   table {
-    width: 100%;
+    width: max-content;        /* let columns take their natural width so the
+                                  container scrolls horizontally instead of
+                                  cramming/clipping */
+    min-width: 100%;
     border-collapse: collapse;
     font-size: 13px;
   }
@@ -380,7 +385,7 @@
   thead {
     background: var(--black4);
     position: sticky;
-    top: 56px;
+    top: 0;                    /* pin to the top of the scroll container */
     z-index: 10;
   }
 
