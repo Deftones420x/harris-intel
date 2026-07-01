@@ -261,6 +261,80 @@
     font-weight: 600;
   }
 
+  /* ── REDESIGNED CONTROLS (view tabs / category filters) ─────── */
+  .tabs-row, .controls-row, .cats-row {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+  }
+  .tabs-row    { margin-bottom: 12px; }
+  .controls-row{ margin-bottom: 10px; }
+  .cats-row    { margin-bottom: 16px; }
+
+  /* Primary navigation tabs — larger, prominent, obvious active state */
+  .view-tab {
+    background: var(--black3);
+    border: 1px solid rgba(255,255,255,0.10);
+    color: #cdd4de;                     /* brighter inactive text for legibility */
+    padding: 11px 18px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    border-radius: 6px;
+  }
+  .view-tab:hover { border-color: var(--gold); color: var(--gold); }
+  .view-tab.active {
+    background: var(--gold); color: var(--black);
+    border-color: var(--gold); font-weight: 700;
+  }
+  .tab-badge {
+    display: inline-block; min-width: 20px; padding: 0 7px; margin-left: 7px;
+    border-radius: 10px; background: #2ecc71; color: #05210f;
+    font-size: 11px; font-weight: 700; line-height: 18px; text-align: center;
+  }
+  .tab-badge.cal { background: #ff6b35; color: #1a0a00; }
+  .view-tab.active .tab-badge { background: var(--black); color: var(--gold); }
+
+  /* Category filters — smaller than tabs, consistent, with counts */
+  .cat-btn {
+    background: var(--black3);
+    border: 1px solid rgba(255,255,255,0.10);
+    color: #cdd4de;
+    padding: 8px 14px;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+    border-radius: 5px;
+  }
+  .cat-btn:hover { border-color: var(--blue); color: #fff; }
+  .cat-btn.active {
+    background: var(--blue); color: #fff;
+    border-color: var(--blue); font-weight: 600;
+  }
+  .cat-ct {
+    display: inline-block; margin-left: 6px; padding: 0 6px;
+    border-radius: 8px; background: rgba(255,255,255,0.08); color: var(--grey2);
+    font-size: 10.5px; font-weight: 700;
+  }
+  .cat-btn.active .cat-ct { background: rgba(0,0,0,0.25); color: #fff; }
+
+  /* Recency pill in the search/sort row */
+  .pill-btn {
+    background: var(--black3);
+    border: 1px solid rgba(255,255,255,0.10);
+    color: #cdd4de;
+    padding: 9px 15px;
+    font-family: var(--font-mono);
+    font-size: 11px; letter-spacing: 0.04em;
+    cursor: pointer; transition: all 0.15s; white-space: nowrap; border-radius: 5px;
+  }
+  .pill-btn:hover  { border-color: var(--gold); color: var(--gold); }
+  .pill-btn.active { background: var(--gold); color: var(--black); border-color: var(--gold); font-weight: 700; }
+
   .sort-select {
     background: var(--black3);
     border: 1px solid rgba(255,255,255,0.08);
@@ -885,12 +959,8 @@
     <div class="stat-label">Total Records</div>
   </div>
   <div class="stat-block">
-    <div class="stat-value" id="statHot">—</div>
-    <div class="stat-label">Hot Leads ≥70</div>
-  </div>
-  <div class="stat-block">
-    <div class="stat-value" id="statWarm">—</div>
-    <div class="stat-label">Warm Leads 50-69</div>
+    <div class="stat-value" id="statNewWeek">—</div>
+    <div class="stat-label">New This Week</div>
   </div>
   <div class="stat-block">
     <div class="stat-value" id="statAddr">—</div>
@@ -905,53 +975,45 @@
 <!-- MAIN -->
 <div class="main">
 
-  <!-- VIEW TABS (Bug 6): Leads vs New vs Foreclosure Calendar -->
-  <div class="filter-bar" style="margin-bottom:10px;">
-    <button class="filter-btn view-tab active" data-view="leads" onclick="setView('leads')">📋 ALL LEADS</button>
-    <button class="filter-btn view-tab" data-view="new" onclick="setView('new')"
-            title="Leads first seen since the last scraper run (daily delta). Shows ALL new leads — category/score filters don't apply here.">🆕 NEW <span class="new-badge" id="newBadge">0</span></button>
-    <button class="filter-btn view-tab" data-view="calendar" onclick="setView('calendar')">📅 FORECLOSURE CALENDAR <span class="new-badge" id="calBadge" style="background:#ff6b35;">0</span></button>
+  <!-- VIEW TABS — primary navigation -->
+  <div class="tabs-row">
+    <button class="view-tab active" data-view="leads" onclick="setView('leads')"
+            title="All actionable leads (excludes the nameless foreclosure calendar).">📋 All Leads</button>
+    <button class="view-tab" data-view="new" onclick="setView('new')"
+            title="Leads first seen since the last scraper run (the daily delta). Shows ALL new leads regardless of category.">🆕 New <span class="tab-badge" id="newBadge">0</span></button>
+    <button class="view-tab" data-view="calendar" onclick="setView('calendar')"
+            title="Upcoming foreclosure auction postings (no owner name in the county index).">📅 Foreclosure Calendar <span class="tab-badge cal" id="calBadge">0</span></button>
   </div>
 
-  <!-- CATEGORY BREAKDOWN -->
-  <div class="breakdown" id="breakdown"></div>
-
-  <!-- FILTER BAR -->
-  <div class="filter-bar">
+  <!-- SEARCH + SORT + RECENCY -->
+  <div class="controls-row">
     <div class="search-wrap">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
       </svg>
       <input class="search-input" type="text" id="searchInput"
-             placeholder="Search owner, address, doc number, legal..." />
+             placeholder="Search owner, address, doc number…" />
     </div>
 
     <select class="sort-select" id="sortSelect" onchange="applyFilters()">
-      <option value="score_desc">Score: High → Low</option>
-      <option value="score_asc">Score: Low → High</option>
       <option value="date_desc">Filed: Newest First</option>
       <option value="date_asc">Filed: Oldest First</option>
       <option value="amount_desc">Amount: High → Low</option>
     </select>
 
-    <button class="filter-btn active" onclick="setCatFilter('')" data-cat="">ALL</button>
-    <button class="filter-btn" onclick="setCatFilter('lp')"      data-cat="lp">LIS PENDENS</button>
-    <button class="filter-btn" onclick="setCatFilter('fc')"      data-cat="fc">FORECLOSURE</button>
-    <button class="filter-btn" onclick="setCatFilter('tax')"     data-cat="tax">TAX</button>
-    <button class="filter-btn" onclick="setCatFilter('jud')"     data-cat="jud">JUDGMENT</button>
-    <button class="filter-btn" onclick="setCatFilter('lien')"    data-cat="lien">LIEN</button>
-    <button class="filter-btn" onclick="setCatFilter('probate')" data-cat="probate">PROBATE</button>
+    <button class="pill-btn" id="recentBtn" onclick="setRecentFilter()"
+            title="Filed within the last 30 days (by filed date). Different from the NEW tab, which is 'first seen since the last run'.">📆 Last 30 Days</button>
   </div>
 
-  <!-- SCORE FILTER -->
-  <div class="filter-bar" style="margin-top:-6px; margin-bottom: 14px;">
-    <button class="filter-btn active" onclick="setScoreFilter(0)" data-score="0">ALL SCORES</button>
-    <button class="filter-btn" onclick="setScoreFilter(70)" data-score="70">🔥 HOT (≥70)</button>
-    <button class="filter-btn" onclick="setScoreFilter(50)" data-score="50">⚡ WARM (≥50)</button>
-    <button class="filter-btn" onclick="setScoreFilter(30)" data-score="30">ACTIVE (≥30)</button>
-    <span style="width:1px;background:rgba(255,255,255,0.12);margin:2px 4px;"></span>
-    <button class="filter-btn" id="recentBtn" onclick="setRecentFilter()"
-            title="Filed within the last 30 days (by filed date). Different from the NEW tab, which is 'first seen since the last run'.">📆 LAST 30 DAYS (filed)</button>
+  <!-- CATEGORY FILTERS — with live counts -->
+  <div class="cats-row">
+    <button class="cat-btn active" data-cat=""        onclick="setCatFilter('')">All <span class="cat-ct" data-catcount="all">—</span></button>
+    <button class="cat-btn"        data-cat="lp"      onclick="setCatFilter('lp')">Lis Pendens <span class="cat-ct" data-catcount="lp">—</span></button>
+    <button class="cat-btn"        data-cat="fc"      onclick="setCatFilter('fc')">Foreclosure <span class="cat-ct" data-catcount="fc">—</span></button>
+    <button class="cat-btn"        data-cat="tax"     onclick="setCatFilter('tax')">Tax <span class="cat-ct" data-catcount="tax">—</span></button>
+    <button class="cat-btn"        data-cat="jud"     onclick="setCatFilter('jud')">Judgment <span class="cat-ct" data-catcount="jud">—</span></button>
+    <button class="cat-btn"        data-cat="lien"    onclick="setCatFilter('lien')">Lien <span class="cat-ct" data-catcount="lien">—</span></button>
+    <button class="cat-btn"        data-cat="probate" onclick="setCatFilter('probate')">Probate <span class="cat-ct" data-catcount="probate">—</span></button>
   </div>
 
   <div class="lead-count" id="leadCount"></div>
@@ -961,7 +1023,6 @@
     <table>
       <thead>
         <tr>
-          <th onclick="setSort('score')">Score</th>
           <th onclick="setSort('cat')">Type</th>
           <th onclick="setSort('doc_type')">Doc</th>
           <th onclick="setSort('filed')">Filed</th>
@@ -1003,7 +1064,6 @@ let ALL_RECORDS = [];
 let filtered    = [];
 let viewMode    = 'leads';   // 'leads' | 'new' | 'calendar' (Bug 6)
 let catFilter   = '';
-let scoreFilter = 0;
 let recentOnly  = false;     // "Last 30 days" quick filter (filed date)
 
 // A nameless FRCL foreclosure posting = the auction *calendar*, not an
@@ -1022,7 +1082,7 @@ function isRecent(r) {
   const ms = Date.now() - d.getTime();
   return ms >= 0 && ms <= 30 * 24 * 3600 * 1000;
 }
-let sortKey     = 'score';
+let sortKey     = 'filed';
 let sortDir     = 'desc';
 let page        = 1;
 const PER_PAGE  = 50;
@@ -1034,14 +1094,19 @@ const PER_PAGE  = 50;
     const d  = await r.json();
     ALL_RECORDS = d.records || [];
 
-    // Stats bar
-    const hot  = ALL_RECORDS.filter(r => r.score >= 70).length;
-    const warm = ALL_RECORDS.filter(r => r.score >= 50 && r.score < 70).length;
+    // Stats bar (scoring removed). "New This Week" = filed within the last 7
+    // days by the actual filed date — a factual recency count, not a score.
+    const weekAgo = Date.now() - 7 * 24 * 3600 * 1000;
+    const newWeek = ALL_RECORDS.filter(r => {
+      const f = (r.filed || '').slice(0, 10);
+      if (!f) return false;
+      const t = new Date(f + 'T00:00:00').getTime();
+      return !isNaN(t) && t >= weekAgo && t <= Date.now();
+    }).length;
     const addr = ALL_RECORDS.filter(r => r.prop_address).length;
 
     setText('statTotal',     d.total || ALL_RECORDS.length);
-    setText('statHot',       hot);
-    setText('statWarm',      warm);
+    setText('statNewWeek',   newWeek);
     setText('statAddr',      addr);
 
     const from = (d.date_range?.from || '').replace(/-/g,'/');
@@ -1070,36 +1135,25 @@ const PER_PAGE  = 50;
   } catch(e) {
     console.error(e);
     document.getElementById('tableBody').innerHTML =
-      '<tr><td colspan="11" style="text-align:center;padding:60px;color:var(--grey)">No data loaded yet — run the scraper first.</td></tr>';
+      '<tr><td colspan="10" style="text-align:center;padding:60px;color:var(--grey)">No data loaded yet — run the scraper first.</td></tr>';
     setText('lastUpdated', 'No data');
   }
 })();
 
-// ── BREAKDOWN ─────────────────────────────────────────────────
+// ── CATEGORY COUNTS ───────────────────────────────────────────
+// Fill the count chip on each category filter button. Counts are over the
+// actionable leads set (the nameless foreclosure calendar has its own tab),
+// so they match what selecting a category actually shows.
 function buildBreakdown() {
-  const cats = {
-    lp:'Lis Pendens', fc:'Foreclosure', tax:'Tax', jud:'Judgment',
-    lien:'Lien', probate:'Probate', notice:'Notice'
-  };
-  const colors = {
-    lp:'var(--cat-lp)', fc:'var(--cat-fc)', tax:'var(--cat-tax)',
-    jud:'var(--cat-jud)', lien:'var(--cat-lien)',
-    probate:'var(--cat-probate)', notice:'var(--cat-notice)'
-  };
-
-  const counts = {};
-  ALL_RECORDS.forEach(r => { counts[r.cat] = (counts[r.cat]||0)+1; });
-
-  const el = document.getElementById('breakdown');
-  el.innerHTML = Object.entries(cats).map(([k,v]) => {
-    const c = counts[k] || 0;
-    if (!c) return '';
-    return `<div class="breakdown-item" onclick="setCatFilter('${k}')">
-      <div class="breakdown-dot" style="background:${colors[k]}"></div>
-      <span class="breakdown-label">${v}</span>
-      <span class="breakdown-count">${c}</span>
-    </div>`;
-  }).join('');
+  const counts = { all: 0 };
+  ALL_RECORDS.forEach(r => {
+    if (isCalendarRow(r)) return;
+    counts.all++;
+    if (r.cat) counts[r.cat] = (counts[r.cat] || 0) + 1;
+  });
+  document.querySelectorAll('[data-catcount]').forEach(span => {
+    span.textContent = counts[span.dataset.catcount] || 0;
+  });
 }
 
 // ── VIEW TABS (Bug 6) ─────────────────────────────────────────
@@ -1120,14 +1174,6 @@ function setCatFilter(cat) {
   catFilter = cat;
   document.querySelectorAll('[data-cat]').forEach(b =>
     b.classList.toggle('active', b.dataset.cat === cat));
-  page = 1;
-  applyFilters();
-}
-
-function setScoreFilter(min) {
-  scoreFilter = min;
-  document.querySelectorAll('[data-score]').forEach(b =>
-    b.classList.toggle('active', Number(b.dataset.score) === min));
   page = 1;
   applyFilters();
 }
@@ -1167,9 +1213,8 @@ function applyFilters() {
     // filters apply only on the main ALL LEADS view. (Search still applies
     // everywhere — that's an explicit, active user action.)
     if (viewMode === 'leads') {
-      if (catFilter   && r.cat   !== catFilter)   return false;
-      if (scoreFilter && r.score < scoreFilter)   return false;
-      if (recentOnly  && !isRecent(r))            return false;
+      if (catFilter  && r.cat !== catFilter)  return false;
+      if (recentOnly && !isRecent(r))         return false;
     }
     if (q) {
       const haystack = [r.owner, r.grantee, r.doc_num, r.legal,
@@ -1180,21 +1225,22 @@ function applyFilters() {
     return true;
   });
 
-  // Sort
+  // Sort. Default and the "Filed" options: newest filed date first, and within
+  // the same date, addressed leads rank above address-less ones. (Scoring was
+  // removed — the client decides what's a lead by filtering, not by our score.)
   const [sk, sd] = sv.split('_');
   filtered.sort((a,b) => {
-    let av = a[sk] ?? a.score ?? 0;
-    let bv = b[sk] ?? b.score ?? 0;
-    if (sk === 'amount') { av = a.amount||0; bv = b.amount||0; }
-    if (sk === 'date')   {
-      // In calendar view, "date" means the upcoming sale date.
-      av = (viewMode==='calendar' ? a.frcl_sale_date : a.filed) || '';
-      bv = (viewMode==='calendar' ? b.frcl_sale_date : b.filed) || '';
+    if (sk === 'amount') {
+      const av = a.amount || 0, bv = b.amount || 0;
+      return sd === 'asc' ? av - bv : bv - av;
     }
-    if (sk === 'score')  { av = a.score||0;  bv = b.score||0; }
-    if (av < bv) return sd === 'asc' ? -1 : 1;
-    if (av > bv) return sd === 'asc' ?  1 : -1;
-    return 0;
+    // Date sort: calendar uses the upcoming sale date, everything else uses the
+    // filed date.
+    const av = (viewMode === 'calendar' ? a.frcl_sale_date : a.filed) || '';
+    const bv = (viewMode === 'calendar' ? b.frcl_sale_date : b.filed) || '';
+    if (av !== bv) return sd === 'asc' ? (av < bv ? -1 : 1) : (av < bv ? 1 : -1);
+    // Tiebreak: addressed (actionable) above address-less.
+    return (b.prop_address ? 1 : 0) - (a.prop_address ? 1 : 0);
   });
 
   const noun = viewMode === 'calendar' ? 'foreclosure postings'
@@ -1212,7 +1258,7 @@ function renderTable() {
   const tbody = document.getElementById('tableBody');
 
   if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="11">
+    tbody.innerHTML = `<tr><td colspan="10">
       <div class="empty-state">
         <h3>NO LEADS FOUND</h3>
         <p>Try adjusting your filters</p>
@@ -1222,8 +1268,6 @@ function renderTable() {
 
   tbody.innerHTML = rows.map((r, i) => {
     const delay = Math.min(i * 18, 400);
-    const score_class = r.score>=70 ? 'score-hot' : r.score>=50 ? 'score-warm'
-                      : r.score>=30 ? 'score-cool' : 'score-low';
 
     const flags_html = (r.flags||[]).map(f =>
       `<span class="flag-chip">${f}</span>`).join('');
@@ -1272,8 +1316,7 @@ function renderTable() {
       ? `<div style="font-size:10px;color:#ff6b35;font-family:var(--font-mono)">sale ${esc(r.frcl_sale_date)}</div>` : '';
 
     return `<tr class="${r.is_new?'row-new':''}" style="animation-delay:${delay}ms">
-      <td><span class="score-badge ${score_class}">${r.score||0}</span>${new_pill}</td>
-      <td><span class="cat-pill cat-${r.cat||'notice'}">${esc(r.cat_label||r.cat||'')}</span></td>
+      <td><span class="cat-pill cat-${r.cat||'notice'}">${esc(r.cat_label||r.cat||'')}</span>${new_pill}</td>
       <td class="mono">${esc(r.doc_type||'')}</td>
       <td class="mono" style="white-space:nowrap">${esc(r.filed||'—')}${sale_line}</td>
       <td class="owner">
@@ -1334,7 +1377,7 @@ function exportCSV(type) {
       'First Name','Last Name','Email','Phone',
       'Property Address','Property City','Property State','Property Zip',
       'Mailing Address','Mailing City','Mailing State','Mailing Zip',
-      'Tags','Lead Score','Amount Due','Doc Number','Filed Date',
+      'Tags','Amount Due','Doc Number','Filed Date',
       'Sale Date','Source','Confidence'
     ];
     getRow = r => {
@@ -1346,7 +1389,7 @@ function exportCSV(type) {
         fn, ln, '', '',
         r.prop_address||'', r.prop_city||'', r.prop_state||'TX', r.prop_zip||'',
         r.mail_address||'', r.mail_city||'', r.mail_state||'TX', r.mail_zip||'',
-        tags, r.score||'',
+        tags,
         r.amount != null ? r.amount : '',
         r.doc_num||'', r.filed||'', r.frcl_sale_date||'',
         (r.sources||[r.source||'RP']).join('+'),
@@ -1359,7 +1402,7 @@ function exportCSV(type) {
       'First Name','Last Name',
       'Property Address','Property City','Property State','Property Zip',
       'Mailing Address','Mailing City','Mailing State','Mailing Zip',
-      'Owner Name','Amount Due','Lead Type','Score','Flags','Sources',
+      'Owner Name','Amount Due','Lead Type','Flags','Sources',
       'Doc Number','Filed Date','Sale Date','Confidence','Match Reason'
     ];
     getRow = r => {
@@ -1373,7 +1416,6 @@ function exportCSV(type) {
         r.owner||'',
         r.amount != null ? r.amount : '',
         r.cat_label||r.cat||'',
-        r.score||'',
         (r.flags||[]).join('; '),
         (r.sources||[r.source||'RP']).join('+'),
         r.doc_num||'', r.filed||'', r.frcl_sale_date||'',
@@ -1738,7 +1780,7 @@ function exportSkipTrace() {
     'First Name','Last Name',
     'Property Address','Property City','Property State','Property Zip',
     'Mailing Address','Mailing City','Mailing State','Mailing Zip',
-    'Lead Type','Score','Amount Due','Sources','Stacked',
+    'Lead Type','Amount Due','Sources','Stacked',
     'Doc Number','Sale Date','Filed Date','Match Confidence','Flags',
     'Doc Link','HCAD Link'
   ];
@@ -1755,7 +1797,6 @@ function exportSkipTrace() {
       r.prop_address||'', r.prop_city||'', r.prop_state||'TX', r.prop_zip||'',
       r.mail_address||'', r.mail_city||'', r.mail_state||'TX', r.mail_zip||'',
       r.cat_label||r.cat||'',
-      r.score||0,
       r.amount ? Number(r.amount).toFixed(2) : '',
       (r.sources||[(r.source==='TAX_IMPORT'?'TAX':'RP')]).join('+'),
       r.stacked ? 'YES' : 'NO',
@@ -1775,7 +1816,7 @@ function exportGHL() {
     'Email','Phone',
     'Property Address','Property City','Property State','Property Zip',
     'Mailing Address','Mailing City','Mailing State','Mailing Zip',
-    'Lead Type','Score','Amount Due','Sources','Stacked',
+    'Lead Type','Amount Due','Sources','Stacked',
     'Doc Number','Filed Date','Foreclosure Sale Date',
     'Motivated Seller Flags','Match Confidence',
     'Public Records URL','HCAD URL'
@@ -1791,7 +1832,7 @@ function exportGHL() {
       first, last, '', '',
       r.prop_address||'', r.prop_city||'', r.prop_state||'TX', r.prop_zip||'',
       r.mail_address||'', r.mail_city||'', r.mail_state||'TX', r.mail_zip||'',
-      r.cat_label||'', r.score||0,
+      r.cat_label||'',
       r.amount ? Number(r.amount).toFixed(2) : '',
       (r.sources||[(r.source==='TAX_IMPORT'?'TAX':'RP')]).join('+'),
       r.stacked ? 'YES' : 'NO',
