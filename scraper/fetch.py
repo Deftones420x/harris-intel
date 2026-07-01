@@ -1280,8 +1280,48 @@ def enrich_records(raw: list, parcel: HCADParcelLookup) -> list:
              f"NONE={conf_counts['NONE']}")
     return enriched
 
+# ─── New-lead detection (Bug 6) ───────────────────────────────────────────────
+# Persist every doc number ever seen. Each run, anything not already in the file
+# is stamped is_new=True so the dashboard can surface a "New" tab + badge.
+SEEN_FILE = OUTPUT_DIRS[0] / "seen_doc_nums.json"
+
+
+def stamp_new_leads(records: list) -> int:
+    """Mark records first seen on this run, then persist the seen set.
+    On the very first run (no seen file yet) nothing is marked new — we just
+    seed the file — to avoid a useless 'everything is new' batch."""
+    try:
+        seen = set(json.loads(SEEN_FILE.read_text()))
+        first_run = False
+    except Exception:
+        seen = set()
+        first_run = True
+
+    new_count = 0
+    for r in records:
+        dn = (r.get("doc_num") or "").strip()
+        is_new = bool(dn) and not first_run and dn not in seen
+        r["is_new"] = is_new
+        if is_new:
+            new_count += 1
+
+    all_docs = seen | {(r.get("doc_num") or "").strip()
+                       for r in records if (r.get("doc_num") or "").strip()}
+    try:
+        SEEN_FILE.parent.mkdir(parents=True, exist_ok=True)
+        SEEN_FILE.write_text(json.dumps(sorted(all_docs)))
+    except Exception as e:
+        log.warning(f"Could not write {SEEN_FILE}: {e}")
+
+    log.info(f"New leads this run: {new_count} "
+             f"(seen set now {len(all_docs)} docs)"
+             + (" [first run — seeded, none marked new]" if first_run else ""))
+    return new_count
+
+
 # ─── Save ─────────────────────────────────────────────────────────────────────
-def save_records(records: list, today: datetime, days_back: int):
+def save_records(records: list, today: datetime, days_back: int,
+                 new_count: int = 0):
     payload = {
         "fetched_at":   today.isoformat(),
         "source":       "Harris County Clerk / HCAD",
@@ -1291,6 +1331,7 @@ def save_records(records: list, today: datetime, days_back: int):
         },
         "total":        len(records),
         "with_address": sum(1 for r in records if r.get("prop_address")),
+        "new_count":    new_count,
         "records":      records,
     }
     for d in OUTPUT_DIRS:
@@ -1380,8 +1421,12 @@ async def main():
     else:
         log.info("✓ Sanity gate passed.")
 
+    # New-lead detection (Bug 6) — only after the gate passes, so a partial
+    # scrape can't poison the seen set.
+    new_count = stamp_new_leads(records)
+
     log.info("\nSaving outputs...")
-    save_records(records, today, days_back)
+    save_records(records, today, days_back, new_count)
 
     log.info(f"\n{'='*60}")
     log.info(f"✓ COMPLETE")

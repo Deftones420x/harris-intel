@@ -662,6 +662,18 @@
   }
   .src-rp  { background: rgba(26,108,255,0.15); color: var(--blue2); border: 1px solid rgba(26,108,255,0.3); }
   .src-frcl { background: rgba(255,107,53,0.15); color: #ff6b35; border: 1px solid rgba(255,107,53,0.3); }
+  .view-tab.active { background: var(--gold); color: var(--black); border-color: var(--gold); }
+  .new-badge {
+    display: inline-block; min-width: 18px; padding: 0 6px; margin-left: 6px;
+    border-radius: 10px; background: #2ecc71; color: #05210f;
+    font-size: 11px; font-weight: 700; line-height: 18px; text-align: center;
+  }
+  .new-badge:empty, .new-badge.zero { opacity: 0.4; }
+  .row-new td:first-child { box-shadow: inset 3px 0 0 #2ecc71; }
+  .new-pill {
+    display:inline-block; margin-left:6px; padding:1px 6px; border-radius:8px;
+    background:#2ecc71; color:#05210f; font-size:10px; font-weight:700; vertical-align:middle;
+  }
   .src-tax  { background: rgba(212,160,23,0.15); color: var(--gold2); border: 1px solid rgba(212,160,23,0.3); }
 
   /* ── TOOLBAR BUTTONS ─────────────────────────────────────── */
@@ -886,6 +898,13 @@
 <!-- MAIN -->
 <div class="main">
 
+  <!-- VIEW TABS (Bug 6): Leads vs New vs Foreclosure Calendar -->
+  <div class="filter-bar" style="margin-bottom:10px;">
+    <button class="filter-btn view-tab active" data-view="leads" onclick="setView('leads')">📋 ALL LEADS</button>
+    <button class="filter-btn view-tab" data-view="new" onclick="setView('new')">🆕 NEW <span class="new-badge" id="newBadge">0</span></button>
+    <button class="filter-btn view-tab" data-view="calendar" onclick="setView('calendar')">📅 FORECLOSURE CALENDAR <span class="new-badge" id="calBadge" style="background:#ff6b35;">0</span></button>
+  </div>
+
   <!-- CATEGORY BREAKDOWN -->
   <div class="breakdown" id="breakdown"></div>
 
@@ -971,8 +990,15 @@
 // ── STATE ──────────────────────────────────────────────────────
 let ALL_RECORDS = [];
 let filtered    = [];
+let viewMode    = 'leads';   // 'leads' | 'new' | 'calendar' (Bug 6)
 let catFilter   = '';
 let scoreFilter = 0;
+
+// A nameless FRCL foreclosure posting = the auction *calendar*, not an
+// actionable lead. Kept out of the main leads view; shown in its own tab.
+function isCalendarRow(r) {
+  return r.source === 'FRCL' && !(r.owner && r.owner.trim());
+}
 let sortKey     = 'score';
 let sortDir     = 'desc';
 let page        = 1;
@@ -1006,6 +1032,14 @@ const PER_PAGE  = 50;
         {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'}));
       setText('footerFetch', 'Last fetched: ' + dt.toLocaleString());
     }
+
+    // New-lead + calendar badge counts (Bug 6)
+    const newCount = ALL_RECORDS.filter(r => r.is_new && !isCalendarRow(r)).length;
+    const calCount = ALL_RECORDS.filter(isCalendarRow).length;
+    const nb = document.getElementById('newBadge');
+    const cb = document.getElementById('calBadge');
+    if (nb) { nb.textContent = newCount; nb.classList.toggle('zero', newCount === 0); }
+    if (cb) { cb.textContent = calCount; }
 
     buildBreakdown();
     applyFilters();
@@ -1045,6 +1079,19 @@ function buildBreakdown() {
   }).join('');
 }
 
+// ── VIEW TABS (Bug 6) ─────────────────────────────────────────
+function setView(v) {
+  viewMode = v;
+  document.querySelectorAll('[data-view]').forEach(b =>
+    b.classList.toggle('active', b.dataset.view === v));
+  // Calendar sorts by upcoming sale date; leads/new by score.
+  const sortSel = document.getElementById('sortSelect');
+  if (v === 'calendar') sortSel.value = 'date_asc';
+  else if (sortSel.value === 'date_asc') sortSel.value = 'score_desc';
+  page = 1;
+  applyFilters();
+}
+
 // ── FILTERS ───────────────────────────────────────────────────
 function setCatFilter(cat) {
   catFilter = cat;
@@ -1072,7 +1119,16 @@ function applyFilters() {
   const q = document.getElementById('searchInput').value.toLowerCase().trim();
   const sv = document.getElementById('sortSelect').value;
 
-  filtered = ALL_RECORDS.filter(r => {
+  // Base set depends on the active view (Bug 6):
+  //  - calendar: only nameless FRCL auction postings
+  //  - new:      only records first seen on the latest run (excl. calendar)
+  //  - leads:    everything actionable (excl. calendar postings)
+  let base;
+  if (viewMode === 'calendar')  base = ALL_RECORDS.filter(isCalendarRow);
+  else if (viewMode === 'new')  base = ALL_RECORDS.filter(r => r.is_new && !isCalendarRow(r));
+  else                          base = ALL_RECORDS.filter(r => !isCalendarRow(r));
+
+  filtered = base.filter(r => {
     if (catFilter   && r.cat   !== catFilter)     return false;
     if (scoreFilter && r.score < scoreFilter)      return false;
     if (q) {
@@ -1090,14 +1146,21 @@ function applyFilters() {
     let av = a[sk] ?? a.score ?? 0;
     let bv = b[sk] ?? b.score ?? 0;
     if (sk === 'amount') { av = a.amount||0; bv = b.amount||0; }
-    if (sk === 'date')   { av = a.filed||''; bv = b.filed||''; }
+    if (sk === 'date')   {
+      // In calendar view, "date" means the upcoming sale date.
+      av = (viewMode==='calendar' ? a.frcl_sale_date : a.filed) || '';
+      bv = (viewMode==='calendar' ? b.frcl_sale_date : b.filed) || '';
+    }
     if (sk === 'score')  { av = a.score||0;  bv = b.score||0; }
     if (av < bv) return sd === 'asc' ? -1 : 1;
     if (av > bv) return sd === 'asc' ?  1 : -1;
     return 0;
   });
 
-  setText('leadCount', `Showing <span>${filtered.length}</span> of ${ALL_RECORDS.length} records`);
+  const noun = viewMode === 'calendar' ? 'foreclosure postings'
+             : viewMode === 'new'      ? 'new leads (since last run)'
+             : 'leads';
+  setText('leadCount', `Showing <span>${filtered.length}</span> ${noun}`);
   renderTable();
   renderPagination();
 }
@@ -1164,11 +1227,15 @@ function renderTable() {
 
     const clean_legal = (r.legal||'').replace(/^(Grantor|Grantee)\s*[:\s]\s*/i,'').substring(0,35) || '—';
 
-    return `<tr style="animation-delay:${delay}ms">
-      <td><span class="score-badge ${score_class}">${r.score||0}</span></td>
+    const new_pill = r.is_new ? '<span class="new-pill">NEW</span>' : '';
+    const sale_line = r.frcl_sale_date
+      ? `<div style="font-size:10px;color:#ff6b35;font-family:var(--font-mono)">sale ${esc(r.frcl_sale_date)}</div>` : '';
+
+    return `<tr class="${r.is_new?'row-new':''}" style="animation-delay:${delay}ms">
+      <td><span class="score-badge ${score_class}">${r.score||0}</span>${new_pill}</td>
       <td><span class="cat-pill cat-${r.cat||'notice'}">${esc(r.cat_label||r.cat||'')}</span></td>
       <td class="mono">${esc(r.doc_type||'')}</td>
-      <td class="mono" style="white-space:nowrap">${esc(r.filed||'')}</td>
+      <td class="mono" style="white-space:nowrap">${esc(r.filed||'—')}${sale_line}</td>
       <td class="owner">
         <div>${contact_name}</div>
         ${via_name}

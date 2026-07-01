@@ -84,11 +84,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Bug 5: only the single source of truth. No more dated GHL CSVs (the
-          # dashboard exports GHL client-side) and no data/ mirror. This step
-          # only runs if the scraper exited 0, i.e. the sanity gate (Bug 4)
-          # passed.
-          git add dashboard/records.json
+          # Single source of truth + the new-lead state file (Bug 5/6). No more
+          # dated GHL CSVs (the dashboard exports GHL client-side) and no data/
+          # mirror. This step only runs if the scraper exited 0, i.e. the sanity
+          # gate (Bug 4) passed.
+          git add dashboard/records.json dashboard/seen_doc_nums.json
           git diff --cached --quiet || git commit -m "chore: update records $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
         env:
