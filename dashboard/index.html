@@ -1027,6 +1027,7 @@
           <th onclick="setSort('doc_type')">Doc</th>
           <th onclick="setSort('filed')">Filed</th>
           <th onclick="setSort('owner')">Owner / Grantor</th>
+          <th>Contact</th>
           <th>Property Address</th>
           <th>Mailing Address</th>
           <th onclick="setSort('amount')">Amount</th>
@@ -1135,7 +1136,7 @@ const PER_PAGE  = 50;
   } catch(e) {
     console.error(e);
     document.getElementById('tableBody').innerHTML =
-      '<tr><td colspan="10" style="text-align:center;padding:60px;color:var(--grey)">No data loaded yet — run the scraper first.</td></tr>';
+      '<tr><td colspan="11" style="text-align:center;padding:60px;color:var(--grey)">No data loaded yet — run the scraper first.</td></tr>';
     setText('lastUpdated', 'No data');
   }
 })();
@@ -1258,7 +1259,7 @@ function renderTable() {
   const tbody = document.getElementById('tableBody');
 
   if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="10">
+    tbody.innerHTML = `<tr><td colspan="11">
       <div class="empty-state">
         <h3>NO LEADS FOUND</h3>
         <p>Try adjusting your filters</p>
@@ -1311,6 +1312,19 @@ function renderTable() {
 
     const clean_legal = (r.legal||'').replace(/^(Grantor|Grantee)\s*[:\s]\s*/i,'').substring(0,35) || '—';
 
+    // DealMachine contact cell (Phase 1): phones (DNC-flagged) + emails.
+    const dm_phones = (r.dm_phone || []).map(p => {
+      const num = typeof p === 'string' ? p : (p && p.number) || '';
+      if (!num) return '';
+      const dnc = (p && p.dnc) ? ' <span title="Do Not Call — do not auto-dial" style="color:#e05a5a">⛔</span>' : '';
+      return `<div class="mono" style="font-size:11px;white-space:nowrap">${esc(num)}${dnc}</div>`;
+    }).join('');
+    const dm_emails = (r.dm_email || []).map(e =>
+      `<div class="mono" style="font-size:10px;color:var(--blue2);white-space:nowrap">${esc(e)}</div>`).join('');
+    const contact_cell = (dm_phones || dm_emails)
+      ? dm_phones + dm_emails
+      : '<span style="color:var(--grey);font-size:11px;font-family:var(--font-mono)">—</span>';
+
     const new_pill = r.is_new ? '<span class="new-pill">NEW</span>' : '';
     const sale_line = r.frcl_sale_date
       ? `<div style="font-size:10px;color:#ff6b35;font-family:var(--font-mono)">sale ${esc(r.frcl_sale_date)}</div>` : '';
@@ -1324,6 +1338,7 @@ function renderTable() {
         ${via_name}
         ${conf_badge}
       </td>
+      <td>${contact_cell}</td>
       <td class="col-addr">${prop_addr}</td>
       <td class="col-addr">${mail_addr}</td>
       <td class="amount-cell">${amount_str}</td>
@@ -1775,9 +1790,20 @@ function sourceBadges(r) {
 }
 
 // ── SKIP TRACE CSV ─────────────────────────────────────────────
+// DealMachine contact fields formatted for CSV (phones DNC-flagged).
+function dmPhonesStr(r) {
+  return (r.dm_phone || []).map(p => {
+    const num = typeof p === 'string' ? p : (p && p.number) || '';
+    return num ? (num + ((p && p.dnc) ? ' (DNC)' : '')) : '';
+  }).filter(Boolean).join('; ');
+}
+function dmEmailsStr(r) {
+  return (r.dm_email || []).map(e => (typeof e === 'string' ? e : (e && e.email) || '')).filter(Boolean).join('; ');
+}
+
 function exportSkipTrace() {
   const cols = [
-    'First Name','Last Name',
+    'First Name','Last Name','Phone','Email',
     'Property Address','Property City','Property State','Property Zip',
     'Mailing Address','Mailing City','Mailing State','Mailing Zip',
     'Lead Type','Amount Due','Sources','Stacked',
@@ -1793,7 +1819,7 @@ function exportSkipTrace() {
       : [r.first_name || contact, r.last_name || ''];
 
     rows.push([
-      parts[0], parts[1],
+      parts[0], parts[1], dmPhonesStr(r), dmEmailsStr(r),
       r.prop_address||'', r.prop_city||'', r.prop_state||'TX', r.prop_zip||'',
       r.mail_address||'', r.mail_city||'', r.mail_state||'TX', r.mail_zip||'',
       r.cat_label||r.cat||'',
@@ -1829,7 +1855,7 @@ function exportGHL() {
     const last  = r.last_name  || contact.split(' ').slice(1).join(' ') || '';
 
     rows.push([
-      first, last, '', '',
+      first, last, dmEmailsStr(r), dmPhonesStr(r),
       r.prop_address||'', r.prop_city||'', r.prop_state||'TX', r.prop_zip||'',
       r.mail_address||'', r.mail_city||'', r.mail_state||'TX', r.mail_zip||'',
       r.cat_label||'',

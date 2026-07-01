@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Optional
 
 import requests
+import dealmachine
 from enrichment import EnrichmentEngine
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright, TimeoutError as PWTimeout
@@ -1421,6 +1422,7 @@ def dedupe_records(records: list) -> list:
 # Persist every doc number ever seen. Each run, anything not already in the file
 # is stamped is_new=True so the dashboard can surface a "New" tab + badge.
 SEEN_FILE = OUTPUT_DIRS[0] / "seen_doc_nums.json"
+DM_CACHE  = OUTPUT_DIRS[0] / "dealmachine_cache.json"   # DealMachine enrich cache
 
 
 def stamp_new_leads(records: list) -> int:
@@ -1559,6 +1561,14 @@ async def main():
             sys.exit(1)
     else:
         log.info("✓ Sanity gate passed.")
+
+    # DealMachine enrichment (Phase 1) — only after the gate passes, so a
+    # partial scrape can't waste credits/poison the cache. Skips gracefully if
+    # the API key isn't present.
+    try:
+        dm_stats = dealmachine.enrich_addressed(records, DM_CACHE)
+    except Exception as e:
+        log.warning(f"DealMachine enrichment error (non-fatal): {e}")
 
     # New-lead detection (Bug 6) — only after the gate passes, so a partial
     # scrape can't poison the seen set.

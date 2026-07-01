@@ -59,6 +59,9 @@ jobs:
           python scraper/fetch.py
         env:
           DAYS_BACK: ${{ env.DAYS_BACK }}
+          # DealMachine enrichment key (optional). Read only from env; the
+          # scraper skips enrichment gracefully if it's absent.
+          DEALMACHINE_API_KEY: ${{ secrets.DEALMACHINE_API_KEY }}
 
       - name: Show scrape summary
         run: |
@@ -89,6 +92,8 @@ jobs:
           # mirror. This step only runs if the scraper exited 0, i.e. the sanity
           # gate (Bug 4) passed.
           git add dashboard/records.json dashboard/seen_doc_nums.json
+          # DealMachine cache exists only when enrichment ran (key present).
+          [ -f dashboard/dealmachine_cache.json ] && git add dashboard/dealmachine_cache.json || true
           git diff --cached --quiet || git commit -m "chore: update records $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
         env:
