@@ -54,7 +54,10 @@ DOC_TYPES = {
     "DEED":   ("tax",     "Deed (Sheriff/Trustee/Tax)"),
     "BNKRCY": ("lien",    "Bankruptcy"),
     "LEVY":   ("lien",    "Notice of Levy"),
-    "REL":    ("lp",      "Release"),
+    # Item 2: a Release is a lien being CLEARED — the opposite of distress. It
+    # is no longer a 'lp' lead; it is scraped under its own 'release' category
+    # and used to suppress matching liens, then dropped from the output.
+    "REL":    ("release", "Release of Lien"),
 }
 
 # ─── Scoring model ────────────────────────────────────────────────────────────
@@ -725,7 +728,7 @@ class HarrisClerkScraper:
                     "cat_label": cat_label,
                     "owner":     grantor,
                     "grantee":   ", ".join(grantees),
-                    "contact":   (grantees[0] if (cat == "lp" and grantees) else grantor),
+                    "contact":   (grantees[0] if (cat in ("lp", "release") and grantees) else grantor),
                     "amount":    None,
                     "legal":     legal,
                     "clerk_url": clerk_url,
@@ -1314,6 +1317,35 @@ def _dedupe_pass(records: list, keyfn) -> list:
     return [kept[k] for k in order]
 
 
+def suppress_released_liens(records: list) -> list:
+    """Item 2: a recorded Release clears a lien, so that distress is resolved.
+    Drop all 'release' rows (they are not leads) and remove any lien whose
+    normalized property address matches a release. Address matching is what the
+    RP index reliably exposes (there is no released-instrument-number field in
+    the list view)."""
+    def _n(s):
+        return re.sub(r"\s+", " ", (s or "").strip().upper())
+
+    releases   = [r for r in records if r.get("cat") == "release"]
+    rel_addrs  = {_n(r.get("prop_address")) for r in releases if r.get("prop_address")}
+    rel_addrs.discard("")
+
+    kept, suppressed = [], 0
+    for r in records:
+        cat = r.get("cat")
+        if cat == "release":
+            continue  # not a lead — drop
+        if cat == "lien" and r.get("prop_address") and _n(r["prop_address"]) in rel_addrs:
+            suppressed += 1
+            continue  # a matching release exists — distress resolved
+        kept.append(r)
+
+    log.info(f"Releases: {len(releases)} scraped ({len(rel_addrs)} with a matched "
+             f"address); suppressed {suppressed} released liens; dropped all "
+             f"release rows from output")
+    return kept
+
+
 def dedupe_records(records: list) -> list:
     """De-duplicate before writing records.json (Issue 1). The RP index files
     the same trustee-sale notice under multiple instrument entries, so the same
@@ -1470,6 +1502,7 @@ async def main():
 
     log.info("\n[3/3] Enriching and scoring...")
     records = enrich_records(raw or [], parcel)
+    records = suppress_released_liens(records)
     records = dedupe_records(records)
 
     # ── Sanity gate (Bug 4): fail loudly on silent partial scrapes ────────────

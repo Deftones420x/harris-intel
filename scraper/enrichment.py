@@ -116,7 +116,7 @@ def get_match_targets(rec):
     if contact:
         others = [t for t in [grantee, grantor] if t and t != contact]
         return [contact] + others
-    if cat in ("lp", "fc"):
+    if cat in ("lp", "fc", "release"):
         return [t for t in [grantee, grantor] if t]
     return [t for t in [grantor, grantee] if t]
 
@@ -181,7 +181,7 @@ class EnrichmentEngine:
 
     def enrich(self, rec):
         legal_raw   = rec.get("legal", "")
-        search_name = (rec.get("grantee") if rec.get("cat") in ("lp", "fc")
+        search_name = (rec.get("grantee") if rec.get("cat") in ("lp", "fc", "release")
                        else rec.get("owner") or "")
         rec["hcad_url"] = self._hcad_url(legal_raw, search_name)
 
