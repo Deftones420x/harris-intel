@@ -1032,10 +1032,11 @@
           <th onclick="setSort('doc_type')">Doc</th>
           <th onclick="setSort('filed')">Filed</th>
           <th onclick="setSort('owner')">Owner / Grantor</th>
-          <th>Contact</th>
           <th>Property Address</th>
           <th>Mailing Address</th>
           <th onclick="setSort('amount')">Amount</th>
+          <th>Est. Value</th>
+          <th>Equity</th>
           <th>Flags</th>
           <th>Legal Desc</th>
           <th>Doc Link</th>
@@ -1141,7 +1142,7 @@ const PER_PAGE  = 50;
   } catch(e) {
     console.error(e);
     document.getElementById('tableBody').innerHTML =
-      '<tr><td colspan="11" style="text-align:center;padding:60px;color:var(--grey)">No data loaded yet — run the scraper first.</td></tr>';
+      '<tr><td colspan="12" style="text-align:center;padding:60px;color:var(--grey)">No data loaded yet — run the scraper first.</td></tr>';
     setText('lastUpdated', 'No data');
   }
 })();
@@ -1264,7 +1265,7 @@ function renderTable() {
   const tbody = document.getElementById('tableBody');
 
   if (!rows.length) {
-    tbody.innerHTML = `<tr><td colspan="11">
+    tbody.innerHTML = `<tr><td colspan="12">
       <div class="empty-state">
         <h3>NO LEADS FOUND</h3>
         <p>Try adjusting your filters</p>
@@ -1317,18 +1318,19 @@ function renderTable() {
 
     const clean_legal = (r.legal||'').replace(/^(Grantor|Grantee)\s*[:\s]\s*/i,'').substring(0,35) || '—';
 
-    // DealMachine contact cell (Phase 1): phones (DNC-flagged) + emails.
-    const dm_phones = (r.dm_phone || []).map(p => {
-      const num = typeof p === 'string' ? p : (p && p.number) || '';
-      if (!num) return '';
-      const dnc = (p && p.dnc) ? ' <span title="Do Not Call — do not auto-dial" style="color:#e05a5a">⛔</span>' : '';
-      return `<div class="mono" style="font-size:11px;white-space:nowrap">${esc(num)}${dnc}</div>`;
-    }).join('');
-    const dm_emails = (r.dm_email || []).map(e =>
-      `<div class="mono" style="font-size:10px;color:var(--blue2);white-space:nowrap">${esc(e)}</div>`).join('');
-    const contact_cell = (dm_phones || dm_emails)
-      ? dm_phones + dm_emails
-      : '<span style="color:var(--grey);font-size:11px;font-family:var(--font-mono)">—</span>';
+    // DealMachine financial columns (Change 3): Est. Value + Equity. Phones and
+    // emails are NOT table columns — they live in the CSV exports.
+    const fmtMoney = v => (v != null && v !== '' && !isNaN(v))
+      ? '$' + Number(v).toLocaleString('en-US', {maximumFractionDigits: 0}) : '—';
+    const estval_cell = `<span class="mono" style="white-space:nowrap">${fmtMoney(r.dm_estimated_value)}</span>`;
+    let equity_cell;
+    if (r.dm_equity_percent != null && r.dm_equity_percent !== '' && !isNaN(r.dm_equity_percent)) {
+      equity_cell = `<span class="mono" style="white-space:nowrap">${Math.round(Number(r.dm_equity_percent))}%</span>`;
+    } else if (r.dm_equity_dollars != null && r.dm_equity_dollars !== '') {
+      equity_cell = `<span class="mono" style="white-space:nowrap">${fmtMoney(r.dm_equity_dollars)}</span>`;
+    } else {
+      equity_cell = '<span style="color:var(--grey)">—</span>';
+    }
 
     const new_pill = r.is_new ? '<span class="new-pill">NEW</span>' : '';
     const sale_line = r.frcl_sale_date
@@ -1343,10 +1345,11 @@ function renderTable() {
         ${via_name}
         ${conf_badge}
       </td>
-      <td>${contact_cell}</td>
       <td class="col-addr">${prop_addr}</td>
       <td class="col-addr">${mail_addr}</td>
       <td class="amount-cell">${amount_str}</td>
+      <td class="mono" style="white-space:nowrap">${estval_cell}</td>
+      <td class="mono" style="white-space:nowrap">${equity_cell}</td>
       <td class="col-flags"><div class="flags-wrap">${flags_html}</div></td>
       <td class="col-legal mono" title="${esc(r.legal||'')}">${esc(clean_legal)}</td>
       <td style="white-space:nowrap">${doc_link}</td>
@@ -1794,37 +1797,71 @@ function sourceBadges(r) {
   return all.map(s => `<span class="source-badge src-${s.toLowerCase()}">${s}</span>`).join('');
 }
 
-// ── SKIP TRACE CSV ─────────────────────────────────────────────
-// DealMachine contact fields formatted for CSV (phones DNC-flagged).
-function dmPhonesStr(r) {
-  return (r.dm_phone || []).map(p => {
-    const num = typeof p === 'string' ? p : (p && p.number) || '';
-    return num ? (num + ((p && p.dnc) ? ' (DNC)' : '')) : '';
-  }).filter(Boolean).join('; ');
+// ── DealMachine CSV columns (Change 4) ─────────────────────────
+// Phones and emails go in SEPARATE fixed columns (all kept, incl. DNC-flagged),
+// plus every DealMachine financial/indicator field one column each.
+function dmPhone(r, i) {
+  const p = (r.dm_phone || [])[i];
+  if (!p) return '';
+  return typeof p === 'string' ? p : (p.number || '');
 }
-function dmEmailsStr(r) {
-  return (r.dm_email || []).map(e => (typeof e === 'string' ? e : (e && e.email) || '')).filter(Boolean).join('; ');
+function dmPhoneDNC(r, i) {
+  const p = (r.dm_phone || [])[i];
+  if (!p || typeof p === 'string') return '';
+  return p.dnc === true ? 'DNC' : (p.dnc === false ? '' : '');
+}
+function dmEmail(r, i) {
+  const e = (r.dm_email || [])[i];
+  if (!e) return '';
+  return typeof e === 'string' ? e : (e.email || '');
+}
+// Build the DealMachine column block (headers + per-row values) for a given set
+// of rows. The dm_data indicator columns are the UNION of keys seen, so every
+// indicator DealMachine returned gets its own column.
+function dmColumns(rows) {
+  const keys = new Set();
+  rows.forEach(r => Object.keys(r.dm_data || {}).forEach(k => keys.add(k)));
+  const dataKeys = [...keys].sort();
+  const headers = [
+    'Phone 1','Phone 1 DNC','Phone 2','Phone 2 DNC','Phone 3','Phone 3 DNC',
+    'Email 1','Email 2',
+    'DM Est Value','DM Equity %','DM Equity $','DM Sale Price','DM Sale Date',
+    'DM Owner Name','DM Mailing Address','DM Enriched',
+    ...dataKeys.map(k => 'DM: ' + k),
+  ];
+  const row = r => [
+    dmPhone(r,0), dmPhoneDNC(r,0), dmPhone(r,1), dmPhoneDNC(r,1), dmPhone(r,2), dmPhoneDNC(r,2),
+    dmEmail(r,0), dmEmail(r,1),
+    r.dm_estimated_value ?? '', r.dm_equity_percent ?? '', r.dm_equity_dollars ?? '',
+    r.dm_sale_price ?? '', r.dm_sale_date ?? '',
+    r.dm_owner_name ?? '', r.dm_mailing_address ?? '', r.dm_enriched ? 'YES' : '',
+    ...dataKeys.map(k => (r.dm_data && r.dm_data[k] != null) ? r.dm_data[k] : ''),
+  ];
+  return { headers, row, dataKeys };
 }
 
 function exportSkipTrace() {
+  const src = filtered.length ? filtered : ALL_RECORDS;
+  const dm  = dmColumns(src);
   const cols = [
-    'First Name','Last Name','Phone','Email',
+    'First Name','Last Name',
     'Property Address','Property City','Property State','Property Zip',
     'Mailing Address','Mailing City','Mailing State','Mailing Zip',
     'Lead Type','Amount Due','Sources','Stacked',
     'Doc Number','Sale Date','Filed Date','Match Confidence','Flags',
-    'Doc Link','HCAD Link'
+    'Doc Link','HCAD Link',
+    ...dm.headers,
   ];
 
   const rows = [cols];
-  filtered.forEach(r => {
+  src.forEach(r => {
     const contact = r.contact || r.owner || '';
     const parts   = contact.includes(' ')
       ? [r.first_name || contact.split(' ')[0], r.last_name || contact.split(' ').slice(1).join(' ')]
       : [r.first_name || contact, r.last_name || ''];
 
     rows.push([
-      parts[0], parts[1], dmPhonesStr(r), dmEmailsStr(r),
+      parts[0], parts[1],
       r.prop_address||'', r.prop_city||'', r.prop_state||'TX', r.prop_zip||'',
       r.mail_address||'', r.mail_city||'', r.mail_state||'TX', r.mail_zip||'',
       r.cat_label||r.cat||'',
@@ -1834,7 +1871,8 @@ function exportSkipTrace() {
       r.doc_num||'', r.frcl_sale_date||'', r.filed||'',
       r.match_confidence||'',
       (r.flags||[]).join('; '),
-      r.clerk_url||'', r.hcad_url||''
+      r.clerk_url||'', r.hcad_url||'',
+      ...dm.row(r),
     ]);
   });
 
@@ -1842,25 +1880,28 @@ function exportSkipTrace() {
 }
 
 function exportGHL() {
+  const src = filtered.length ? filtered : ALL_RECORDS;
+  const dm  = dmColumns(src);
   const cols = [
     'First Name','Last Name',
-    'Email','Phone',
+    'Email','Phone',                       // GHL CRM primary contact columns
     'Property Address','Property City','Property State','Property Zip',
     'Mailing Address','Mailing City','Mailing State','Mailing Zip',
     'Lead Type','Amount Due','Sources','Stacked',
     'Doc Number','Filed Date','Foreclosure Sale Date',
     'Motivated Seller Flags','Match Confidence',
-    'Public Records URL','HCAD URL'
+    'Public Records URL','HCAD URL',
+    ...dm.headers,
   ];
 
   const rows = [cols];
-  filtered.forEach(r => {
+  src.forEach(r => {
     const contact = r.contact || r.owner || '';
     const first = r.first_name || contact.split(' ')[0] || '';
     const last  = r.last_name  || contact.split(' ').slice(1).join(' ') || '';
 
     rows.push([
-      first, last, dmEmailsStr(r), dmPhonesStr(r),
+      first, last, dmEmail(r,0), dmPhone(r,0),
       r.prop_address||'', r.prop_city||'', r.prop_state||'TX', r.prop_zip||'',
       r.mail_address||'', r.mail_city||'', r.mail_state||'TX', r.mail_zip||'',
       r.cat_label||'',
@@ -1870,7 +1911,8 @@ function exportGHL() {
       r.doc_num||'', r.filed||'', r.frcl_sale_date||'',
       (r.flags||[]).join('; '),
       r.match_confidence||'',
-      r.clerk_url||'', r.hcad_url||''
+      r.clerk_url||'', r.hcad_url||'',
+      ...dm.row(r),
     ]);
   });
 

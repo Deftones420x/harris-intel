@@ -34,6 +34,8 @@ import requests
 log = logging.getLogger(__name__)
 
 BASE_URL       = "https://api.v2.dealmachine.com/v1"
+CACHE_VERSION  = 2         # bump to re-fetch cached entries for new fields
+                           # (re-access within a billing cycle is free per docs)
 BATCH_SIZE     = 25        # addresses per request (well under any body limit)
 REQUEST_SPACING= 1.2       # seconds between requests -> ~50/min, under the 60/min cap
 MAX_REQUESTS   = 120       # hard cap on requests per run (<< 5000/day)
@@ -112,9 +114,27 @@ def _parse_property(prop: dict) -> dict:
     # schema; capture them defensively if the response includes them.
     mailing = _first(prop.get("mailing_address"), prop.get("owner_mailing_address"),
                      prop.get("mail_address"))
-    equity  = _first(prop.get("equity_percent"), prop.get("equity"),
-                     prop.get("estimated_equity_percent"))
+    est_val = _first(prop.get("estimated_value"), prop.get("calculated_total_value"),
+                     prop.get("market_value"), prop.get("assessed_total_value"))
+    equity  = _first(prop.get("equity_percent"), prop.get("equity_percentage"),
+                     prop.get("estimated_equity_percent"), prop.get("equity"))
+    equity_d= _first(prop.get("equity_dollars"), prop.get("estimated_equity"),
+                     prop.get("equity_amount"))
+
+    # Capture EVERY top-level scalar field DealMachine returns (Change 2/4), so
+    # value/equity/sale/owner-type/absentee/vacancy/tax indicators are all kept
+    # without hard-coding a schema. Nested objects/arrays (contacts, input) and
+    # noise are skipped.
+    _skip = {"contacts", "input", "match_failure", "match_warning"}
+    dm_data = {}
+    for k, v in (prop.items() if isinstance(prop, dict) else []):
+        if k in _skip:
+            continue
+        if isinstance(v, (str, int, float, bool)) and v not in ("", None):
+            dm_data[k] = v
+
     return {
+        "cache_v":            CACHE_VERSION,
         "dm_enriched":        True,
         "dm_matched":         bool(prop.get("matched", True)),
         "dm_owner_name":      owner or "",
@@ -122,8 +142,12 @@ def _parse_property(prop: dict) -> dict:
         "dm_email":           uemails[:3],
         "dm_mailing_address": mailing or "",
         "dm_property_id":     prop.get("dm_property_id", ""),
-        "equity_percent":     equity if equity != "" else None,
-        "estimated_value":    prop.get("estimated_value"),
+        "dm_estimated_value": est_val if est_val != "" else None,
+        "dm_equity_percent":  equity if equity != "" else None,
+        "dm_equity_dollars":  equity_d if equity_d != "" else None,
+        "dm_sale_price":      _first(prop.get("sale_price"), prop.get("last_sale_price")) or None,
+        "dm_sale_date":       _first(prop.get("sale_date"), prop.get("last_sale_date")) or "",
+        "dm_data":            dm_data,             # all scalar fields returned
     }
 
 
@@ -228,13 +252,23 @@ def enrich_addressed(records: list, cache_path: Path) -> dict:
         # still apply any cached data below
     can_call = not (remaining is not None and remaining <= 0)
 
-    # Figure out which unique addresses still need a call.
+    # Figure out which unique addresses still need a call: not cached at all, OR
+    # cached under an older schema version (re-fetched to backfill new fields —
+    # re-access within a billing cycle is free per the docs).
     todo, todo_keys = [], set()
     for r in addressed:
         k = _addr_key(r)
-        if not k or k in cache or k in todo_keys:
+        if not k or k in todo_keys:
+            continue
+        cached = cache.get(k)
+        if cached and cached.get("cache_v") == CACHE_VERSION:
             continue
         todo_keys.add(k); todo.append(r)
+    if todo:
+        stale = sum(1 for k in todo_keys if k in cache)
+        log.info(f"DealMachine: {len(todo_keys)} addresses to fetch "
+                 f"({stale} stale re-fetch for new fields, "
+                 f"{len(todo_keys)-stale} brand new)")
 
     if can_call and todo:
         todo = todo[:MAX_ADDRESSES]
@@ -273,13 +307,13 @@ def enrich_addressed(records: list, cache_path: Path) -> dict:
         if not dm.get("dm_matched", False):
             stats["tier_miss"] += 1
             continue
-        # fill dm_* (only set when present; do not overwrite our address/owner
-        # unless we're upgrading a blank)
+        # Fill dm_* (only when present; never blank an existing good field).
         for k in ("dm_enriched", "dm_matched", "dm_owner_name", "dm_phone",
                   "dm_email", "dm_mailing_address", "dm_property_id",
-                  "equity_percent", "estimated_value"):
+                  "dm_estimated_value", "dm_equity_percent", "dm_equity_dollars",
+                  "dm_sale_price", "dm_sale_date", "dm_data"):
             v = dm.get(k)
-            if v not in (None, "", []):
+            if v not in (None, "", [], {}):
                 r[k] = v
         r["dm_enriched_date"] = datetime.now().strftime("%Y-%m-%d")
         # upgrade OUR mailing address only if we didn't have one
@@ -291,6 +325,15 @@ def enrich_addressed(records: list, cache_path: Path) -> dict:
             stats["tier_contact"] += 1
         else:
             stats["tier_address_only"] += 1
+
+    # Discovery: log the full set of scalar fields DealMachine actually returned,
+    # so we can see exactly which value/equity/indicator columns exist.
+    field_union = set()
+    for dm in cache.values():
+        field_union.update((dm.get("dm_data") or {}).keys())
+    if field_union:
+        log.info(f"DealMachine returned fields ({len(field_union)}): "
+                 f"{sorted(field_union)}")
 
     log.info(
         f"DealMachine Phase 1: considered={stats['considered']} "
