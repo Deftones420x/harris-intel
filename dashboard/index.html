@@ -908,7 +908,8 @@
   <!-- VIEW TABS (Bug 6): Leads vs New vs Foreclosure Calendar -->
   <div class="filter-bar" style="margin-bottom:10px;">
     <button class="filter-btn view-tab active" data-view="leads" onclick="setView('leads')">📋 ALL LEADS</button>
-    <button class="filter-btn view-tab" data-view="new" onclick="setView('new')">🆕 NEW <span class="new-badge" id="newBadge">0</span></button>
+    <button class="filter-btn view-tab" data-view="new" onclick="setView('new')"
+            title="Leads first seen since the last scraper run (daily delta). Shows ALL new leads — category/score filters don't apply here.">🆕 NEW <span class="new-badge" id="newBadge">0</span></button>
     <button class="filter-btn view-tab" data-view="calendar" onclick="setView('calendar')">📅 FORECLOSURE CALENDAR <span class="new-badge" id="calBadge" style="background:#ff6b35;">0</span></button>
   </div>
 
@@ -948,6 +949,9 @@
     <button class="filter-btn" onclick="setScoreFilter(70)" data-score="70">🔥 HOT (≥70)</button>
     <button class="filter-btn" onclick="setScoreFilter(50)" data-score="50">⚡ WARM (≥50)</button>
     <button class="filter-btn" onclick="setScoreFilter(30)" data-score="30">ACTIVE (≥30)</button>
+    <span style="width:1px;background:rgba(255,255,255,0.12);margin:2px 4px;"></span>
+    <button class="filter-btn" id="recentBtn" onclick="setRecentFilter()"
+            title="Filed within the last 30 days (by filed date). Different from the NEW tab, which is 'first seen since the last run'.">📆 LAST 30 DAYS (filed)</button>
   </div>
 
   <div class="lead-count" id="leadCount"></div>
@@ -1000,11 +1004,23 @@ let filtered    = [];
 let viewMode    = 'leads';   // 'leads' | 'new' | 'calendar' (Bug 6)
 let catFilter   = '';
 let scoreFilter = 0;
+let recentOnly  = false;     // "Last 30 days" quick filter (filed date)
 
 // A nameless FRCL foreclosure posting = the auction *calendar*, not an
 // actionable lead. Kept out of the main leads view; shown in its own tab.
 function isCalendarRow(r) {
   return r.source === 'FRCL' && !(r.owner && r.owner.trim());
+}
+
+// "Recent" = filed within the last 30 days by the actual FILED date. This is a
+// DIFFERENT concept from is_new (first-seen-since-the-last-run); both coexist.
+function isRecent(r) {
+  const f = (r.filed || '').slice(0, 10);
+  if (!f) return false;
+  const d = new Date(f + 'T00:00:00');
+  if (isNaN(d)) return false;
+  const ms = Date.now() - d.getTime();
+  return ms >= 0 && ms <= 30 * 24 * 3600 * 1000;
 }
 let sortKey     = 'score';
 let sortDir     = 'desc';
@@ -1116,6 +1132,16 @@ function setScoreFilter(min) {
   applyFilters();
 }
 
+function setRecentFilter() {
+  recentOnly = !recentOnly;
+  document.getElementById('recentBtn').classList.toggle('active', recentOnly);
+  // The recency filter lives on the main leads view; switch there so its effect
+  // is visible (it's bypassed in the NEW/CALENDAR views by design).
+  if (recentOnly && viewMode !== 'leads') { setView('leads'); return; }
+  page = 1;
+  applyFilters();
+}
+
 function setSort(key) {
   if (sortKey === key) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
   else { sortKey = key; sortDir = 'desc'; }
@@ -1136,8 +1162,15 @@ function applyFilters() {
   else                          base = ALL_RECORDS.filter(r => !isCalendarRow(r));
 
   filtered = base.filter(r => {
-    if (catFilter   && r.cat   !== catFilter)     return false;
-    if (scoreFilter && r.score < scoreFilter)      return false;
+    // Problem 1: the NEW and CALENDAR views show their FULL set so the table
+    // count always equals the tab badge. The sticky category/score/recency
+    // filters apply only on the main ALL LEADS view. (Search still applies
+    // everywhere — that's an explicit, active user action.)
+    if (viewMode === 'leads') {
+      if (catFilter   && r.cat   !== catFilter)   return false;
+      if (scoreFilter && r.score < scoreFilter)   return false;
+      if (recentOnly  && !isRecent(r))            return false;
+    }
     if (q) {
       const haystack = [r.owner, r.grantee, r.doc_num, r.legal,
         r.prop_address, r.mail_address, r.doc_type, r.cat_label]
