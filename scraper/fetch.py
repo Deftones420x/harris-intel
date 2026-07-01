@@ -413,7 +413,9 @@ def build_flags(rec: dict, today: datetime) -> list:
             flags.append("LLC / corp owner")
         try:
             dt = datetime.strptime(filed[:10], "%Y-%m-%d")
-            if (today - dt).days <= 7:
+            # BUG 2 FIX: require 0 <= age <= 7. The old `<= 7` was also true for
+            # future-dated records (foreclosure sale dates), falsely tagging them.
+            if 0 <= (today - dt).days <= 7:
                 flags.append("New this week")
         except Exception:
             pass
@@ -991,28 +993,33 @@ class HarrisClerkScraper:
                 continue
             if doc_num.upper() in ["DOCUMENT ID", "DOC ID", "FILE NUMBER", ""]:
                 continue
-            # Deduplicate
-            key = (doc_num, sale_dt)
-            if key in seen:
+            # Deduplicate — a posting shows up under both the Sale-Date and
+            # File-Date searches (and across adjacent months), so key on the
+            # document number alone.
+            if doc_num in seen:
                 continue
-            seen.add(key)
+            seen.add(doc_num)
 
-            # Normalize sale date
-            filed_iso = ""
-            for fmt in ("%m/%d/%Y", "%Y-%m-%d", "%m/%d/%y"):
-                try:
-                    from datetime import datetime as _dt
-                    filed_iso = _dt.strptime(sale_dt[:10], fmt).strftime("%Y-%m-%d")
-                    break
-                except Exception:
-                    pass
-            if not filed_iso:
-                filed_iso = f"{year}-{month:02d}-01"
+            def _parse_frcl_date(s):
+                for fmt in ("%m/%d/%Y", "%Y-%m-%d", "%m/%d/%y"):
+                    try:
+                        return datetime.strptime(s[:10], fmt).strftime("%Y-%m-%d")
+                    except Exception:
+                        pass
+                return ""
+
+            # BUG 2 FIX: the foreclosure *sale* date is often 1-3 months in the
+            # FUTURE. Storing it in `filed` produced future-dated leads and made
+            # build_flags tag them "New this week" (today - future <= 7). Keep
+            # `filed` = actual file date only; expose the auction date separately
+            # via `frcl_sale_date`.
+            sale_iso = _parse_frcl_date(sale_dt)
+            file_iso = _parse_frcl_date(file_dt)
 
             rows_out.append({
                 "doc_num":           doc_num,
                 "doc_type":          "FRCL",
-                "filed":             filed_iso,
+                "filed":             file_iso,          # past file date, may be ""
                 "cat":               "fc",
                 "cat_label":         "Foreclosure Sale",
                 "owner":             grantor,
@@ -1021,7 +1028,7 @@ class HarrisClerkScraper:
                 "amount":            None,
                 "legal":             address,
                 "clerk_url":         f"https://www.cclerk.hctx.net/applications/websearch/FRCL_R.aspx",
-                "frcl_sale_date":    filed_iso,
+                "frcl_sale_date":    sale_iso,          # auction date (may be future)
                 "frcl_search_type":  search_type,
                 "source":            "FRCL",
             })
