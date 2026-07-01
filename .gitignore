@@ -1,0 +1,13 @@
+# Daily GHL exports are redundant — the dashboard exports GHL client-side on
+# demand. Never commit them again (they added 150+ MB of bloat). (Bug 5)
+ghl_export_*.csv
+*.csv
+
+# data/ is deprecated: the single source of truth is dashboard/records.json.
+data/
+
+# Python / tooling
+__pycache__/
+*.pyc
+.venv/
+venv/

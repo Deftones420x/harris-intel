@@ -16,6 +16,10 @@ permissions:
   pages: write
   id-token: write
 
+# Silence the harmless "Node.js 20 is deprecated" warnings (Bug 5 cleanup).
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   scrape:
     runs-on: ubuntu-22.04
@@ -80,7 +84,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add dashboard/records.json data/records.json data/ dashboard/
+          # Bug 5: only the single source of truth. No more dated GHL CSVs (the
+          # dashboard exports GHL client-side) and no data/ mirror. This step
+          # only runs if the scraper exited 0, i.e. the sanity gate (Bug 4)
+          # passed.
+          git add dashboard/records.json
           git diff --cached --quiet || git commit -m "chore: update records $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
         env:

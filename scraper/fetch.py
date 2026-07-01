@@ -92,7 +92,10 @@ SCORE_ACTIVE = 30
 FC_NOTICE_CODES         = {"NOTICE", "TRSALE"}
 FC_NOTICE_LOOKBACK_DAYS = 45
 
-OUTPUT_DIRS = [Path("dashboard"), Path("data")]
+# Bug 5: single source of truth. The dashboard/ copy is what GitHub Pages
+# serves; the old data/ mirror and the daily GHL CSVs were pure repo bloat
+# (the dashboard exports GHL client-side on demand).
+OUTPUT_DIRS = [Path("dashboard")]
 
 
 # ─── HCAD Parcel Lookup ───────────────────────────────────────────────────────
@@ -1297,52 +1300,9 @@ def save_records(records: list, today: datetime, days_back: int):
         log.info(f"Saved → {d}/records.json")
 
 
-def export_ghl_csv(records: list, today: datetime):
-    cols = [
-        "First Name", "Last Name",
-        "Mailing Address", "Mailing City", "Mailing State", "Mailing Zip",
-        "Property Address", "Property City", "Property State", "Property Zip",
-        "Lead Type", "Document Type", "Date Filed", "Document Number",
-        "Amount/Debt Owed", "Seller Score", "Motivated Seller Flags",
-        "Source", "Public Records URL",
-    ]
-    rows = []
-    for r in records:
-        try:
-            parts  = (r.get("owner") or "").strip().split()
-            amount = r.get("amount")
-            rows.append({
-                "First Name":             parts[0] if parts else "",
-                "Last Name":              " ".join(parts[1:]) if len(parts) > 1 else "",
-                "Mailing Address":        r.get("mail_address", ""),
-                "Mailing City":           r.get("mail_city", ""),
-                "Mailing State":          r.get("mail_state", "TX"),
-                "Mailing Zip":            r.get("mail_zip", ""),
-                "Property Address":       r.get("prop_address", ""),
-                "Property City":          r.get("prop_city", ""),
-                "Property State":         r.get("prop_state", "TX"),
-                "Property Zip":           r.get("prop_zip", ""),
-                "Lead Type":              r.get("cat_label", ""),
-                "Document Type":          r.get("doc_type", ""),
-                "Date Filed":             r.get("filed", ""),
-                "Document Number":        r.get("doc_num", ""),
-                "Amount/Debt Owed":       f"${amount:,.2f}" if amount else "",
-                "Seller Score":           r.get("score", 0),
-                "Motivated Seller Flags": "; ".join(r.get("flags", [])),
-                "Source":                 "Harris County Clerk",
-                "Public Records URL":     r.get("clerk_url", ""),
-            })
-        except Exception:
-            continue
-
-    for d in OUTPUT_DIRS:
-        d.mkdir(parents=True, exist_ok=True)
-        path = d / f"ghl_export_{today.strftime('%Y%m%d')}.csv"
-        with open(path, "w", newline="", encoding="utf-8") as f:
-            w = csv.DictWriter(f, fieldnames=cols)
-            w.writeheader()
-            w.writerows(rows)
-        log.info(f"GHL CSV → {path} ({len(rows)} rows)")
+# Bug 5: export_ghl_csv() was removed. It wrote a dated GHL CSV into both output
+# dirs every run, and the workflow committed them — 150+ MB of accumulated bloat.
+# The dashboard already builds the identical GHL export client-side on demand.
 
 
 # ─── Sanity gate (Bug 4) ──────────────────────────────────────────────────────
@@ -1422,7 +1382,6 @@ async def main():
 
     log.info("\nSaving outputs...")
     save_records(records, today, days_back)
-    export_ghl_csv(records, today)
 
     log.info(f"\n{'='*60}")
     log.info(f"✓ COMPLETE")
