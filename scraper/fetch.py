@@ -87,10 +87,25 @@ SCORE_HOT  = 70   # tier thresholds (unchanged, but now meaningful)
 SCORE_WARM = 50
 SCORE_ACTIVE = 30
 
-# Bug 1: foreclosure-notice doc types scraped over a wider window so upcoming
-# trustee sales are captured with grantor names (then HCAD supplies addresses).
-FC_NOTICE_CODES         = {"NOTICE", "TRSALE"}
-FC_NOTICE_LOOKBACK_DAYS = 45
+# Per-doc-type lookback overrides (days). Anything not listed uses DAYS_BACK.
+#
+# - NOTICE/TRSALE (Bug 1): foreclosure notices, widened so upcoming trustee
+#   sales are captured with grantor names (then HCAD supplies addresses).
+# - T/L, JUDGE, BNKRCY, LEVY (Item 1): these are all VALID county instrument
+#   codes (verified against Codes.aspx), not stale — they were returning 0
+#   only because they're low-volume distress types and a 7-day window rarely
+#   catches one (e.g. federal tax liens: the most recent was 8 days out). They
+#   are high-value distress signals, so they get a wide window to actually
+#   surface. LEVY is genuinely rare (0 in the last 90 days) but the code is
+#   valid, so it's kept to catch one whenever it is filed.
+LOOKBACK_OVERRIDES = {
+    "NOTICE": 45,
+    "TRSALE": 45,
+    "T/L":    60,   # Notice of Federal Tax Lien
+    "JUDGE":  60,   # Judgment
+    "BNKRCY": 60,   # Bankruptcy
+    "LEVY":   60,   # Notice of Levy on Real Estate
+}
 
 # Bug 5: single source of truth. The dashboard/ copy is what GitHub Pages
 # serves; the old data/ mirror and the daily GHL CSVs were pure repo bloat
@@ -856,11 +871,9 @@ class HarrisClerkScraper:
 
             for doc_code, (cat, cat_label) in DOC_TYPES.items():
                 try:
-                    # Foreclosure notices use a wider window so upcoming trustee
-                    # sales are captured with grantor names (Bug 1). This is the
-                    # enrichment source for foreclosures — the FRCL portal is
-                    # kept only as a supplementary (nameless) auction calendar.
-                    lb = FC_NOTICE_LOOKBACK_DAYS if doc_code in FC_NOTICE_CODES else None
+                    # Wider window for foreclosure notices (Bug 1) and low-volume
+                    # distress types (Item 1) so they actually surface records.
+                    lb = LOOKBACK_OVERRIDES.get(doc_code)
                     await self._search_one(page, doc_code, cat, cat_label,
                                            lookback_days=lb)
                 except Exception as e:
