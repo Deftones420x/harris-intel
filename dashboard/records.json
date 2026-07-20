@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-07-19T07:45:59.882132",
+  "fetched_at": "2026-07-20T08:04:16.162684",
   "source": "Harris County Clerk / HCAD",
   "date_range": {
-    "from": "2026-07-12",
-    "to": "2026-07-19"
+    "from": "2026-07-13",
+    "to": "2026-07-20"
   },
-  "total": 4275,
-  "with_address": 1123,
+  "total": 4212,
+  "with_address": 1108,
   "new_count": 0,
   "records": [
     {
@@ -103,7 +103,7 @@
         "owner_occupied": false,
         "apn": "134-443-001-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -196,7 +196,7 @@
         "owner_occupied": true,
         "apn": "128-242-005-0004"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -241,99 +241,6 @@
         "Stacked lists": 18
       },
       "score": 74,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197889",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "WHEELER WAYNE D",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "WHEELER WAYNE D",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WHEELER+WAYNE+D",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): D WHEELER WAYNE",
-      "prop_address": "8406 HANFRO LN",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77088",
-      "mail_address": "9902 LONALLEN ST",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77088-3116",
-      "stack_count": 2,
-      "sources": [
-        "LIEN",
-        "TAX"
-      ],
-      "flags": [
-        "Tax lien",
-        "Absentee owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Absentee owner": 12,
-        "Has address": 10,
-        "Named owner": 8,
-        "Stacked lists": 18
-      },
-      "score": 73,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "WAYNE WHEELER",
-      "dm_phone": [
-        {
-          "number": "8326137525",
-          "dnc": false
-        },
-        {
-          "number": "8327664548",
-          "dnc": false
-        },
-        {
-          "number": "2818365133",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "BROWNEYEZVIRGO@YAHOO.COM"
-      ],
-      "dm_property_id": "prop_131582453",
-      "dm_estimated_value": 206000,
-      "dm_equity_percent": 100,
-      "dm_equity_dollars": 206000,
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_131582453",
-        "full_address": "8406 Hanfro Ln Houston, TX, 77088",
-        "address": "8406 Hanfro Ln",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77088",
-        "latitude": 29.877345,
-        "longitude": -95.432649,
-        "estimated_value": 206000,
-        "estimated_equity_amount": 206000,
-        "estimated_equity_percentage": 100,
-        "year_built": 1935,
-        "living_area_sqft": 1194,
-        "lot_size_sqft": 7020,
-        "num_bedrooms": 2,
-        "num_bathrooms": 1,
-        "total_assessed_value": 107843,
-        "annual_property_tax_amount": 2468,
-        "num_mortgages": 0,
-        "total_original_loan_amount": 0,
-        "total_estimated_loan_balance": 0,
-        "owner_occupied": false,
-        "apn": "077-283-002-0015"
-      },
-      "dm_enriched_date": "2026-07-19",
       "is_new": false
     },
     {
@@ -416,7 +323,7 @@
         "owner_occupied": false,
         "apn": "121-265-002-0027"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -432,8 +339,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUfYiRdmwTcBsRjxRphvQDGen/TsvIKuSNORyAgZBf/yctnsluAcyb4VxS6mQTpPkZYDh/bHM5HQagwtcOVExYEYKYjvLrYvf3FJ6Dci2qr6k3oqB3zuT3H06J+L8w9NLg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=4006+TRANQUIL+FOREST+LLC%2C+BAKHTIARI+FATEMEH%2C+JOHN+%26+PAGE+HOL",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): 4006 TRANQUIL FOREST",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): 4006 TRANQUIL",
       "prop_address": "4006 TRANQUIL FOREST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -513,7 +420,7 @@
         "owner_occupied": false,
         "apn": "129-922-001-0027"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -611,7 +518,7 @@
         "owner_occupied": false,
         "apn": "121-402-003-0009"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -628,7 +535,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUsMJNgZrt1HO0zul8aN0Q4MFudpXIwk2dJ/Ki/P9mldLlVM7GNUuypIeY2goPS8ktirEut9HJj6I5u1TLPckC9AXdN8Hz2MSySUBst+SjcQqz7Mf/71lhksrHmwPI7NUw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ARNOLD+ALYSSA%2C+FIEDLER+MISTY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MISTY FIEDLER",
+      "match_reason": "Name \u2192 single property (2w): MISTY, FIEDLER",
       "prop_address": "706 S DIAMONDHEAD BLVD",
       "prop_city": "CROSBY",
       "prop_state": "TX",
@@ -654,6 +561,62 @@
         "Named owner": 8
       },
       "score": 70,
+      "dm_enriched": true,
+      "dm_matched": true,
+      "dm_owner_name": "MISTY FIEDLER",
+      "dm_phone": [
+        {
+          "number": "8325744737",
+          "dnc": false
+        },
+        {
+          "number": "7137761160",
+          "dnc": false
+        },
+        {
+          "number": "7138168126",
+          "dnc": false
+        }
+      ],
+      "dm_email": [
+        "CTMYGIRLS@AOL.COM",
+        "FIEDLERM@AUTONATION.COM",
+        "RCMCKINNY@GMAIL.COM"
+      ],
+      "dm_property_id": "prop_130757580",
+      "dm_estimated_value": 289000,
+      "dm_equity_percent": 90,
+      "dm_equity_dollars": 259616,
+      "dm_sale_date": "2024-03-15T00:00:00.000Z",
+      "dm_data": {
+        "matched": true,
+        "dm_property_id": "prop_130757580",
+        "full_address": "706 S Diamondhead Blvd Crosby, TX, 77532",
+        "address": "706 S Diamondhead Blvd",
+        "city": "Crosby",
+        "state": "TX",
+        "zip": "77532",
+        "latitude": 29.912342,
+        "longitude": -95.080255,
+        "estimated_value": 289000,
+        "estimated_equity_amount": 259616,
+        "estimated_equity_percentage": 90,
+        "year_built": 1978,
+        "living_area_sqft": 2626,
+        "lot_size_sqft": 9918,
+        "num_bedrooms": 4,
+        "num_bathrooms": 3,
+        "last_sale_date": "2024-03-15T00:00:00.000Z",
+        "last_sale_amount": 0,
+        "total_assessed_value": 292304,
+        "annual_property_tax_amount": 7562,
+        "num_mortgages": 2,
+        "total_original_loan_amount": 298570,
+        "total_estimated_loan_balance": 29384,
+        "owner_occupied": false,
+        "apn": "105-335-000-0008"
+      },
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -754,7 +717,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcmyMaggf9gxz9aLcA4NyMk5X1qvy8TTpJuj3/3ux07LAowZC4wEKHD6Fna81sqk3O1WRh/BpaQZF8YSPXUH/nKDj/PEOZZbOQCK9WK+2vHGIgzW2UUbRBFkBywfW6txjQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=NUWAY+HOMES+L+L+C%2C+NUWAY+HOMES+TEXAS+L+P%2C+WHITE+ANGELA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ANGELA WHITE",
+      "match_reason": "Name \u2192 single property (2w): ANGELA, WHITE",
       "prop_address": "5801 LUMBERDALE RD 0236",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -1258,7 +1221,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVpgnniHGTTqpxSKeHI/6wunHBCP605CYTIrcCFh9vHJByV31uO8+j4gciZL9D8s3JB3ORO2HuXTkoKW7lUE+9tkOVDftZY1a2OZZOzUsqAvgWP6KV+tB88fGAZu3VzJvQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AJPACAJA+MARINA%2C+HANLEN+MARY+ANN+REYES%2C+PRESSLER+DENISE+ANN%2C",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): FEBE, PUAC",
+      "match_reason": "Name \u2192 single property (2w): FEBE PUAC",
       "prop_address": "9306 CLARIDGE DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -1342,7 +1305,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVazWGbsXPCRpiB7frkMw6gK4AwVgq7wi/44Zyfg2bJ13cDMyHFAsdj5JLFUeUkYt0SFG1CJq3icIh7u5vjZYWxooAAx+WZneixTaN1IfIKjzfPaH22vW4UKeVXqAQlAaKA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CHKM+INVESTMENTS+LLC%2C+JAYAWICKRAMA+ISHAN%2C+WU+GRACE",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): GRACE WU",
+      "match_reason": "Name \u2192 single property (2w): GRACE, WU",
       "prop_address": "20535 DELTA WOOD TRL",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -1593,8 +1556,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZ/f0PU4ylcQmaXJOOyh9b3yPv9SaYbkEmDlyY5PIe6Udbfkehtn2bb1ANDxo/BmBSsHxVlu5GNUJDqC3Rf8zmJkRirKiGz1BHd5QO/LCahiVKsgrGoJR02ceUkY/nU0Ng==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CARLSON+BENJAMIN+L%2C+CARLSON+EVELYN+A%2C+JUNG+EUN+MI%2C+KIM+BUM+J",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CARLSON BENJAMIN",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): CARLSON BENJAMIN L",
       "prop_address": "1014 HARBOUR SANDS DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -1761,8 +1724,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcUTIDffJww/ha1EWbDAlUxHuI4ioI2bQeeS1Dbz665xhPB/eSbXEh0KtuONHhrWChxCqMXbP/TFz3A2A8OoN94tQxMw0pZDgIySjGTugxUD3bFzEtLmdWsriQEZ7vaamQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JADAW+LAWRENCE+ENTERPRISE+LLC%2C+WATKINS+AZALIA",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): JADAW LAWRENCE ENTERPRISE",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): JADAW LAWRENCE",
       "prop_address": "4916 TRONEWOOD ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -1887,8 +1850,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYN4DQUgjqTBQ/6WzhnbqYVj5kmpUXa7l+n/p1W+rHRWVEj2nHzzgouME5Q2/GB4+64MvIoH60ZbF5uJJuGqN9EiuFA0ff85jpIprL3ZX1CUR4302Jh1uoTesqW1qUxPSQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DELUCCA+DAVID+M%2C+DELUCCA+FENG+Q%2C+REEVES+CARAL%2C+REEVES+MICHAE",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): DELUCCA DAVID M",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): DELUCCA DAVID",
       "prop_address": "24119 VALENCIA RIDGE LN",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -2181,8 +2144,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQjLnpVbscMIhaY0NVHUE8fF/25+Sc2RwZx7pU0/e5a0eW0v6RkvOXTW+ig9OSIXzoF7YQJCGNh1fyvjN9s+nclDLZRZsCNo7TOiRhElfDrp7zMCY66MN0ePHBbhr70WzA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=5406+BARONET+DR+LLC%2C+ANGEL+JOSE+ANGEL+ORTEGA+DEL%2C+MOLINA+VER",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): 5406 BARONET DR",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): 5406 BARONET",
       "prop_address": "5406 BARONET DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -2675,7 +2638,7 @@
         "owner_occupied": false,
         "apn": "081-261-000-0038"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -2944,7 +2907,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfa7vqIrpCLVnnQyXo7kgRCv1eKvXgdtb0JPGZFQC0iDdWtJDJT6ZKJ0+Y7yk26YMRysiQ6Lv4nThA0usC/nJGtbxnoeUMwqert4KPeFo+dU0RctEMN1W4Om19vmwSuf/A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HEARTHSTONE+SECTION+7",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MUNIR KHAN",
+      "match_reason": "Name \u2192 single property (2w): MUNIR, KHAN",
       "prop_address": "7065 JACKRABBIT RD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -3279,8 +3242,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVTbaI7gCwJOgLArmhm658VlYVKBBYrPpZVl1p25/vMmf2VsDuip+kj1PmDyJgbxs2E5jHEiaYkViLFm8C3W8LI69HJp/W4gn9y6Q8VWP7jId2dtGYKVbGDxE5Hic387Htg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DREHER+FLORENCIA+BENECH%2C+PENA+RRCARDO+BENTANCUR%2C+SMITH+JUSTI",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): DREHER FLORENCIA BENECH",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): DREHER FLORENCIA",
       "prop_address": "17319 BLANTON FOREST DR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -3443,7 +3406,7 @@
         "owner_occupied": true,
         "apn": "146-932-002-0014"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -4264,7 +4227,7 @@
         "owner_occupied": false,
         "apn": "135-448-001-0001"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -4351,7 +4314,7 @@
         "owner_occupied": true,
         "apn": "108-755-000-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -4444,7 +4407,7 @@
         "owner_occupied": false,
         "apn": "130-951-004-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -4539,7 +4502,7 @@
         "owner_occupied": false,
         "apn": "064-091-007-0013"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -4616,7 +4579,7 @@
         "owner_occupied": false,
         "apn": "131-469-002-0004"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -4825,7 +4788,7 @@
         "owner_occupied": false,
         "apn": "119-733-002-0023"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -4942,7 +4905,7 @@
         "owner_occupied": false,
         "apn": "097-441-000-0038"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -5079,7 +5042,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWl1VQy6sZ8kbC7bqC11Ilyo/tdypvEPQwxjSAQC0RjMAmhS+ANzMwJXRHW1BB58cWoNkJEVFSYAsin+Hq7197Tc0hpCamETQbusJAa1XoWW02ydl91U1OcXk0yDXqFTAQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FERNANDEZ+MARIELYS%2C+MORENO+ISMAEL+JASAI+GUAJARDO%2C+SALAZAR+OT",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): OTONIEL SALAZAR",
+      "match_reason": "Name \u2192 single property (2w): OTONIEL, SALAZAR",
       "prop_address": "3535 NASA ROAD 1 18",
       "prop_city": "SEABROOK",
       "prop_state": "TX",
@@ -5378,7 +5341,7 @@
         "owner_occupied": false,
         "apn": "043-175-000-0063"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -5492,7 +5455,7 @@
         "owner_occupied": false,
         "apn": "045-064-000-0345"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -5624,7 +5587,7 @@
         "owner_occupied": false,
         "apn": "057-223-000-0082"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -6401,7 +6364,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbKf+x9dXjEfo/wizfv2LLMrdGW44AShUZMJcm8ztZoctYlUUUZlwHvXmgyo+yO+D0L+0zY4L39+6XtlrcH7TMfbN5lXmPIHK9tuZRE7/Wm0TTUbQd8YV0VAwuV7DxpKsA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AMATO+CARLO%2C+RODRIGUEZ+JESSICA%2C+THOMAS+CHRISTINA%2C+THOMAS+JAS",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JASON, THOMAS",
+      "match_reason": "Name \u2192 single property (2w): JASON THOMAS",
       "prop_address": "8838 DRIFTSTONE DR",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -6721,7 +6684,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUNu9g1m+pY669b5/kmpq2CoFbO3mx9cEt3o+H7YnEsuVa9+zz7pVOt0jlWlFSfXhwDtEbtBM7jaYJq8ksmaKGGiuUz+NKpg+fd7akjXlcl/XqnzkQN66ff8jePwwzenaQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FORNALSKI+ALEXANDER+MICHAEL%2C+HILL+LISA%2C+HILL+RICHARD",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): RICHARD HILL",
+      "match_reason": "Name \u2192 single property (2w): RICHARD, HILL",
       "prop_address": "16811 ELLICOTT ROCK DR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -6761,7 +6724,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVXlieUxn2mKx0I+IV80RP9cWoYNwe8DpGGF/s54265YYQN3ercCoqHZ5wEevQCWDE4mQiyhvuBA3Nm52XkzbEZQpmZjHOTaYIfnQ2id2CDVKHrDKFUqUTyvUDjatMIir2g==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CAVENDER+BRITTANY+DANIELLE%2C+FETHERSTON+DANIEL+BRIAN%2C+MOORE+N",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): NANCY MOORE",
+      "match_reason": "Name \u2192 single property (2w): NANCY, MOORE",
       "prop_address": "2422 PRIDES CROSSING RD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -8080,8 +8043,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZfuoPD82qJnq1+1a2tZHZpWlw0hv3EtAgB9MkjhJZDwYmBiYdNg3jeWJ3dl8HQso2s51U7ofjsbpPiRxK2jGu+/drDRpGC0JrZ/msVfgFoKgRkZp0D9MOdqGLdXlFGhEA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GUNTHER+SUZANNE+C%2C+WAY+BRADEN+L%2C+WAY+KIMBERLY+A",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): GUNTHER SUZANNE C",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): GUNTHER SUZANNE",
       "prop_address": "1549 ALEXANDER ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -8121,7 +8084,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWhGbQRmamDgHoFNGKwS9TNm1w9kncn1flvcaMnBQOwMBO8cwaSxB+ZY1BgjGJ8POI46jIHQN5gxC3ZucNTPg8CpHMrW+NImmt1T2lnA9qc9TtFltCX0ZH/aEseJPqmqtQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LONESTAR+RESTORATION+FLIPS+LLC%2C+RICHARDSON+RACHEL",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): RACHEL, RICHARDSON",
+      "match_reason": "Name \u2192 single property (2w): RACHEL RICHARDSON",
       "prop_address": "3107 CLOUDFOREST LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -8720,8 +8683,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcz9bflr0hzPtCYeE/Hw1+2ZFK5BhR8GiBe7aQttkNUbqfe1QHHdRxgtRd35yEegKaHny9HdtyZkJo9aKKGFvft+8FP54Y9AuEDnk6O1H/IjbRdayA49amWa3rNx/JUtDw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DOTY+RICHARD+S+JR%2C+DOTY+SARAH+BISSEX%2C+HICKS+CLAY+AUSTIN%2C+HIC",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): DOTY RICHARD S",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): DOTY RICHARD",
       "prop_address": "414 W 13TH ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -9041,7 +9004,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVee3yT7P/5DYjcXV+PlXz+ede77X7G6+qPwy6fMHRVUWXW1HdEq5HuoBIR7QZ1ox+JjNR7H1Q8tfe55C8Y7UQCDu6B5uKdYC54wAsQC4scPgWMubKt7lr8GBALwD0tnZ6A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=RAMOS+GREGORY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): GREGORY, RAMOS",
+      "match_reason": "Name \u2192 single property (2w): GREGORY RAMOS",
       "prop_address": "21023 INGRAM HOUSE WAY",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -9440,7 +9403,7 @@
         "owner_occupied": true,
         "apn": "108-712-000-0012"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -10175,7 +10138,7 @@
         "owner_occupied": true,
         "apn": "115-979-007-0002"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -10872,7 +10835,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVbOGrGHjscG9YE902FnjWdLu2OyZEsNWunTqPm5TqofeHsp5M0XJqnABIYHjTckF7n+uNkbJ1+3Fz95UgXEfxxEm59L8SXmQBmY7ePjQdNmaN+s5Wgxy09HWXX1uL9Nbw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=THE+SECRETARY+OF+HOUSING+AND+URBAN+DEVELOPMENT",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): BENJAMIN, ONGOCO",
+      "match_reason": "Name \u2192 single property (2w): BENJAMIN ONGOCO",
       "prop_address": "9206 CLAY RD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -10970,7 +10933,7 @@
         "owner_occupied": true,
         "apn": "020-205-000-0014"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -11156,8 +11119,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVSsm95PQjWjbKjVS1xGvd0kj77MXJTEgMBuP8wuXyevVtJ0o1dpel3Z4Op7xPtx6ELYboQ6xrtZikVBZtFc9X3ycZ8YGvDGj/HfuRuksN3+EX7F+7q7IOPnS0scCMwu6LA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MENDEZ+GENESIS+MONTES",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CITIBANK N",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): CITIBANK N A",
       "prop_address": "6500 W 43RD ST 292",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -11183,99 +11146,6 @@
         "Stacked lists": 18
       },
       "score": 56,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-287000",
-      "doc_type": "DEED",
-      "filed": "2026-07-16",
-      "cat": "tax",
-      "cat_label": "Deed (Sheriff/Trustee/Tax)",
-      "owner": "WHEELER WAYNE D SR",
-      "grantee": "WHEELER WAYNE D II, WHEELER WAYNE D SR",
-      "contact": "WHEELER WAYNE D SR",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVwj+CRXhwIyyvOrtX8IPNo1BJVDUTQHPPzC1Pc0xQrYSX9VGfAsDsdCVJfsVQO9LfpbyctDkjocbam/BzG38qB01MtdKEBJD+2sRpoL/SPKR6Fjbc7X2Bz/Pl1RdQo0Fg==",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WHEELER+WAYNE+D+SR",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): D WHEELER WAYNE",
-      "prop_address": "8406 HANFRO LN",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77088",
-      "mail_address": "9902 LONALLEN ST",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77088-3116",
-      "stack_count": 2,
-      "sources": [
-        "LIEN",
-        "TAX"
-      ],
-      "flags": [
-        "Absentee owner",
-        "New this week"
-      ],
-      "score_breakdown": {
-        "Absentee owner": 12,
-        "New this week": 8,
-        "Has address": 10,
-        "Named owner": 8,
-        "Stacked lists": 18
-      },
-      "score": 56,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "WAYNE WHEELER",
-      "dm_phone": [
-        {
-          "number": "8326137525",
-          "dnc": false
-        },
-        {
-          "number": "8327664548",
-          "dnc": false
-        },
-        {
-          "number": "2818365133",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "BROWNEYEZVIRGO@YAHOO.COM"
-      ],
-      "dm_property_id": "prop_131582453",
-      "dm_estimated_value": 206000,
-      "dm_equity_percent": 100,
-      "dm_equity_dollars": 206000,
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_131582453",
-        "full_address": "8406 Hanfro Ln Houston, TX, 77088",
-        "address": "8406 Hanfro Ln",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77088",
-        "latitude": 29.877345,
-        "longitude": -95.432649,
-        "estimated_value": 206000,
-        "estimated_equity_amount": 206000,
-        "estimated_equity_percentage": 100,
-        "year_built": 1935,
-        "living_area_sqft": 1194,
-        "lot_size_sqft": 7020,
-        "num_bedrooms": 2,
-        "num_bathrooms": 1,
-        "total_assessed_value": 107843,
-        "annual_property_tax_amount": 2468,
-        "num_mortgages": 0,
-        "total_original_loan_amount": 0,
-        "total_estimated_loan_balance": 0,
-        "owner_occupied": false,
-        "apn": "077-283-002-0015"
-      },
-      "dm_enriched_date": "2026-07-19",
       "is_new": false
     },
     {
@@ -11594,7 +11464,7 @@
         "owner_occupied": false,
         "apn": "107-956-000-0018"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -11691,7 +11561,7 @@
         "owner_occupied": true,
         "apn": "129-925-004-0015"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -11788,7 +11658,7 @@
         "owner_occupied": false,
         "apn": "134-637-001-0018"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -11863,7 +11733,7 @@
         "owner_occupied": false,
         "apn": "144-254-001-0001"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -12031,7 +11901,7 @@
         "owner_occupied": true,
         "apn": "138-309-002-0007"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -12104,7 +11974,7 @@
         "owner_occupied": false,
         "apn": "113-809-000-0047"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -12238,7 +12108,7 @@
         "owner_occupied": false,
         "apn": "071-030-022-0623"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -12255,7 +12125,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AHAD+MOHAMMED",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MOHAMMED AHAD",
+      "match_reason": "Name \u2192 single property (2w): MOHAMMED, AHAD",
       "prop_address": "23742 MODENA GARDENS DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -12325,7 +12195,7 @@
         "owner_occupied": false,
         "apn": "135-975-001-0064"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -12418,7 +12288,7 @@
         "owner_occupied": false,
         "apn": "114-355-005-0063"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -12494,7 +12364,7 @@
         "owner_occupied": false,
         "apn": "123-385-003-0055"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -12587,178 +12457,7 @@
         "owner_occupied": false,
         "apn": "127-316-001-0020"
       },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197930",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "STERNER CLARK E",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "STERNER CLARK E",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=STERNER+CLARK+E",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: STERNER CLARK E",
-      "prop_address": "5925 ALMEDA RD 12201",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77004",
-      "mail_address": "2450 LOUISIANA ST APT 400508",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77006-2380",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Absentee owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Absentee owner": 12,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 55,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197901",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "BRIONES ROLANDO H JR",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "BRIONES ROLANDO H JR",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BRIONES+ROLANDO+H+JR",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: BRIONES ROLANDO H",
-      "prop_address": "4515 BRIAR HOLLOW PL 106",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77027",
-      "mail_address": "4515 BRIAR HOLLOW PL APT 106",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77027-9710",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Absentee owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Absentee owner": 12,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 55,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197876",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "LOCKETT MARTHA E",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "LOCKETT MARTHA E",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LOCKETT+MARTHA+E",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: LOCKETT MARTHA E",
-      "prop_address": "3415 OTIS ST",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77026",
-      "mail_address": "4015 JEWEL ST",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77026-5763",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Absentee owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Absentee owner": 12,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 55,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "MARTHA LOCKETT",
-      "dm_phone": [
-        {
-          "number": "8325162805",
-          "dnc": false
-        },
-        {
-          "number": "7136749317",
-          "dnc": false
-        },
-        {
-          "number": "7136761175",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "MARTHALOCKETT7@GMAIL.COM",
-        "MLOCKET1@HOUSTONISD.ORG"
-      ],
-      "dm_property_id": "prop_131347588",
-      "dm_estimated_value": 305000,
-      "dm_equity_percent": 100,
-      "dm_equity_dollars": 305000,
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_131347588",
-        "full_address": "APN: 059-025-004-0008 Houston, TX, 77026",
-        "address": "3415 Otis St",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77026",
-        "latitude": 29.792474,
-        "longitude": -95.317109,
-        "estimated_value": 305000,
-        "estimated_equity_amount": 305000,
-        "estimated_equity_percentage": 100,
-        "year_built": 1929,
-        "living_area_sqft": 788,
-        "lot_size_sqft": 9600,
-        "num_bedrooms": 2,
-        "total_assessed_value": 65408,
-        "annual_property_tax_amount": 1390,
-        "num_mortgages": 0,
-        "total_original_loan_amount": 0,
-        "total_estimated_loan_balance": 0,
-        "owner_occupied": false,
-        "apn": "059-025-004-0008"
-      },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -13374,8 +13073,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQ72RFgw+nJh4s+UviJgl28+VuRh2RP+UxJxqFvC0fJj5aq23/ykSqWzZgO+kH32HVmT/M8ggLMfsJR9F44pznChGk0FUTLmL788agHuh6nQZDTkkhqUty8upwFSCMHEjg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=OLESON+EUGENE+EARL+EST",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): OLESON EUGENE EARL",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): OLESON EUGENE",
       "prop_address": "31907 STEVEN SPRINGS DR",
       "prop_city": "HOCKLEY",
       "prop_state": "TX",
@@ -13574,8 +13273,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfBygt0Sx63Ig5S+koaHLTMdazulGsJAwSRO+rzwtJDsA1JwpuHNwlHer/7o3X8MlTRV1dspWcZ+zDuGi+Sh1cVTxVWouTB0m6gtW1DbwAf5kcYORkkVkJiGwC3choonTA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MUSTACCHIA+JOSEPH+III+EST",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MUSTACCHIA JOSEPH",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): MUSTACCHIA JOSEPH III",
       "prop_address": "14202 CINDYWOOD DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -13734,8 +13433,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQtY2cC7pW+JEIbV8Pes+YkqrHm/dd1MGofXF4rhPCQ2DykaBn6MSzDmw0tXiN9lU0+A7lm3h6w3Hs/g8cB1x/LBo1lGXCR9pMPyN/YlsLyYbdyvZPNRwxCOhZOgT76Y+g==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CHEN+ROLF+O+MONTALVO%2C+CHEN+ROLF+OMAR+MONTALVO%2C+GARRISON+ANNE",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CHEN ROLF",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): CHEN ROLF O",
       "prop_address": "10026 MEADOW LAKE LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -13772,8 +13471,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUmmBBDM5zgK4T6UbBtlaawg1McTFv0OVAi2ODb8qC5Hg8sgOWO6Yzd4NP3NhSPg9WlPkQvP2Welrsj3BG/oCRfX26xFjmMPBEANEmF3sDeAVsMVD6Edzlf6GqnrFWNtwQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BLACK+JANET+W%2C+HOLZ+ERIC+R%2C+HOLZ+JOYCE+H",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): BLACK JANET W",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): BLACK JANET",
       "prop_address": "611 N LIVE OAK ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -14114,8 +13813,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVS5jzdcsnc65yd6AmuUZOZv/mnougw7co2cIDREnvhnvIeH6db0YWmt37zCWoCmQXgJyNu8Bap/lj8dUJ4QomuQS2gkngVSTJeP64l8rQd0ysQ+8yx4Y4+aHORUI146z4A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CRIST+CLIFFORD+T+JR%2C+CRIST+STEFANIE+LEA%2C+STARR+CHRISTOPHER%2C+",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): CRIST CLIFFORD T",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): CRIST CLIFFORD",
       "prop_address": "4338 TRAVAGO TRL",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -14760,8 +14459,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVf4Pk0iZo+IMb9TAWknG8G9fgQh9MjQxFiICrbzPrhhN6YLD35Zpgg38wbKGKcR57f672Fmu3YY0cUto54dutg9R4X56iWMFENMu0Cc8QDZBjfnl/qhSmohnMMGkY0Zp+w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HARGROVE+JYOTI+PAI%2C+HARGROVE+TREVOR+WESTBROOK%2C+KLEEMAN+LINDA",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): KLEEMAN LOUIS F",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): KLEEMAN LOUIS",
       "prop_address": "19902 TIDY TIPS LN",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -15026,8 +14725,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcjEjKekqIrcwzxbAXCuKBgyZEi3iazLszcVEZQl/Z3P8WZd2v9xLrX3L6kgHEqLl4J9XSkmWUtboNwFdiDlXyhntnHa49z4BiGw5HYfM7X90+HGXnBaaahKQaDc4G8bSA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BELL+KIMBERLEY+J%2C+MARKOVITS+PAUL+J%2C+TIER+BENJAMIN%2C+TIER+KANA",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): BELL KIMBERLEY J",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): BELL KIMBERLEY",
       "prop_address": "700 E 9TH ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -15143,7 +14842,7 @@
         "owner_occupied": true,
         "apn": "119-624-004-0010"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -16033,8 +15732,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVAWlYpEhKzr0Yl6q0s4rnozpwLbdw5RL4v49UqgnjhYOFXXcBLrcPweu6pzh5PFFmEHKYIWkIBXkZqYLkRRa1/8KG2uatQDsKN4wC163ukmEltid2+EQE8wtS1eNN+Wgg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=KORNAHRENS+MARIE+M%2C+KORNAHRENS+MARIE+MOORE%2C+SUAREZ+MARCO",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): KORNAHRENS MARIE M",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): KORNAHRENS MARIE",
       "prop_address": "16015 JUNIPER GROVE DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -16072,7 +15771,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVRrCl8hnpGkURurBn6fwoDGCo0UmqrMoF5Vb5tmMF0nPg0jsBlXoZOkEbKZYfQXNgiU6312FmLcMQ/RwhBd2rO7zbZggsXM0ZcfaPmerIUfuJpaejvuTc3ypg5TWO08S4A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=OPEN+HOUSE+TEXAS+REALTY+%26+INVESTMENTS+LLC%2C+RUIZ+CAROLINA%2C+RU",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ROSENDO RUIZ",
+      "match_reason": "Name \u2192 single property (2w): ROSENDO, RUIZ",
       "prop_address": "5630 CACTUS FOREST DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -16641,8 +16340,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVToeqHB6pSQ2BK9QnTGkAgeX0htGCnPwZMtvmbN0nw23Z0oxHBjzPf/9fdbmdi0mICdNRoUUFRcWxMGP7v+Ah/bv0Wu/7OKpv091OF82S1SLTDkD0aRJwCs8+U3nLLdAkA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HERNANDEZ+DILSIA+CAROLINA+BENITEZ%2C+MARQUINES+CHRISTIAN+JOSUE",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): HERNANDEZ DILSIA CAROLINA",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): HERNANDEZ DILSIA",
       "prop_address": "13106 CHIPMAN GLEN DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -16795,7 +16494,7 @@
         "owner_occupied": true,
         "apn": "081-313-001-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -16870,7 +16569,7 @@
         "owner_occupied": true,
         "apn": "109-896-000-0030"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -16965,81 +16664,7 @@
         "owner_occupied": true,
         "apn": "117-588-003-0027"
       },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-221179",
-      "doc_type": "TRSALE",
-      "filed": "2026-06-04",
-      "cat": "fc",
-      "cat_label": "Trustee Sale",
-      "owner": "HUGHES WATTERS & ASKANASE LLP",
-      "grantee": "KRUPP ELIZABETH MARGARET, KRUPP MARTIN",
-      "contact": "HUGHES WATTERS & ASKANASE LLP",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQ+1ZuM4MxXVC/sGaplDlASF93JHd1yjyqsPOKY0TyLkPEav3F0BZKCAJOSpNhlJamwGm/XIwAAORh8+G63Ks8Jb5uKXT++zvsMs5HiN6j5HPBQxcxIL7xFZWRAMOQBVmg==",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=KRUPP+ELIZABETH+MARGARET%2C+KRUPP+MARTIN",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): KRUPP ELIZABETH",
-      "prop_address": "5302 VILLAGE SPRINGS DR",
-      "prop_city": "HUMBLE",
-      "prop_state": "TX",
-      "prop_zip": "77339",
-      "mail_address": "5302 VILLAGE SPRINGS DR",
-      "mail_city": "KINGWOOD",
-      "mail_state": "TX",
-      "mail_zip": "77339-1215",
-      "stack_count": 1,
-      "sources": [
-        "FC"
-      ],
-      "flags": [
-        "Foreclosure auction scheduled"
-      ],
-      "score_breakdown": {
-        "Foreclosure auction scheduled": 32,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 50,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_property_id": "prop_130943854",
-      "dm_estimated_value": 239000,
-      "dm_equity_percent": 13,
-      "dm_equity_dollars": 41922,
-      "dm_sale_date": "2012-06-11T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_130943854",
-        "full_address": "5302 Village Springs Dr Kingwood, TX, 77339",
-        "address": "5302 Village Springs Dr",
-        "city": "Kingwood",
-        "state": "TX",
-        "zip": "77339",
-        "latitude": 30.079211,
-        "longitude": -95.200137,
-        "estimated_value": 239000,
-        "estimated_equity_amount": 41922,
-        "estimated_equity_percentage": 13,
-        "year_built": 1983,
-        "living_area_sqft": 1847,
-        "lot_size_sqft": 7080,
-        "num_bedrooms": 3,
-        "num_bathrooms": 2,
-        "last_sale_date": "2012-06-11T00:00:00.000Z",
-        "last_sale_amount": 0,
-        "total_assessed_value": 258743,
-        "annual_property_tax_amount": 41,
-        "num_mortgages": 2,
-        "total_original_loan_amount": 504000,
-        "total_estimated_loan_balance": 197078,
-        "owner_occupied": true,
-        "apn": "114-385-018-0016"
-      },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -17139,8 +16764,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): CALDERON PAUL ENRIQUE",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): CALDERON PAUL",
       "prop_address": "738 SMITH SPRINGS",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -17350,7 +16975,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MICHAEL PRICE",
+      "match_reason": "Name \u2192 single property (2w): MICHAEL, PRICE",
       "prop_address": "5827 STRONG CREEK DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -17812,7 +17437,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HAYS+CLINT",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CURTIS, TRAYLOR",
+      "match_reason": "Name \u2192 single property (2w): CURTIS TRAYLOR",
       "prop_address": "2820 S BARTELL DR 25",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -25580,7 +25205,7 @@
         "owner_occupied": true,
         "apn": "061-134-051-0013"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -25749,7 +25374,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HARRIS+MATTHEW",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MATTHEW, HARRIS",
+      "match_reason": "Name \u2192 single property (2w): MATTHEW HARRIS",
       "prop_address": "3203 COLLEVILLE SUR MER LN",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -26013,7 +25638,7 @@
         "owner_occupied": true,
         "apn": "137-949-003-0004"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26108,7 +25733,7 @@
         "owner_occupied": true,
         "apn": "117-882-002-0006"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26198,7 +25823,7 @@
         "owner_occupied": true,
         "apn": "130-862-001-0020"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26273,7 +25898,7 @@
         "owner_occupied": true,
         "apn": "150-118-003-0001"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26348,7 +25973,7 @@
         "owner_occupied": true,
         "apn": "092-230-000-0027"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26443,7 +26068,7 @@
         "owner_occupied": true,
         "apn": "098-563-000-0022"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26518,7 +26143,7 @@
         "owner_occupied": true,
         "apn": "116-152-003-0056"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26593,7 +26218,7 @@
         "owner_occupied": true,
         "apn": "104-259-000-0012"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26670,7 +26295,7 @@
         "owner_occupied": true,
         "apn": "146-855-005-0019"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26765,7 +26390,7 @@
         "owner_occupied": true,
         "apn": "106-075-000-0004"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26860,7 +26485,7 @@
         "owner_occupied": true,
         "apn": "114-046-001-0030"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -26955,7 +26580,7 @@
         "owner_occupied": true,
         "apn": "115-901-002-0013"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27050,7 +26675,7 @@
         "owner_occupied": true,
         "apn": "135-513-002-0024"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27141,7 +26766,7 @@
         "owner_occupied": true,
         "apn": "084-334-000-0018"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27228,7 +26853,7 @@
         "owner_occupied": true,
         "apn": "115-377-001-0006"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27323,7 +26948,7 @@
         "owner_occupied": true,
         "apn": "120-956-000-0018"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27340,7 +26965,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WILSON+KRISTIN+M",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): M, WILSON KRISTIN",
+      "match_reason": "Name \u2192 single property (3w): M WILSON KRISTIN",
       "prop_address": "6614 GREENVALE LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -27410,7 +27035,7 @@
         "owner_occupied": true,
         "apn": "112-304-000-0031"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27496,7 +27121,7 @@
         "owner_occupied": false,
         "apn": "077-182-026-0012"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27571,7 +27196,7 @@
         "owner_occupied": true,
         "apn": "114-252-001-0001"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27646,7 +27271,7 @@
         "owner_occupied": true,
         "apn": "097-381-000-0005"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27720,7 +27345,7 @@
         "owner_occupied": false,
         "apn": "120-988-004-0029"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27810,7 +27435,7 @@
         "owner_occupied": true,
         "apn": "102-104-000-0017"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27905,7 +27530,7 @@
         "owner_occupied": true,
         "apn": "134-210-002-0011"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -27922,7 +27547,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PERALTA+JUAN",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JUAN PERALTA",
+      "match_reason": "Name \u2192 single property (2w): JUAN, PERALTA",
       "prop_address": "6518 HAWTHORNE FALLS LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -27991,7 +27616,7 @@
         "owner_occupied": true,
         "apn": "128-166-001-0013"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28066,7 +27691,7 @@
         "owner_occupied": true,
         "apn": "035-109-084-0027"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28156,7 +27781,7 @@
         "owner_occupied": true,
         "apn": "073-064-009-0002"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28173,7 +27798,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JAMES+LISA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): LISA JAMES",
+      "match_reason": "Name \u2192 single property (2w): LISA, JAMES",
       "prop_address": "12211 WESTLOCK DR",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -28250,7 +27875,7 @@
         "owner_occupied": true,
         "apn": "114-395-003-0029"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28325,7 +27950,7 @@
         "owner_occupied": true,
         "apn": "060-085-011-0006"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28420,7 +28045,7 @@
         "owner_occupied": true,
         "apn": "111-523-000-0044"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28506,7 +28131,7 @@
         "owner_occupied": true,
         "apn": "076-126-019-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28597,7 +28222,7 @@
         "owner_occupied": true,
         "apn": "060-097-001-0015"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28692,7 +28317,7 @@
         "owner_occupied": true,
         "apn": "113-578-004-0048"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28771,13 +28396,13 @@
         "owner_occupied": true,
         "apn": "116-162-003-0031"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
-      "doc_num": "RP-2026-197920",
+      "doc_num": "RP-2026-237953",
       "doc_type": "T/L",
-      "filed": "2026-05-20",
+      "filed": "2026-06-16",
       "cat": "lien",
       "cat_label": "Federal Tax Lien",
       "owner": "FIELDS DWIGHT",
@@ -28858,7 +28483,7 @@
         "owner_occupied": true,
         "apn": "114-671-016-0022"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -28953,7 +28578,7 @@
         "owner_occupied": true,
         "apn": "075-139-012-0006"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29028,7 +28653,7 @@
         "owner_occupied": true,
         "apn": "039-082-000-0041"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29114,7 +28739,7 @@
         "owner_occupied": true,
         "apn": "123-080-002-0029"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29205,7 +28830,7 @@
         "owner_occupied": true,
         "apn": "130-618-003-0021"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29280,7 +28905,7 @@
         "owner_occupied": true,
         "apn": "106-229-000-0019"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29369,7 +28994,7 @@
         "owner_occupied": true,
         "apn": "111-861-000-0025"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29444,7 +29069,7 @@
         "owner_occupied": true,
         "apn": "124-733-001-0006"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29539,7 +29164,7 @@
         "owner_occupied": true,
         "apn": "118-774-001-0039"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29634,7 +29259,7 @@
         "owner_occupied": true,
         "apn": "116-659-001-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29729,7 +29354,7 @@
         "owner_occupied": true,
         "apn": "115-080-054-0060"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29823,7 +29448,7 @@
         "owner_occupied": true,
         "apn": "092-210-000-0020"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29898,7 +29523,7 @@
         "owner_occupied": true,
         "apn": "123-430-003-0018"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -29993,7 +29618,7 @@
         "owner_occupied": true,
         "apn": "125-715-001-0001"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30084,7 +29709,7 @@
         "owner_occupied": true,
         "apn": "137-824-001-0025"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30178,7 +29803,7 @@
         "owner_occupied": true,
         "apn": "114-418-001-0005"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30195,7 +29820,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WARD+JEREMIAH",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JEREMIAH, WARD",
+      "match_reason": "Name \u2192 single property (2w): JEREMIAH WARD",
       "prop_address": "25711 CLEAR SPRINGS WAY",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -30271,7 +29896,7 @@
         "owner_occupied": true,
         "apn": "119-186-001-0054"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30346,7 +29971,7 @@
         "owner_occupied": true,
         "apn": "115-853-005-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30441,7 +30066,7 @@
         "owner_occupied": true,
         "apn": "036-119-007-0007"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30458,7 +30083,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=RODRIGUEZ+LORI",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): LORI, RODRIGUEZ",
+      "match_reason": "Name \u2192 single property (2w): LORI RODRIGUEZ",
       "prop_address": "11303 RIVERSTONE LAKE LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -30536,7 +30161,7 @@
         "owner_occupied": true,
         "apn": "123-665-003-0012"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30629,7 +30254,7 @@
         "owner_occupied": true,
         "apn": "124-404-001-0036"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30646,7 +30271,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DUGAS+TIFFANY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): TIFFANY, DUGAS",
+      "match_reason": "Name \u2192 single property (2w): TIFFANY DUGAS",
       "prop_address": "9002 LUPTON CT",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -30723,7 +30348,7 @@
         "owner_occupied": true,
         "apn": "100-039-000-0011"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30818,7 +30443,7 @@
         "owner_occupied": true,
         "apn": "120-633-002-0037"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -30912,7 +30537,7 @@
         "owner_occupied": true,
         "apn": "117-825-036-0025"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31007,7 +30632,7 @@
         "owner_occupied": true,
         "apn": "141-053-001-0006"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31079,7 +30704,7 @@
         "owner_occupied": true,
         "apn": "600-000-301-9731"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31170,7 +30795,7 @@
         "owner_occupied": true,
         "apn": "016-263-000-1120"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31265,7 +30890,7 @@
         "owner_occupied": true,
         "apn": "114-317-012-0492"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31340,7 +30965,7 @@
         "owner_occupied": true,
         "apn": "123-870-003-0007"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31465,7 +31090,7 @@
         "owner_occupied": true,
         "apn": "114-134-003-0032"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31560,7 +31185,7 @@
         "owner_occupied": true,
         "apn": "117-012-001-0027"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31647,7 +31272,7 @@
         "owner_occupied": true,
         "apn": "110-590-000-0006"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31742,7 +31367,7 @@
         "owner_occupied": true,
         "apn": "106-254-000-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31817,7 +31442,7 @@
         "owner_occupied": true,
         "apn": "121-294-010-0019"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31892,7 +31517,7 @@
         "owner_occupied": true,
         "apn": "122-239-002-0044"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -31987,7 +31612,7 @@
         "owner_occupied": false,
         "apn": "114-297-013-0052"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -32062,7 +31687,7 @@
         "owner_occupied": true,
         "apn": "118-749-001-0003"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -32149,7 +31774,7 @@
         "owner_occupied": true,
         "apn": "133-780-001-0011"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -32242,7 +31867,7 @@
         "owner_occupied": true,
         "apn": "084-434-000-0008"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -32329,7 +31954,7 @@
         "owner_occupied": true,
         "apn": "042-230-000-0115"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -32404,7 +32029,7 @@
         "owner_occupied": true,
         "apn": "130-610-002-0006"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -32499,7 +32124,7 @@
         "owner_occupied": true,
         "apn": "089-132-000-0370"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -32586,7 +32211,7 @@
         "owner_occupied": true,
         "apn": "101-397-000-0024"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -32677,809 +32302,7 @@
         "owner_occupied": true,
         "apn": "115-639-006-0026"
       },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197932",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "MCALLISTER ROBERT",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "MCALLISTER ROBERT",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MCALLISTER+ROBERT",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: MCALLISTER ROBERT",
-      "prop_address": "130 WHITE DR",
-      "prop_city": "BELLAIRE",
-      "prop_state": "TX",
-      "prop_zip": "77401",
-      "mail_address": "130 WHITE DR",
-      "mail_city": "BELLAIRE",
-      "mail_state": "TX",
-      "mail_zip": "77401-4205",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "ROBERT MCALLISTER",
-      "dm_phone": [
-        {
-          "number": "7136609266",
-          "dnc": false
-        },
-        {
-          "number": "2815465059",
-          "dnc": false
-        },
-        {
-          "number": "7137760900",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "RMCALLIS@FLASH.NET",
-        "LTNPC@HOTMAIL.COM",
-        "SHORTTNGUYEN@GMAIL.COM"
-      ],
-      "dm_property_id": "prop_130882595",
-      "dm_estimated_value": 492000,
-      "dm_equity_percent": 100,
-      "dm_equity_dollars": 492000,
-      "dm_sale_date": "2012-05-18T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_130882595",
-        "full_address": "130 White Dr Bellaire, TX, 77401",
-        "address": "130 White Dr",
-        "city": "Bellaire",
-        "state": "TX",
-        "zip": "77401",
-        "latitude": 29.706676,
-        "longitude": -95.458858,
-        "estimated_value": 492000,
-        "estimated_equity_amount": 492000,
-        "estimated_equity_percentage": 100,
-        "year_built": 2005,
-        "living_area_sqft": 2502,
-        "lot_size_sqft": 2707,
-        "num_bedrooms": 3,
-        "num_bathrooms": 3,
-        "last_sale_date": "2012-05-18T00:00:00.000Z",
-        "last_sale_amount": 0,
-        "total_assessed_value": 537952,
-        "annual_property_tax_amount": 3005,
-        "num_mortgages": 0,
-        "total_original_loan_amount": 0,
-        "total_estimated_loan_balance": 0,
-        "owner_occupied": false,
-        "apn": "124-333-003-0003"
-      },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197929",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "PAREDES ROEN C MEDRANO",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "PAREDES ROEN C MEDRANO",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PAREDES+ROEN+C+MEDRANO",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): PAREDES ROEN",
-      "prop_address": "12107 CHESSINGTON DR",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77031",
-      "mail_address": "12107 CHESSINGTON DR",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77031-2904",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_property_id": "prop_130673051",
-      "dm_estimated_value": 265000,
-      "dm_equity_percent": 100,
-      "dm_equity_dollars": 265000,
-      "dm_sale_date": "2020-01-21T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_130673051",
-        "full_address": "12107 Chessington Dr Houston, TX, 77031",
-        "address": "12107 Chessington Dr",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77031",
-        "latitude": 29.648149,
-        "longitude": -95.546648,
-        "estimated_value": 265000,
-        "estimated_equity_amount": 265000,
-        "estimated_equity_percentage": 100,
-        "year_built": 1971,
-        "living_area_sqft": 1940,
-        "lot_size_sqft": 10207,
-        "num_bedrooms": 4,
-        "num_bathrooms": 2,
-        "last_sale_date": "2020-01-21T00:00:00.000Z",
-        "last_sale_amount": 0,
-        "total_assessed_value": 274322,
-        "annual_property_tax_amount": 5830,
-        "num_mortgages": 0,
-        "total_original_loan_amount": 0,
-        "total_estimated_loan_balance": 0,
-        "owner_occupied": true,
-        "apn": "103-223-000-0019"
-      },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197925",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "BASS JUANITA A",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "BASS JUANITA A",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BASS+JUANITA+A",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): BASS JUANITA",
-      "prop_address": "14323 DOUBLE SHOALS CIR",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77090",
-      "mail_address": "14323 DOUBLE SHOALS CIR",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77090-2479",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "JUANITA BASS",
-      "dm_phone": [
-        {
-          "number": "7696101147",
-          "dnc": false
-        },
-        {
-          "number": "6627217983",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "JUANITA1983MS2005@YAHOO.COM",
-        "JUANITA.BASS09@GMAIL.COM",
-        "JUANITABASS09@GMAIL.COM"
-      ],
-      "dm_property_id": "prop_131565449",
-      "dm_estimated_value": 349000,
-      "dm_equity_percent": 36,
-      "dm_equity_dollars": 114376,
-      "dm_sale_price": 235800,
-      "dm_sale_date": "2020-03-17T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_131565449",
-        "full_address": "14323 Double Shoals Cir Houston, TX, 77090",
-        "address": "14323 Double Shoals Cir",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77090",
-        "latitude": 29.9897,
-        "longitude": -95.445372,
-        "estimated_value": 349000,
-        "estimated_equity_amount": 114376,
-        "estimated_equity_percentage": 36,
-        "year_built": 2008,
-        "living_area_sqft": 4439,
-        "lot_size_sqft": 6600,
-        "num_bedrooms": 4,
-        "num_bathrooms": 3,
-        "last_sale_date": "2020-03-17T00:00:00.000Z",
-        "last_sale_amount": 235800,
-        "total_assessed_value": 390736,
-        "annual_property_tax_amount": 7459,
-        "num_mortgages": 2,
-        "total_original_loan_amount": 260063,
-        "total_estimated_loan_balance": 234624,
-        "owner_occupied": true,
-        "apn": "126-231-003-0011"
-      },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197921",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "OSMAN ABDUSALAM I",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "OSMAN ABDUSALAM I",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=OSMAN+ABDUSALAM+I",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): OSMAN ABDUSALAM",
-      "prop_address": "24014 PRAIRIE GLEN LN",
-      "prop_city": "KATY",
-      "prop_state": "TX",
-      "prop_zip": "77493",
-      "mail_address": "24014 PRAIRIE GLEN LN",
-      "mail_city": "KATY",
-      "mail_state": "TX",
-      "mail_zip": "77493-3298",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "ABDUSALAM OSMAN",
-      "dm_phone": [
-        {
-          "number": "5035606398",
-          "dnc": false
-        },
-        {
-          "number": "5034811053",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "MUSSASARTU@GMAIL.COM",
-        "SARAMUSSA@YAHOO.COM",
-        "SASPEER67@GMAIL.COM"
-      ],
-      "dm_property_id": "prop_161188302",
-      "dm_estimated_value": 414000,
-      "dm_equity_percent": 18,
-      "dm_equity_dollars": 86988,
-      "dm_sale_price": 445200,
-      "dm_sale_date": "2021-11-23T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_161188302",
-        "full_address": "24014 Prairie Glen Ln Katy, TX, 77493",
-        "address": "24014 Prairie Glen Ln",
-        "city": "Katy",
-        "state": "TX",
-        "zip": "77493",
-        "latitude": 29.835098,
-        "longitude": -95.79136,
-        "estimated_value": 414000,
-        "estimated_equity_amount": 86988,
-        "estimated_equity_percentage": 18,
-        "year_built": 2018,
-        "living_area_sqft": 2923,
-        "lot_size_sqft": 7225,
-        "num_bedrooms": 5,
-        "num_bathrooms": 4,
-        "last_sale_date": "2021-11-23T00:00:00.000Z",
-        "last_sale_amount": 445200,
-        "total_assessed_value": 398854,
-        "annual_property_tax_amount": 9286,
-        "num_mortgages": 1,
-        "total_original_loan_amount": 356125,
-        "total_estimated_loan_balance": 327012,
-        "owner_occupied": true,
-        "apn": "139-310-002-0017"
-      },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197916",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "BARLOW MARK S",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "BARLOW MARK S",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BARLOW+MARK+S",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): BARLOW MARK",
-      "prop_address": "2354 CENTRAL PARK CIR",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77059",
-      "mail_address": "2354 CENTRAL PARK CIR",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77059-4410",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "MARK BARLOW",
-      "dm_phone": [
-        {
-          "number": "2813338999",
-          "dnc": false
-        },
-        {
-          "number": "7138249575",
-          "dnc": false
-        },
-        {
-          "number": "2813338990",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "MARK@DRMARKBARLOW.COM",
-        "MARK.BARLOW@CHRISTUSHEALTH.ORG",
-        "MBARLOW00@HOTMAIL.COM"
-      ],
-      "dm_property_id": "prop_131175303",
-      "dm_estimated_value": 801000,
-      "dm_equity_percent": 52,
-      "dm_equity_dollars": 413730,
-      "dm_sale_price": 521400,
-      "dm_sale_date": "2016-07-26T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_131175303",
-        "full_address": "2354 Central Park Cir Houston, TX, 77059",
-        "address": "2354 Central Park Cir",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77059",
-        "latitude": 29.597448,
-        "longitude": -95.130802,
-        "estimated_value": 801000,
-        "estimated_equity_amount": 413730,
-        "estimated_equity_percentage": 52,
-        "year_built": 1993,
-        "living_area_sqft": 4895,
-        "lot_size_sqft": 13082,
-        "num_bedrooms": 5,
-        "num_bathrooms": 4,
-        "last_sale_date": "2016-07-26T00:00:00.000Z",
-        "last_sale_amount": 521400,
-        "total_assessed_value": 705287,
-        "annual_property_tax_amount": 13025,
-        "num_mortgages": 2,
-        "total_original_loan_amount": 533070,
-        "total_estimated_loan_balance": 387270,
-        "owner_occupied": true,
-        "apn": "116-998-002-0031"
-      },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197908",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "WILSON JANICE E",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "WILSON JANICE E",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WILSON+JANICE+E",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: WILSON JANICE E",
-      "prop_address": "11618 HIGHLAND MEADOW DR",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77089",
-      "mail_address": "11618 HIGHLAND MEADOW DR",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77089-6812",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "JANICE WILSON",
-      "dm_phone": [
-        {
-          "number": "9036038284",
-          "dnc": false
-        },
-        {
-          "number": "9034741362",
-          "dnc": false
-        },
-        {
-          "number": "9036038282",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "JNC.WLSN@YAHOO.COM",
-        "JANICE.WINDEL@GMAIL.COM",
-        "YODAGOD69@GMAIL.COM"
-      ],
-      "dm_property_id": "prop_130953478",
-      "dm_estimated_value": 207000,
-      "dm_equity_percent": 64,
-      "dm_equity_dollars": 134969,
-      "dm_sale_price": 99400,
-      "dm_sale_date": "2021-06-08T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_130953478",
-        "full_address": "11618 Highland Meadow Dr Houston, TX, 77089",
-        "address": "11618 Highland Meadow Dr",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77089",
-        "latitude": 29.588358,
-        "longitude": -95.211179,
-        "estimated_value": 207000,
-        "estimated_equity_amount": 134969,
-        "estimated_equity_percentage": 64,
-        "year_built": 1983,
-        "living_area_sqft": 1165,
-        "lot_size_sqft": 4750,
-        "num_bedrooms": 3,
-        "num_bathrooms": 2,
-        "last_sale_date": "2021-06-08T00:00:00.000Z",
-        "last_sale_amount": 99400,
-        "total_assessed_value": 199299,
-        "annual_property_tax_amount": 2538,
-        "num_mortgages": 1,
-        "total_original_loan_amount": 79559,
-        "total_estimated_loan_balance": 72031,
-        "owner_occupied": true,
-        "apn": "115-472-002-0036"
-      },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197902",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "CID EMMA",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "CID EMMA",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CID+EMMA",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: CID EMMA",
-      "prop_address": "2262 BANCROFT ST",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77027",
-      "mail_address": "2262 BANCROFT ST",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77027-3706",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "EMMA CID",
-      "dm_phone": [
-        {
-          "number": "7132084888",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "ECID@AOL.COM",
-        "ECWORDPLAY@AOL.COM",
-        "ECWORDPLAY@NETZERO.NET"
-      ],
-      "dm_property_id": "prop_130511863",
-      "dm_estimated_value": 573000,
-      "dm_equity_percent": 63,
-      "dm_equity_dollars": 324099,
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_130511863",
-        "full_address": "2262 Bancroft St Houston, TX, 77027",
-        "address": "2262 Bancroft St",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77027",
-        "latitude": 29.744067358,
-        "longitude": -95.45209532,
-        "estimated_value": 573000,
-        "estimated_equity_amount": 324099,
-        "estimated_equity_percentage": 63,
-        "year_built": 2000,
-        "living_area_sqft": 2371,
-        "lot_size_sqft": 1521,
-        "num_bedrooms": 3,
-        "num_bathrooms": 4,
-        "total_assessed_value": 589145,
-        "annual_property_tax_amount": 4332,
-        "num_mortgages": 1,
-        "total_original_loan_amount": 298000,
-        "total_estimated_loan_balance": 248901,
-        "owner_occupied": true,
-        "apn": "121-281-001-0032"
-      },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197899",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "LAWSON SHAMS R",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "LAWSON SHAMS R",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LAWSON+SHAMS+R",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: LAWSON SHAMS R",
-      "prop_address": "20922 WHITE ROCK CREEK DR",
-      "prop_city": "CYPRESS",
-      "prop_state": "TX",
-      "prop_zip": "77433",
-      "mail_address": "20922 WHITE ROCK CREEK DR",
-      "mail_city": "CYPRESS",
-      "mail_state": "TX",
-      "mail_zip": "77433-8907",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "SHAMS LAWSON",
-      "dm_phone": [
-        {
-          "number": "9172384392",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "RAYLAWSON29@HOTMAIL.COM"
-      ],
-      "dm_property_id": "prop_174962948",
-      "dm_estimated_value": 551000,
-      "dm_equity_percent": 4,
-      "dm_equity_dollars": -31306,
-      "dm_sale_price": 779078,
-      "dm_sale_date": "2025-02-20T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_174962948",
-        "full_address": "20922 White Rock Creek Dr Cypress, TX, 77433",
-        "address": "20922 White Rock Creek Dr",
-        "city": "Cypress",
-        "state": "TX",
-        "zip": "77433",
-        "latitude": 29.973827755,
-        "longitude": -95.77309869,
-        "estimated_value": 551000,
-        "estimated_equity_amount": -31306,
-        "estimated_equity_percentage": 4,
-        "year_built": 2024,
-        "living_area_sqft": 3130,
-        "lot_size_sqft": 6283,
-        "num_bedrooms": 4,
-        "num_bathrooms": 4,
-        "last_sale_date": "2025-02-20T00:00:00.000Z",
-        "last_sale_amount": 779078,
-        "total_assessed_value": 338417,
-        "annual_property_tax_amount": 9264,
-        "num_mortgages": 1,
-        "total_original_loan_amount": 585773,
-        "total_estimated_loan_balance": 582306,
-        "owner_occupied": true,
-        "apn": "146-637-003-0014"
-      },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197884",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "RAMIREZ STEVEN R",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "RAMIREZ STEVEN R",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=RAMIREZ+STEVEN+R",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: RAMIREZ STEVEN R",
-      "prop_address": "4205 DALLAS ST",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77023",
-      "mail_address": "4205 DALLAS ST",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77023-1784",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 43,
-      "dm_enriched": true,
-      "dm_matched": true,
-      "dm_owner_name": "STEVEN RAMIREZ",
-      "dm_phone": [
-        {
-          "number": "8323979139",
-          "dnc": false
-        },
-        {
-          "number": "7132370053",
-          "dnc": false
-        },
-        {
-          "number": "7132288009",
-          "dnc": false
-        }
-      ],
-      "dm_email": [
-        "WORLD2GO2U@HOTMAIL.COM",
-        "RSTEVEN@AOL.COM"
-      ],
-      "dm_property_id": "prop_131432263",
-      "dm_estimated_value": 282000,
-      "dm_equity_percent": 100,
-      "dm_equity_dollars": 282000,
-      "dm_sale_price": 39400,
-      "dm_sale_date": "1997-02-13T00:00:00.000Z",
-      "dm_data": {
-        "matched": true,
-        "dm_property_id": "prop_131432263",
-        "full_address": "4205 Dallas St Houston, TX, 77023",
-        "address": "4205 Dallas St",
-        "city": "Houston",
-        "state": "TX",
-        "zip": "77023",
-        "latitude": 29.740367,
-        "longitude": -95.337129,
-        "estimated_value": 282000,
-        "estimated_equity_amount": 282000,
-        "estimated_equity_percentage": 100,
-        "year_built": 1925,
-        "living_area_sqft": 1636,
-        "lot_size_sqft": 5000,
-        "num_bedrooms": 2,
-        "num_bathrooms": 2,
-        "last_sale_date": "1997-02-13T00:00:00.000Z",
-        "last_sale_amount": 39400,
-        "total_assessed_value": 285600,
-        "annual_property_tax_amount": 3635,
-        "num_mortgages": 0,
-        "total_original_loan_amount": 0,
-        "total_estimated_loan_balance": 0,
-        "owner_occupied": true,
-        "apn": "055-092-000-0016"
-      },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -43588,8 +42411,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): MUSYOKA KEVIN M",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): MUSYOKA KEVIN",
       "prop_address": "16219 CRESTMOOR WAY",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -43628,8 +42451,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): ZAMUDIO PEDRO H",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): ZAMUDIO PEDRO",
       "prop_address": "5311 RUSTLING TRAILS DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -44189,7 +43012,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HAYS+CLINT",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CLAUDIA, ZAMORA",
+      "match_reason": "Name \u2192 single property (2w): CLAUDIA ZAMORA",
       "prop_address": "5217 GLENPARK DR",
       "prop_city": "LA PORTE",
       "prop_state": "TX",
@@ -44668,8 +43491,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): AMUNEKE MARTHA",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): AMUNEKE MARTHA C",
       "prop_address": "8917 RIVERWELL CIR W",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -45228,8 +44051,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): PALUMBO ANTONIO",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): PALUMBO ANTONIO D",
       "prop_address": "14727 HUNTMONT DR",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -45869,7 +44692,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HAYS+CLINT",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JAIME ROSAS",
+      "match_reason": "Name \u2192 single property (2w): JAIME, ROSAS",
       "prop_address": "16615 CAPEWOOD DR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -46469,7 +45292,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HAYS+CLINT",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MICHAEL, ARMSTRONG",
+      "match_reason": "Name \u2192 single property (2w): MICHAEL ARMSTRONG",
       "prop_address": "6126 SIENNA ARBOR LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -47296,6 +46119,97 @@
       "is_new": false
     },
     {
+      "doc_num": "RP-2026-287000",
+      "doc_type": "DEED",
+      "filed": "2026-07-16",
+      "cat": "tax",
+      "cat_label": "Deed (Sheriff/Trustee/Tax)",
+      "owner": "WHEELER WAYNE D SR",
+      "grantee": "WHEELER WAYNE D II, WHEELER WAYNE D SR",
+      "contact": "WHEELER WAYNE D SR",
+      "amount": null,
+      "legal": "",
+      "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVwj+CRXhwIyyvOrtX8IPNo1BJVDUTQHPPzC1Pc0xQrYSX9VGfAsDsdCVJfsVQO9LfpbyctDkjocbam/BzG38qB01MtdKEBJD+2sRpoL/SPKR6Fjbc7X2Bz/Pl1RdQo0Fg==",
+      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WHEELER+WAYNE+D+SR",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): D WHEELER WAYNE",
+      "prop_address": "8406 HANFRO LN",
+      "prop_city": "HOUSTON",
+      "prop_state": "TX",
+      "prop_zip": "77088",
+      "mail_address": "9902 LONALLEN ST",
+      "mail_city": "HOUSTON",
+      "mail_state": "TX",
+      "mail_zip": "77088-3116",
+      "stack_count": 1,
+      "sources": [
+        "TAX"
+      ],
+      "flags": [
+        "Absentee owner",
+        "New this week"
+      ],
+      "score_breakdown": {
+        "Absentee owner": 12,
+        "New this week": 8,
+        "Has address": 10,
+        "Named owner": 8
+      },
+      "score": 38,
+      "dm_enriched": true,
+      "dm_matched": true,
+      "dm_owner_name": "WAYNE WHEELER",
+      "dm_phone": [
+        {
+          "number": "8326137525",
+          "dnc": false
+        },
+        {
+          "number": "8327664548",
+          "dnc": false
+        },
+        {
+          "number": "2818365133",
+          "dnc": false
+        }
+      ],
+      "dm_email": [
+        "BROWNEYEZVIRGO@YAHOO.COM"
+      ],
+      "dm_property_id": "prop_131582453",
+      "dm_estimated_value": 206000,
+      "dm_equity_percent": 100,
+      "dm_equity_dollars": 206000,
+      "dm_data": {
+        "matched": true,
+        "dm_property_id": "prop_131582453",
+        "full_address": "8406 Hanfro Ln Houston, TX, 77088",
+        "address": "8406 Hanfro Ln",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77088",
+        "latitude": 29.877345,
+        "longitude": -95.432649,
+        "estimated_value": 206000,
+        "estimated_equity_amount": 206000,
+        "estimated_equity_percentage": 100,
+        "year_built": 1935,
+        "living_area_sqft": 1194,
+        "lot_size_sqft": 7020,
+        "num_bedrooms": 2,
+        "num_bathrooms": 1,
+        "total_assessed_value": 107843,
+        "annual_property_tax_amount": 2468,
+        "num_mortgages": 0,
+        "total_original_loan_amount": 0,
+        "total_estimated_loan_balance": 0,
+        "owner_occupied": false,
+        "apn": "077-283-002-0015"
+      },
+      "dm_enriched_date": "2026-07-20",
+      "is_new": false
+    },
+    {
       "doc_num": "RP-2026-286836",
       "doc_type": "DEED",
       "filed": "2026-07-16",
@@ -47588,8 +46502,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVTKJ0/sGYxdynp9Dp2hCMrwZrZDYp9B7HjQ3Z7TzjzvdBh80IGAaO1eVHZyhnqQCj4gyUX6xFvXSYqv6XwU0Jp1O61BWtJYa1bg7b1scgcoO5Xwh5fCC6bSY/Z7aE/ihmA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SICK+JON+E+EST",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): SICK JON",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): SICK JON E",
       "prop_address": "7400 BELLERIVE DR 702",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -48069,7 +46983,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVT9xkuab9+96Ng3tbv9PQHjCmIin2vK6a9fIjctTGPMw9JAqGi4mK88pMD609RUBCTbYRiGx/toLMY2s+/9DbcsXjaEBAFho2JC88PsBBKD8lPQU0v76z7o7wcxHpsy63Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=XIONG+HONGJIE",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): HONGJIE XIONG",
+      "match_reason": "Name \u2192 single property (2w): HONGJIE, XIONG",
       "prop_address": "6305 WESTCOTT ST A",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -48189,7 +47103,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVeM7cMTHFMdUL6ydS7w6xz3ezUnmNMZqmen776dTC/WBn6zIlHDh8Enqw2EOiX+sBcQL35+FT+bmeOHyvlFNUgy5OpMNnhSj+dpEagYJftS65SDc83+f38aglExjpMLbpA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SEGOVIA+LUIS+E",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): E SEGOVIA LUIS",
+      "match_reason": "Name \u2192 single property (3w): E, SEGOVIA LUIS",
       "prop_address": "711 LODGEHILL LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -48264,7 +47178,7 @@
         "owner_occupied": false,
         "apn": "105-106-000-0028"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -48520,8 +47434,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcLfKodlxDVqN8Zk6wsJQcr8kbdGp9eLD32ROW24WWzk4twZZkrJXfLa1jk9RCHtdaRfGVMW7aZemXweXMDCvK7+O3xvOyClSH0/K02blm3AeADCwUPU7wgODltiulzqfw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BANKS+DWAN+MICHELLE%2C+OPENDOOR+PROPERTY+J+LLC",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): BANKS DWAN MICHELLE",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): BANKS DWAN",
       "prop_address": "6127 WILLOWCREST CT",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -48622,7 +47536,7 @@
         "owner_occupied": false,
         "apn": "114-928-010-0005"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -48699,7 +47613,7 @@
         "owner_occupied": false,
         "apn": "086-227-000-0017"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -61321,1116 +60235,6 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=TURNER+JUDI+E",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197971",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "KIRKCONNELL KAMRON",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "KIRKCONNELL KAMRON",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=KIRKCONNELL+KAMRON",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197939",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "ABSHIRE TABATA",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "ABSHIRE TABATA",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ABSHIRE+TABATA",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197937",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "DON QUIXOTE S HOME DECOR",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "DON QUIXOTE S HOME DECOR",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DON+QUIXOTE+S+HOME+DECOR",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197936",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "TEXAS FUTURE PROJECT",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "TEXAS FUTURE PROJECT",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=TEXAS+FUTURE+PROJECT",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197935",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "UFOM BEATRICE",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "UFOM BEATRICE",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=UFOM+BEATRICE",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197934",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "ONI-ORISAN LAITAN A",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "ONI-ORISAN LAITAN A",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ONI-ORISAN+LAITAN+A",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197933",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "MARTINEZ MAYRA A",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "MARTINEZ MAYRA A",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MARTINEZ+MAYRA+A",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197926",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "CHAVEZ PETRA",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "CHAVEZ PETRA",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CHAVEZ+PETRA",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197924",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "RAMIREZ LUIS M AMADOR",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "RAMIREZ LUIS M AMADOR",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=RAMIREZ+LUIS+M+AMADOR",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197922",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "ORIHUELA REINA LORENA",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "ORIHUELA REINA LORENA",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ORIHUELA+REINA+LORENA",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197919",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "HARPER MARCUS J",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "HARPER MARCUS J",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HARPER+MARCUS+J",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197915",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "ARCHWAY CHRISTIAN LEARNING CENTER",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "ARCHWAY CHRISTIAN LEARNING CENTER",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ARCHWAY+CHRISTIAN+LEARNING+CENTER",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197913",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "FRAZIER HEWLETT A",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "FRAZIER HEWLETT A",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FRAZIER+HEWLETT+A",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197911",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "SANDLIN SARA C",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "SANDLIN SARA C",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SANDLIN+SARA+C",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197910",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "SANDLIN ROBERT",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "SANDLIN ROBERT",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SANDLIN+ROBERT",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197906",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "APPLAUSE DENTISTS II PA",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "APPLAUSE DENTISTS II PA",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=APPLAUSE+DENTISTS+II+PA",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197900",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "PISULA THOMAS J",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "PISULA THOMAS J",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PISULA+THOMAS+J",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197897",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "DOMINGUEZ JULIO C",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "DOMINGUEZ JULIO C",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DOMINGUEZ+JULIO+C",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197896",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "ANASTOS MICHELLE L",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "ANASTOS MICHELLE L",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ANASTOS+MICHELLE+L",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197895",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "MCCARTHY KEVIN",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "MCCARTHY KEVIN",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MCCARTHY+KEVIN",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197894",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "PATEL AMIT",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "PATEL AMIT",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PATEL+AMIT",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197893",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "MITCHELL C GOOLSBY",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "MITCHELL C GOOLSBY",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MITCHELL+C+GOOLSBY",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197892",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "LOPEZ CAROLINA",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "LOPEZ CAROLINA",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LOPEZ+CAROLINA",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197891",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "RIOS P ROCAMONTES",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "RIOS P ROCAMONTES",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=RIOS+P+ROCAMONTES",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197890",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "MOUTON DARREL",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "MOUTON DARREL",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MOUTON+DARREL",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197888",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "AUSTIN SHAMARIAN",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "AUSTIN SHAMARIAN",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AUSTIN+SHAMARIAN",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197887",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "MEZA MARIA C",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "MEZA MARIA C",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MEZA+MARIA+C",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197886",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "GALLEGOS JOSE J",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "GALLEGOS JOSE J",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GALLEGOS+JOSE+J",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197885",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "THOMAS TYRONE",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "THOMAS TYRONE",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=THOMAS+TYRONE",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Named owner": 8
-      },
-      "score": 33,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197878",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "PATTERSON RYAN",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "PATTERSON RYAN",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PATTERSON+RYAN",
       "match_confidence": "NONE",
       "match_reason": "No match found",
       "prop_address": "",
@@ -127894,7 +125698,7 @@
         "owner_occupied": false,
         "apn": "116-331-006-0022"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -129992,7 +127796,7 @@
         "owner_occupied": true,
         "apn": "073-100-032-0042"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -131035,7 +128839,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWRgzf3CozlOWv/02zYsA9O4LqFPe6vshE2d2SlySAOMD8tFH/meZpxOlSIX6Aph2P2SC7tvxHYGLkWiq7OtyUSPlzjEa88GXWtwRbRYUNqZGp2V/J1NlRJHYVO+wnZvRg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=RODRIGUEZ+LINDA+M",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): M RODRIGUEZ LINDA",
+      "match_reason": "Name \u2192 single property (3w): M, RODRIGUEZ LINDA",
       "prop_address": "10515 SAGEFOREST DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -131300,8 +129104,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVenG5neJCdLEgvc8+/72j4nP8nx8vFZ99dcesgD5Fe2mW4VZwyoxSsqIAf48kJ+e5K8WrOZeJiKuqsaGXc7AmoUFg1+mqov9R1A1TgbCLCvf3q0evrNMofrrpezwRPSbPg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DRAEHN+LEE+O%27DELL",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DRAEHN LEE",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): DRAEHN LEE O",
       "prop_address": "15927 ABERDEEN TRAILS DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -131681,7 +129485,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYzy4SiVGAdzvU4ni6zjqTVtHXygZTJwhCRY0jxGX3l5G0sGGJ6Hu1Vpy1wA70y1KLH0Dbz4d3JqWguUC17vxVraqtfjKc2fstVLkICqwYxhoKqCjp8jMlSdODkz3hzQKw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=VILLA+DOMINGA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DOMINGA, VILLA",
+      "match_reason": "Name \u2192 single property (2w): DOMINGA VILLA",
       "prop_address": "501 SAN JACINTO ST",
       "prop_city": "LA PORTE",
       "prop_state": "TX",
@@ -132479,7 +130283,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVW9jh386TIBa56u0XKkPxyS8n8v4gw2R8m2PXk7ctghJUkLRe+LgZJog0nZjlIQzQ/BtbyrVA4VOa2b40FbhyfnVzgzRh/BJEM689ytiV/3UyTwACaThi6w5b94HTFQwUQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JORDAN+CHARLES",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CHARLES JORDAN",
+      "match_reason": "Name \u2192 single property (2w): CHARLES, JORDAN",
       "prop_address": "3462 CHEANEY DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -133505,7 +131309,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVSsi75Q5gUNgNNNa9H4+pTEc96Nm9bWDbZ5gAB/IG/sNYvxxiOXpLtjaWYvi1whBErNQOUNO8br1XhtkHVXho2RHCnPXw1GjXKv4uesVQjJ5yb0PGicMEfjpTKm8YroPWA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MORRIS+JOHN+M",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): M MORRIS JOHN",
+      "match_reason": "Name \u2192 single property (3w): M, MORRIS JOHN",
       "prop_address": "8126 GLENCREST ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -134189,7 +131993,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVd0iUnCBnq5kHhePLtf5RjT50ZbmqkT4VF0SYLbJGX3a/OLHvtafjsqj9ahF9NNStcTbIqV5pe5S9b4BoxB6QsvKyXqTaPzTYaDeIISxO/QSpwA5T8u4iGosppnm6yftzw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GARCIA+JOSE+RAMIRO",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): RAMIRO GARCIA JOSE",
+      "match_reason": "Name \u2192 single property (3w): RAMIRO, GARCIA JOSE",
       "prop_address": "1303 LASKEY ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -134834,8 +132638,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfUsbhw1ZpACNjKhAVraI+5gVz3IM+epfEZccz7nJL6qpwBQ8pcCgHiDIyL35Y071rhG51Hgn7SNGQIxMRzc6w5Iw7MxZ1Xl44xkrVoYDx+Ujzp0LPt4jxhdgSuj7Cy9hA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HENRY+KEATON+HAYES%2C+LEE+ALEXIS+NICOLE%2C+NORTHSTONE+BUILDERS+L",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): HENRY KEATON HAYES",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): HENRY KEATON",
       "prop_address": "7203 HOUSMAN ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -135285,8 +133089,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVR+C8GbDTNf1YFzUFOFBa4l7DSk5V2MQT0wKpRj3356GVx8oUHP6ePnpgzpjAUi5Tn51K3uiTuISeljXyIzz84MPcj3ukVBxfB5wtNVQzaRrHPfBou5NJrfWnx6d6/PwMw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ALBANO+IVAN%2C+JORDAN+LYDIA%2C+JORDAN+WARNER%2C+WARNER+AND+LYDIA+J",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): WARNER AND",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): WARNER AND LYDIA",
       "prop_address": "10522 NORTHVIEW DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -135669,7 +133473,7 @@
         "owner_occupied": false,
         "apn": "109-792-000-0012"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -135890,8 +133694,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcUhjj9a/B1m7DtKCZiiG6U/DLXzwQUduDF8vjqF3iAdg8IygsNy1LuamW86Gi7Y5//Hbv9Rx6hzP/AgT2qF1KWpMkM4uzRCen2y8TMnXC3oHIUrxJxWr02P2GXix3dygw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MORABO+REAL+ESTATE+LLC%2C+OAKS+CAPITAL+GROUP+LLC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MORABO REAL",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): MORABO REAL ESTATE",
       "prop_address": "2603 PIEMONTE AVE",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -136359,7 +134163,7 @@
         "owner_occupied": false,
         "apn": "142-753-005-0045"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -136457,8 +134261,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVeF/0sO+/fMz3ZIbiyucc7voH8KgZVDWVb9rPt4GI3j9rsIiMGg85doSU39yY4aVm0Jk5IDsGlyHTUVTWDWBJv9kxROk2Qp4qJarBK//eSEb0WRIaURuoEQnVrDwChwyRw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ELLAHAM+SOMMER+MOHAMED%2C+SULTAN+SAMI+M%2C+TAYLOR+MORRISON+OF+TE",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ELLAHAM SOMMER",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): ELLAHAM SOMMER MOHAMED",
       "prop_address": "10013 STEEPLE FARMS DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -136826,8 +134630,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVXcSPW2zU3D+0OWuw1T/ek7NLAbtfOMjNIuqR5BRqD3Ts9dvPSHcSSUIbzwmeOKNDahsvLavRrQUtIQMzrbcfYxqrMUhKTGsY9x7P4jo7Np8b+H9ZbNH4vBEwuK+iLWD9A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=EMPTOR+WRRD+16663+39+LLC%2C+PERRY+HOMES+LLC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): EMPTOR WRRD",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): EMPTOR WRRD 16663",
       "prop_address": "16663 WARREN RANCH RD",
       "prop_city": "HOCKLEY",
       "prop_state": "TX",
@@ -137245,7 +135049,7 @@
         "owner_occupied": false,
         "apn": "046-171-034-0004"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -138356,8 +136160,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYx2vAZZfll4tcrhmFssRJaMzpGCCeEbnLuR75pToBahiGIgXXKAckjf4IvZoc6jdRENc6FhOdfP3cAw6l0zsuX4Z6831+7kreSACRSM5cM1sWgpMchV+j1H0QppRVIRqw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HUGHES+DEANNA+L%2C+HUGHES+RICHARD+S%2C+KNAPPER+KOREY%2C+RICHARD+S+",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): RICHARD S",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): RICHARD S HUGHES",
       "prop_address": "4310 EAGLE FORK DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -138893,7 +136697,7 @@
         "owner_occupied": false,
         "apn": "041-094-000-0030"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -139338,8 +137142,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYxuWWiSpUWYtWFu6k86u0e53Ne6O8WiQegI2qDhplIkvML4avoI+cSPTN/4xwp3Uz5pHglELbOr/RurUY3aqfb345u41aFu72W2VDulykiDSYO+hhuqi0K2ZwfDJv1g0w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BILLUPS+KEVIN+LAMONT+JR%2C+SANFIEL+JESSICA+MAY",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): BILLUPS KEVIN LAMONT",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): BILLUPS KEVIN",
       "prop_address": "21614 SURF POINT LN",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -139416,8 +137220,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUA94qgBAnRWXQeswwXgVSz/JSf+NAT2qN+4cthUljMrZh29tZeOrvTQGGht8ECMm60pztNz1qccgQuhKJ6530baOfZGnAUb7j0w0ppfanpBM31axQNxVtgb7IGGuFB2Pg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PARKWAY+AT+ELDRIDGE+SEC+ONE",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): OF PARKWAY AT",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): OF PARKWAY",
       "prop_address": "2207 CAMDEN CREEK LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -139764,7 +137568,7 @@
         "owner_occupied": true,
         "apn": "060-105-002-0001"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -139852,7 +137656,7 @@
         "owner_occupied": true,
         "apn": "131-104-004-0021"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -146973,7 +144777,7 @@
         "owner_occupied": false,
         "apn": "020-043-000-0058"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -147236,7 +145040,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVU3tnbxCvMsnogC9dxDZsZHp1dvf1bYEzugiXcGH4qb1AiDMBbXhMIUEWSEIwB3oZosZRLZ2JL6plbu1Bje3zGxpQIOyRIHoRD998OWQDyUML9o5aCOvSldMqvCKnqsJsw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PALLIDA+L+L+C",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MANUEL NIEVES",
+      "match_reason": "Name \u2192 single property (2w): MANUEL, NIEVES",
       "prop_address": "2619 HEATHERGOLD DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -147276,8 +145080,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcugPQ5rqVktwDWvkDqJXHZUmNQHcXOwK7dw1c56ZZsYeJC96rHmwDSy/aR5BZz4lefVbzUCFSj0lI11Bycnvl0PHCkUwWwbbAoqwbzV/bkhqztv1rLUKyn7oFwrbILrkw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HIGHLAND+GLEN+HOMEOWNERS+ASSOCIATION+INC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CHAVARRIA ERICK",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): CHAVARRIA ERICK A",
       "prop_address": "23131 JETTY MANOR LN",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -147500,7 +145304,7 @@
         "owner_occupied": false,
         "apn": "127-796-004-0032"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -147516,8 +145320,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVRohts1Sgz1cCstYV8w2Iobi9y5ZWdnncPa26bxnqf1vZ6gxCZadIIM5g0uUHQnm0/DpZrBOz8tZeW4Fz2DCW+ERZT6mlnyHoIhjpygVEDZhCy3F+jXu/8dNWyoHzgPIKw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JASMINE+HEIGHTS+HOMEOWNERS+ASSOCIATION",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): FORY JORGE ARMANDO",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): FORY JORGE",
       "prop_address": "21511 FLOWERING GARDEN LN",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -148090,7 +145894,7 @@
         "owner_occupied": true,
         "apn": "141-494-002-0014"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -148107,7 +145911,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVe/erKfFdMj/x9YEuH472KbwJ/XZt+xiGp68F35bGz01wm2ReK7v4Gf6y6jVwid1I7vQt+BvRdzbcGXroFUotNnZOdQ79Wjy80SlgIMVbxwAQtaXkKt+Oqh8FeEU0a3bjw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DISCOVER+BANK",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): WILLIE, HUGHES",
+      "match_reason": "Name \u2192 single property (2w): WILLIE HUGHES",
       "prop_address": "20822 FOX CLIFF LN",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -148353,7 +146157,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVeIK5U2mmEOxZBirXQH4R9ntYgApAb4OYA5lFAoi9pFCIgN3DR02YsDikL8FbKE2zGN+kX2ZimS34o+poEPKm5oDDYjhS/hsrva1JvtO86bHO6fNSNbYIBeljMsU+s2Ugw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MIDLAND+CREDIT+MANAGEMENT+INC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ENEDINA, GONZALEZ",
+      "match_reason": "Name \u2192 single property (2w): ENEDINA GONZALEZ",
       "prop_address": "12333 KAYLA LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -148558,7 +146362,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVSNCuoftSR1oKEHRzhBF/kCJr7HIGcUPY5EZ5R7V9XMzkrwbSrSSrK+xThXPqxU1F5POFTvF8mJE5juoDhxrpSqbDnpU9YflNGFbVQqsNSYrhRV7EGv2GUpDQJD1SVmUHA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MIDLAND+CREDIT+MANAGEMENT+INC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MARTHA RIVERA",
+      "match_reason": "Name \u2192 single property (2w): MARTHA, RIVERA",
       "prop_address": "11607 BEXLEY DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -148926,7 +146730,7 @@
         "owner_occupied": true,
         "apn": "139-155-002-0005"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -149394,7 +147198,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVTVG49Tv5XhrNd1RKxHLemjhjl7VnF0bDmxK/folntFZds3Ov72FrWNCNY7D8el2YNU4W9huQH3oYx0KR9mllIh08UTxXtmFQ89S+NTjHm3SJ6eba1hc5N3O/sxo4PBcMw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JPMORGAN+CHASE+BANK+N+A",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MICHELE CLARK",
+      "match_reason": "Name \u2192 single property (2w): MICHELE, CLARK",
       "prop_address": "11210 ROYAL CHATEAU LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -149722,7 +147526,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUa0ewT32BGwOd5uP1uWqxPiN0kBX8acW0UDl4WvVdJfk2BDz6K3dqzOtJ9ku6hRlhyDCANbfWMFChCxnzLAY7HGIWM0/jp30l9mB6kuKngqT2xXeXh18TDA2V4Plykf6w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MIDLAND+CREDIT+MANAGEMENT+INC",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): T HO THUY",
+      "match_reason": "Name \u2192 single property (3w): T, HO THUY",
       "prop_address": "8200 BROADWAY ST 1115",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -150296,7 +148100,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQgYzhntO3QXNIIroIsDBFLZKcGIzAdrj3xMBPVqSrNhkbSNV35GKyIr3vnPBVQaxZ8/RuTfhbLlwJaynF+Ap9XEBu0Mw7g2qAin+MQ9kUOg3Qo6O/r4xmFhN74V81Klyw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=KLEIN+ISD+RENDITION+PENALTY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ALFREDO, HECHAVARRIA",
+      "match_reason": "Name \u2192 single property (2w): ALFREDO HECHAVARRIA",
       "prop_address": "12031 PINEY BEND DR",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -150767,7 +148571,7 @@
         "owner_occupied": true,
         "apn": "064-015-000-0130"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -150937,7 +148741,7 @@
         "owner_occupied": false,
         "apn": "038-278-000-0017"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -151088,7 +148892,7 @@
         "owner_occupied": false,
         "apn": "118-809-001-0001"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -151159,7 +148963,7 @@
         "owner_occupied": false,
         "apn": "043-217-000-0029"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -151231,7 +149035,7 @@
         "owner_occupied": true,
         "apn": "042-075-003-0103"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -151317,7 +149121,7 @@
         "owner_occupied": false,
         "apn": "041-056-000-0058"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -151430,7 +149234,7 @@
         "owner_occupied": false,
         "apn": "117-174-000-0001"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -151544,7 +149348,7 @@
         "owner_occupied": false,
         "apn": "117-568-001-0002"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -151676,46 +149480,7 @@
         "owner_occupied": false,
         "apn": "068-124-002-0002"
       },
-      "dm_enriched_date": "2026-07-19",
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197898",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "DIAMOND HILL CONTRACTORS INC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "DIAMOND HILL CONTRACTORS INC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DIAMOND+HILL+CONTRACTORS+INC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DIAMOND HILL",
-      "prop_address": "9407 WESTHEIMER RD 305",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77063",
-      "mail_address": "2402 BAMMELWOOD DR",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77014-1523",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Has address": 10,
-        "Institutional owner": -25
-      },
-      "score": 10,
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -155124,8 +152889,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=INDIAN+SHORES+PROPERTY+OWNERS+ASSOCIATION",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): GRIMES JASON",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): GRIMES JASON W",
       "prop_address": "19815 WIG WAM ST",
       "prop_city": "CROSBY",
       "prop_state": "TX",
@@ -155862,7 +153627,7 @@
         "owner_occupied": true,
         "apn": "113-578-004-0048"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -156535,7 +154300,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MEADOW+HILL+RUN+HOMEOWNERS+ASSOCIATION+INC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DONAVON, THIBODEAUX",
+      "match_reason": "Name \u2192 single property (2w): DONAVON THIBODEAUX",
       "prop_address": "21651 FALVEL SUNRISE CT",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -156698,8 +154463,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CITY+OF+BAYTOWN",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MUCKLEROY KAREN",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): MUCKLEROY KAREN M",
       "prop_address": "501 RED BUD LN",
       "prop_city": "BAYTOWN",
       "prop_state": "TX",
@@ -157437,7 +155202,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GOODWIN+%26+COMPANY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DANNY, DAVIS",
+      "match_reason": "Name \u2192 single property (2w): DANNY DAVIS",
       "prop_address": "14711 FUERTE DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -157478,7 +155243,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HOMEOWNERS+ASSOCIATION+OF+CYPRESSWOOD+GLEN+ESTATES+SEC+3",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): WESLEY GEORGE",
+      "match_reason": "Name \u2192 single property (2w): WESLEY, GEORGE",
       "prop_address": "20523 BENWEST CT",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -157601,7 +155366,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=IMPERIAL+TRACE+HOMEOWNERS+ASSOCIATION",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JOHN YOUBOTY",
+      "match_reason": "Name \u2192 single property (2w): JOHN, YOUBOTY",
       "prop_address": "9911 BARONSHIRE ROUND",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -158380,7 +156145,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CLUTCH+AUTOMOTIVE+LLC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): AUTOMOTIVE, CLUTCH",
+      "match_reason": "Name \u2192 single property (2w): AUTOMOTIVE CLUTCH",
       "prop_address": "1140 S MASON RD",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -158518,7 +156283,7 @@
         "owner_occupied": false,
         "apn": "105-493-000-0028"
       },
-      "dm_enriched_date": "2026-07-19",
+      "dm_enriched_date": "2026-07-20",
       "is_new": false
     },
     {
@@ -172420,690 +170185,6 @@
       "is_new": false
     },
     {
-      "doc_num": "RP-2026-197938",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "SOUTHWEST INITIAL INVESTMENTS LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "SOUTHWEST INITIAL INVESTMENTS LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SOUTHWEST+INITIAL+INVESTMENTS+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197928",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "ROBINETT ADJUSTING SERVICES LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "ROBINETT ADJUSTING SERVICES LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ROBINETT+ADJUSTING+SERVICES+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197927",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "A B C AWNING COMPANY",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "A B C AWNING COMPANY",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=A+B+C+AWNING+COMPANY",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197923",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "AMG TRUCKING COMPANY",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "AMG TRUCKING COMPANY",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AMG+TRUCKING+COMPANY",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197917",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "BACT RESOURCES INC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "BACT RESOURCES INC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BACT+RESOURCES+INC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197914",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "DTKL VENTURE LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "DTKL VENTURE LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DTKL+VENTURE+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197912",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "LINESTAR E & I LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "LINESTAR E & I LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LINESTAR+E+%26+I+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197909",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "BLUEWAVE SEAFOOD 2 LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "BLUEWAVE SEAFOOD 2 LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BLUEWAVE+SEAFOOD+2+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197907",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "VIVAS CONTRACTORS INC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "VIVAS CONTRACTORS INC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=VIVAS+CONTRACTORS+INC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197905",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "TREND PHYSICIANS GROUP INC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "TREND PHYSICIANS GROUP INC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=TREND+PHYSICIANS+GROUP+INC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197904",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "AD HOSPITAL EAST LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "AD HOSPITAL EAST LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AD+HOSPITAL+EAST+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197903",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "YUSUF TRANSPORTATION LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "YUSUF TRANSPORTATION LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=YUSUF+TRANSPORTATION+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197883",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "MATERIALS EXPRESS INC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "MATERIALS EXPRESS INC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MATERIALS+EXPRESS+INC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197882",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "INFINITY FUELS INC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "INFINITY FUELS INC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=INFINITY+FUELS+INC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197881",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "BH GROOMING INC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "BH GROOMING INC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BH+GROOMING+INC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197880",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "ALPHA ELITE ROOFING & RESTORATION LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "ALPHA ELITE ROOFING & RESTORATION LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ALPHA+ELITE+ROOFING+%26+RESTORATION+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197879",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "ARK TRADING LLC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "ARK TRADING LLC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ARK+TRADING+LLC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-197877",
-      "doc_type": "T/L",
-      "filed": "2026-05-20",
-      "cat": "lien",
-      "cat_label": "Federal Tax Lien",
-      "owner": "BELLTECH ENTERPRISES INC",
-      "grantee": "INTERNAL REVENUE SERVICE",
-      "contact": "BELLTECH ENTERPRISES INC",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BELLTECH+ENTERPRISES+INC",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "LIEN"
-      ],
-      "flags": [
-        "Tax lien",
-        "Institutional owner"
-      ],
-      "score_breakdown": {
-        "Tax lien": 25,
-        "Institutional owner": -25
-      },
-      "score": 0,
-      "is_new": false
-    },
-    {
       "doc_num": "RP-2026-242157",
       "doc_type": "JUDGE",
       "filed": "2026-06-18",
@@ -173344,8 +170425,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVT8IwVEdv7divAn3ZGcHejggBjvZRN47M7VO2PXOOQuSWrcz6S3ncCZwVbDCXPwJ9jwWjEdD7+jLRYlULgXUuMAS+wj+1w54G9QaDSv9f2wqtgcehgHdsrR/aJ/msWx5OQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WILBANKS+CLARA+STORKSON+EST",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): WILBANKS BILLY O",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): WILBANKS BILLY",
       "prop_address": "2503 HOLLOW HOOK RD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -173461,7 +170542,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYVdIoeuPOa/ZX23tK42nqBmb+X/+jkq5ZC5ZHFlavx3VGm8tIGo66PmmlQsjUZoaqBy1fO2T/HW2Mua+mq4RMOJWZFm/loJ9ihId7bgyhk6IozB3A7HZi6L53o52s14og==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BXD+INVESTMENT+CORP",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): INVESTMENT, BXD",
+      "match_reason": "Name \u2192 single property (2w): INVESTMENT BXD",
       "prop_address": "3121 BROADWAY ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
