@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-07-25T07:42:32.242369",
+  "fetched_at": "2026-07-26T07:51:44.611820",
   "source": "Harris County Clerk / HCAD",
   "date_range": {
-    "from": "2026-07-18",
-    "to": "2026-07-25"
+    "from": "2026-07-19",
+    "to": "2026-07-26"
   },
   "total": 4445,
   "with_address": 1086,
-  "new_count": 303,
+  "new_count": 0,
   "records": [
     {
       "doc_num": "RP-2026-295702",
@@ -83,7 +83,7 @@
         "owner_occupied": true,
         "apn": "117-231-004-0036"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -143,8 +143,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVV4uY5m8GP4uNhk/1MkGWwTRPbBnECJ59qWBWVdmNIMML+PlH5Uet82Q0whHSUGh0VnN14nasmVTQhe4sxEQbOQG8I96MPEnDElZcTBRZPU6g4OFLPe6aIjrbXsPodfQ7w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=TEVLIN+PETER+STEPHAN+EST",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): TEVLIN KIMBERLY",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): TEVLIN KIMBERLY ANN",
       "prop_address": "10807 OAK ACRES DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -204,7 +204,7 @@
         "owner_occupied": true,
         "apn": "117-231-004-0036"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -302,7 +302,7 @@
         "owner_occupied": false,
         "apn": "121-402-003-0009"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -400,7 +400,7 @@
         "owner_occupied": true,
         "apn": "138-932-004-0035"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -416,8 +416,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVdZiNG/0aX9AUmu+w197nedOJwFD0crd59Ej3NAM8CpWpMa7we04OpwThmkg53UxkImqz0NglrWGQ0+aQJXT0heGXyeRn73jrsYzhA30iIXHBVo+4HxldIxJSKQV+Gm0Hg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ATCHLEY+BRENDA+GAY%2C+LARUE+JOHN+MARK",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): ATCHLEY BRENDA GAY",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): ATCHLEY BRENDA",
       "prop_address": "22302 RED RIVER DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -494,7 +494,7 @@
         "owner_occupied": true,
         "apn": "107-961-000-0022"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -593,7 +593,7 @@
         "owner_occupied": true,
         "apn": "140-402-004-0011"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -636,7 +636,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300094",
@@ -678,7 +678,43 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "dm_enriched": true,
+      "dm_matched": true,
+      "dm_property_id": "prop_130980706",
+      "dm_estimated_value": 260000,
+      "dm_equity_percent": 100,
+      "dm_equity_dollars": 260000,
+      "dm_sale_date": "2014-02-19T00:00:00.000Z",
+      "dm_data": {
+        "matched": true,
+        "dm_property_id": "prop_130980706",
+        "full_address": "1218 Park Knoll Ln Katy, TX, 77450",
+        "address": "1218 Park Knoll Ln",
+        "city": "Katy",
+        "state": "TX",
+        "zip": "77450",
+        "latitude": 29.764734,
+        "longitude": -95.747945,
+        "estimated_value": 260000,
+        "estimated_equity_amount": 260000,
+        "estimated_equity_percentage": 100,
+        "year_built": 1981,
+        "living_area_sqft": 1850,
+        "lot_size_sqft": 6300,
+        "num_bedrooms": 3,
+        "num_bathrooms": 2,
+        "last_sale_date": "2014-02-19T00:00:00.000Z",
+        "last_sale_amount": 0,
+        "total_assessed_value": 240651,
+        "annual_property_tax_amount": 5044,
+        "num_mortgages": 0,
+        "total_original_loan_amount": 0,
+        "total_estimated_loan_balance": 0,
+        "owner_occupied": false,
+        "apn": "114-413-053-0018"
+      },
+      "dm_enriched_date": "2026-07-26",
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300085",
@@ -720,7 +756,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300055",
@@ -762,7 +798,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300052",
@@ -804,7 +840,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299788",
@@ -846,7 +882,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299475",
@@ -888,7 +924,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299434",
@@ -930,7 +966,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299408",
@@ -972,7 +1008,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299367",
@@ -1014,7 +1050,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299217",
@@ -1029,8 +1065,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbfMBaIf6a+ut1wBz+4fLWarbIYDtANGPxeM8rDZ2TA1nABAbgGUGq13r0GC1wZTqSVVy/aozIfD0TJzmaIObnkX37DQpUA8T9dJ4T9wgPpki1605t8VN0xaQf75f7NMoA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GREMILLION+MAXIE+PAUL%2C+GREMILLION+TRACY%2C+HEDGES+HUNTER",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): GREMILLION MAXIE",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): GREMILLION MAXIE PAUL",
       "prop_address": "19214 WINDING BRANCH DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -1056,7 +1092,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299179",
@@ -1098,7 +1134,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299043",
@@ -1140,7 +1176,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298989",
@@ -1182,7 +1218,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298615",
@@ -1224,7 +1260,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298145",
@@ -1266,7 +1302,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298020",
@@ -1308,7 +1344,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297922",
@@ -1350,7 +1386,7 @@
         "Named owner": 8
       },
       "score": 70,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297595",
@@ -1407,8 +1443,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVSGqF0bt3lACGyxGwhIhu722hqWLQYLiB7s0C/2IUOt0Kf42omOtRcLh2UvZZzgTAF7u6cJyzj9WH0f2uewNAKYRF/fHqvR9PYDg+MYMUh3e+j/BKAf8Ng9otBKz5PZmRQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CASPER+MARY+JANE+LLC-SERIES+2%2C+GONZALEZ+LUIS+O+MARTINEZ",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CASPER MARY",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): CASPER MARY JANE",
       "prop_address": "19723 BRYON MEADOWS DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -1618,7 +1654,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVTqwn9nLYhjvnYsFWOGXVgOUuMZtmIfPt9IoZPozYwo0+6VQWESbECsT0aYoZ2l2Mr8VJIM90+hEZ7gQJX5cKGjKb3UoH6gVfuggKRB7Na0rDEJAVaF3wQZhKyXemvZyqg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=NYABURI+MEGA%2C+SIERRA+CARLOS+M%2C+SIERRA+JANETH",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JANETH SIERRA",
+      "match_reason": "Name \u2192 single property (2w): JANETH, SIERRA",
       "prop_address": "9332 WESTWOOD VILLAGE DR 49",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -2037,8 +2073,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVY/J1xYTU5MU/UkWn5CfXOeG/gg0Ih/5lg58ompw/gzKaLbzwI5mtmvnmWPAN3CqMUMylACbzMrBxyTKk2CRXKT/HizzCh+bSo3gLRutn+YQ4LFDZgF3tH3uSYDr3VQXeg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=2920+GOLFCREST+HOLDINGS+LLC%2C+EAST+KEN",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): 2920 GOLFCREST HOLDINGS",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): 2920 GOLFCREST",
       "prop_address": "2920 GOLFCREST BLVD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -2122,7 +2158,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVBXY02WukUUTWGsbTo4oAttqe+HFz8xM1kghtqjNDCA6nnMjhRnw+MuOBhmS443WIAlkdB2O+qkn7PAWpJjhcutVYIHk2ZxufvbKaIm7uvNBIagn5+Mrte6PKY5HiFfXw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SCURLOCK+CODY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CODY SCURLOCK",
+      "match_reason": "Name \u2192 single property (2w): CODY, SCURLOCK",
       "prop_address": "5722 WESTRICK LN",
       "prop_city": "PASADENA",
       "prop_state": "TX",
@@ -2205,8 +2241,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfCJlNiCrrhT1+oqlh6pApOdOWSjXtENHaCqVc5FWZhdAFaOhYwAGZLkutuGvzsq2mk2i8NSl9Dwuu3CZgfWR8wBftWdRE4KPrl3OnkD6VrFjbAqjySLpvaWvGhhllWUMQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=1656+BANKS+HOLDINGS+LLC%2C+TOMJANOVICH+AMELIA%2C+TOMJANOVICH+RUD",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): 1656 BANKS HOLDINGS",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): 1656 BANKS",
       "prop_address": "1656 BANKS ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -2247,8 +2283,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVekuUYG8kkWHenvjbbmgpD7odJHNAnVfZOhkyIy4vOmWAvxShINOENejwgeujS2n1LFjkOZ1/2CpWshJ1LOEo+vt8gbkvoEOBPPYf01GqvH0BNJsDFiBbXK6g+NE3aqmKA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=3314+JAN+COURT+TRUST%2C+CANTARERO+SUSANA+M%2C+MARCHESSEAULT+DAVI",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): 3314 JAN COURT",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): 3314 JAN",
       "prop_address": "3314 JAN CT",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -3087,8 +3123,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbpTuXdDwVl6kzMFbu63vD7E2FiN+pEFiTnuJgf4dA500yIlnDTbIX7whm4LEi2322VJerJzTiuGzBHS00++R+GZ2OZRhLPWjhN98oqWPJNtf8geWNlHOi3DmdsE31657g==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CORREA+NOLAN+J%2C+CORREA+PAMELA+B%2C+SUROVIK+ROBIN%2C+SUROVIK+RYAN",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CORREA NOLAN",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): CORREA NOLAN J",
       "prop_address": "18730 OXENBERG MANOR LN",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -3208,7 +3244,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVXHdA8yzYfPJsUH0pkHuh2NwUnBp5rD33PaeAbv5yOx7+3+aL8aIU7vGTwtaqJJoFVmP7FyzvbqHUk1a0fkrebBJaxskbycJFwbZDLWaAuOWndJviRc1+D2MN1+tSyC9gw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=OPENDOOR+PROPERTY+TRUST+I%2C+SELVIDGE+JOSHUA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JOSHUA SELVIDGE",
+      "match_reason": "Name \u2192 single property (2w): JOSHUA, SELVIDGE",
       "prop_address": "12910 ASHFORD CHASE DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -3274,7 +3310,7 @@
         "Named owner": 8
       },
       "score": 66,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-293794",
@@ -3945,8 +3981,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVXflg49UfTOU0pQrimgrCvfi5Zp/godzlYXsr4d6wzxLy2rnYdzC6IhabLsyyKYz2Vw6D9zEWhuy312r5FfODUFysYG8I1jLNOfuaqXPgIqccyoCKHFvSXQJr9r5GoORLw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AYYA+G+M%2C+AYYA+SULU%2C+TURNER+JUDY%2C+TURNER+MAYGAN",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): AYYA G",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): AYYA G M",
       "prop_address": "6914 TEN CURVES RD",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -4050,7 +4086,7 @@
         "owner_occupied": false,
         "apn": "121-265-002-0027"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -4066,8 +4102,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUfYiRdmwTcBsRjxRphvQDGen/TsvIKuSNORyAgZBf/yctnsluAcyb4VxS6mQTpPkZYDh/bHM5HQagwtcOVExYEYKYjvLrYvf3FJ6Dci2qr6k3oqB3zuT3H06J+L8w9NLg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=4006+TRANQUIL+FOREST+LLC%2C+BAKHTIARI+FATEMEH%2C+JOHN+%26+PAGE+HOL",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): 4006 TRANQUIL",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): 4006 TRANQUIL FOREST",
       "prop_address": "4006 TRANQUIL FOREST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -4145,7 +4181,7 @@
         "owner_occupied": false,
         "apn": "129-922-001-0027"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -4241,7 +4277,7 @@
         "owner_occupied": false,
         "apn": "105-335-000-0008"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -4637,7 +4673,7 @@
         "owner_occupied": false,
         "apn": "043-175-000-0063"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -4751,7 +4787,7 @@
         "owner_occupied": false,
         "apn": "045-064-000-0345"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -4883,7 +4919,7 @@
         "owner_occupied": false,
         "apn": "057-223-000-0082"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -4924,7 +4960,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300271",
@@ -4964,7 +5000,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300227",
@@ -5004,7 +5040,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300078",
@@ -5020,7 +5056,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYRw9vD/6NaKIzndldjHuIXaS+XbLT9dqcYITTNtA5yo1rTm3kRlKktYq1yu80A4uvXO5tGIfUY4nYCrUUQYV9M+TuTCVJAJaeNHWAbRlAXp9vsyWCQFjAeXQWEeHzcw/A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ACOSTA+RUBY+ANN%2C+MEDINA+JOSE+JUAN+GONZALEZ%2C+MENDEZ+ASENCION%2C",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MARIA, PENATE",
+      "match_reason": "Name \u2192 single property (2w): MARIA PENATE",
       "prop_address": "10410 MILFORD WOODS LN",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -5044,7 +5080,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300021",
@@ -5084,7 +5120,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299936",
@@ -5124,7 +5160,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299890",
@@ -5164,7 +5200,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299883",
@@ -5204,7 +5240,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299832",
@@ -5244,7 +5280,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299804",
@@ -5284,7 +5320,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299752",
@@ -5324,7 +5360,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299705",
@@ -5364,7 +5400,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299669",
@@ -5404,7 +5440,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299520",
@@ -5444,7 +5480,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299517",
@@ -5484,7 +5520,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299497",
@@ -5524,7 +5560,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299480",
@@ -5564,7 +5600,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299137",
@@ -5604,7 +5640,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299104",
@@ -5644,7 +5680,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299080",
@@ -5684,7 +5720,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299053",
@@ -5724,7 +5760,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298996",
@@ -5764,7 +5800,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298915",
@@ -5804,7 +5840,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298800",
@@ -5844,7 +5880,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298708",
@@ -5884,7 +5920,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298700",
@@ -5900,7 +5936,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVdq5nQOaeLDV4hD/4Y+gO1gFseCQlMZfYv+k8fYWlHIC/rbR3AWA4TMLQ8v3ZZK4mERFw4CZ8mAMDpkrNeJw3fiOR0EEwt8WQRDmYW9iSKgGLUZCzBLOCOjKqRqy/qtO9A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BROCK+MORGAN+NICOLE%2C+VU+BAC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): BAC, VU",
+      "match_reason": "Name \u2192 single property (2w): BAC VU",
       "prop_address": "5918 GLENNEYRE LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -5924,7 +5960,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298675",
@@ -5964,7 +6000,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298631",
@@ -6004,7 +6040,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298599",
@@ -6044,7 +6080,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298504",
@@ -6084,7 +6120,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298454",
@@ -6124,7 +6160,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298430",
@@ -6164,7 +6200,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298229",
@@ -6204,7 +6240,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298054",
@@ -6244,7 +6280,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297913",
@@ -6284,7 +6320,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297906",
@@ -6324,7 +6360,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297899",
@@ -6364,7 +6400,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297783",
@@ -6660,7 +6696,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVc0o3dCvZFcd/XhqcxzZWzKtfLErOAQ+mwmagYzYTfcDV1q59GN3NsqaaPTFkDmS+VeaQFpqVezpJN37SY9xwt00BzDnfDL6mCN3/57req0bPZV8Ce57bNko2SXbwvcH4Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ARCEHEAUX+MARILYN+L%2C+TORRES+DAVID+GARCIA%2C+WHITE+GEORGE+M",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): M, WHITE GEORGE",
+      "match_reason": "Name \u2192 single property (3w): M WHITE GEORGE",
       "prop_address": "9319 LONGSTAFF DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -8140,7 +8176,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVX4Ip3rdQsZkqDJdcSUDjbRyfqqBdn3rSJcsE963Y307QD+f5vVkkNrn5VeduilYZKdmLLyxYGV0+UEY1c1ktchSD4f7OECRMI1NjwIxu+W/dDDLnzbRP9rIRTPHPZm0Gw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CASTILLO+MICHAEL+A",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): A CASTILLO MICHAEL",
+      "match_reason": "Name \u2192 single property (3w): A, CASTILLO MICHAEL",
       "prop_address": "8538 KIRKVILLE DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -8179,8 +8215,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVsTcjlAEgIPVivRsCMymcVSBhWV04EDMq9l3e8D5yl640msngIcpCliFjhIPz556D5RtWr+EiKR2d9Nf3wcrxmJOeIpWA/voAn2U4hNvaszs42rx4WBuyGL1PnYsVxBCA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FORTUNE+JANINA+L%2C+JACKOWSKI+JUSTIN%2C+JACKOWSKI+SHELLY",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): FORTUNE JANINA L",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): FORTUNE JANINA",
       "prop_address": "13515 VILLAS PALMAS DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -8620,7 +8656,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZjB/99f/kfps3d/jDZPTsq1Yjcj+N4CwZm1pTqD9BDj2sZvn1Ab0/srCTgjO5So2/Z8QWczq7vBxv5knP1G9E72i9z1IP/gGDsYQKMKR8/0hydMHfHmOYn+vgZZimyiOw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HONGAN+DAVID%2C+LGI+HOMES+-+TEXAS+LLC%2C+WILLIAMS+ROBIN",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ROBIN WILLIAMS",
+      "match_reason": "Name \u2192 single property (2w): ROBIN, WILLIAMS",
       "prop_address": "1603 KRISWOOD DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -9299,8 +9335,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfPDb5eMHh+nVsnh6HQxdvdpAm6/efcec9RbFkq8hxrQQquRMAxcygSC8lw2YE0X9yOtwYP86V5sOEaOttY2GVIfytNMnCYAy3MmS4bHjDtYaQGfMI98d3Xx20zG/isaTg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MEAD+BRUCE+S+III%2C+THAI+DARLENE",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): MEAD BRUCE S",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): MEAD BRUCE",
       "prop_address": "12410 SHADOWPOINT DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -9339,8 +9375,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVM+2041re/d2//5CmMfDcubnjBXciL1+ftvg+OIuKPHTDi4fU60ootanErT4OONLqNT9LPWiW57PsJgwqd4rSsBqyB7sJ/oImXjhPpilBXrf6trEck3Q5gSwaEn40XjTg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ANDRUS+VICTORIA+NOEL%2C+CHOLLETT+LUCAS",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): ANDRUS VICTORIA NOEL",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): ANDRUS VICTORIA",
       "prop_address": "9018 WELLSPRING DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -9531,7 +9567,7 @@
         "owner_occupied": true,
         "apn": "135-101-001-0007"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -9827,8 +9863,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYA1xC3pAM7CLrQGMuCECcht7+XEv36gIp0XwIIRms/F+JcLltVVU5iq5s59YtmFgq7Tb3lDxdI5S2D0c+qPKEi2kYdHW60YcPN3/k9qklqcIFEafwibwON3loyRLkdjSg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DAUER+JAMES+P%2C+DAUER+RACHELLE+A%2C+PISTONE+MASON%2C+PISTONE+VICT",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): DAUER JAMES P",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): DAUER JAMES",
       "prop_address": "12610 FORT ISABELLA DR",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -9948,7 +9984,7 @@
         "owner_occupied": true,
         "apn": "115-979-007-0002"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -10245,7 +10281,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVRIRzsmQ/CijFw7BNqGcKDgd74iEkhN/rZM0QyLPZrHj4iUzYcN7Q18t7jfcyOyltZBzUuVpPSItb5JCGYpDSRML3hufq2Mlr8/cQlYBiYj65itukXD0Eg5uuK6jyupe1Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PHAM+MINH%2C+TOLL+SOUTHWEST+LLC%2C+TRUONG+ANTHONY%2C+TRUONG+PHILIP",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): PHILIP, TRUONG",
+      "match_reason": "Name \u2192 single property (2w): PHILIP TRUONG",
       "prop_address": "5111 SILVER OAK DR",
       "prop_city": "PASADENA",
       "prop_state": "TX",
@@ -10644,8 +10680,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQVP+zWjrus5AoxBUzku6e3H/Xiz8vuiAsDgnJd1ivb45NYxO5yaDcb8P7IUe3cjVyJzDi53GNW8mcmdbUWfGtX6PCcHazDVJZL05uAcmQ5ZqZe7ZR4hWHHkOurHKeRxDw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HO+OI+LAN%2C+KINDOH+VIOLET+NUNY",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): HO OI LAN",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): HO OI",
       "prop_address": "8110 SINGING SONNET LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -10844,8 +10880,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVTii+P5z9YgNfj+k6NbRLkhAsfXgndPKZ1cud2MIatVc6ITY+4TPxIhu82y8V+ywdtIKenFfThP0PSupEGGCyKIA4mc/AgcfJ0XzF2x9kq25k0iqEEG5dDou6R+tZ1W/TQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HAAN+GREGORY+L%2C+HAAN+TAMMY+L%2C+NGUYEN+THAO+NGOC+PHUONG",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): HAAN GREGORY",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): HAAN GREGORY L",
       "prop_address": "23635 PLANTATION PINES LN",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -10884,8 +10920,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbuEnW83ESjUvmLtLZ6UDa1bD5X4v9y9GGpsJpzTnuXPZ5CY19zXVIBElYicM6aRS/F3ip41SkpNYo4vckEGGGq32SrMI1w5CNY2wXI7BjJGDV1Qt3ced5QrbNffzIXKlw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HARRELL+DAVID+D%2C+KHAN+RAMONA+L%2C+KHAN+ZAYN",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): HARRELL DAVID",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): HARRELL DAVID D",
       "prop_address": "4906 KALITHEA CT",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -10965,7 +11001,7 @@
         "owner_occupied": true,
         "apn": "123-361-004-0036"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -11086,7 +11122,7 @@
         "Named owner": 8
       },
       "score": 58,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297881",
@@ -11170,7 +11206,7 @@
         "Named owner": 8
       },
       "score": 56,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-295177",
@@ -11186,7 +11222,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVTZ8mWLLwcs2B6pHQeFCrJPbn4Cmv7i5fq78uNLhkjxAw0Ksv6lwnelMyK0d2mZn1huA82o/JePQ0YKO7a244Qtugf1Aa7kmfrTzKDyFR6m+5b6ypycRo8a44Fh3kMjVig==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BURG+DAVID",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DAVID, BURG",
+      "match_reason": "Name \u2192 single property (2w): DAVID BURG",
       "prop_address": "5505 BEALL ST C",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -11422,7 +11458,7 @@
         "Stacked lists": 18
       },
       "score": 56,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-283902",
@@ -11438,7 +11474,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CHANG+SAMUEL",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): SAMUEL CHANG",
+      "match_reason": "Name \u2192 single property (2w): SAMUEL, CHANG",
       "prop_address": "10101 S GESSNER RD 104",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -11778,7 +11814,7 @@
         "owner_occupied": false,
         "apn": "107-956-000-0018"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -11875,7 +11911,7 @@
         "owner_occupied": true,
         "apn": "129-925-004-0015"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -11972,7 +12008,7 @@
         "owner_occupied": false,
         "apn": "134-637-001-0018"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12047,7 +12083,7 @@
         "owner_occupied": false,
         "apn": "144-254-001-0001"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12215,7 +12251,7 @@
         "owner_occupied": true,
         "apn": "138-309-002-0007"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12288,7 +12324,7 @@
         "owner_occupied": false,
         "apn": "113-809-000-0047"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12345,7 +12381,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MCDANIEL+TODD",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): TODD, MCDANIEL",
+      "match_reason": "Name \u2192 single property (2w): TODD MCDANIEL",
       "prop_address": "9425 SHERBOURNE ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -12422,7 +12458,7 @@
         "owner_occupied": false,
         "apn": "071-030-022-0623"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12439,7 +12475,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AHAD+MOHAMMED",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MOHAMMED, AHAD",
+      "match_reason": "Name \u2192 single property (2w): MOHAMMED AHAD",
       "prop_address": "23742 MODENA GARDENS DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -12509,7 +12545,7 @@
         "owner_occupied": false,
         "apn": "135-975-001-0064"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12602,7 +12638,7 @@
         "owner_occupied": false,
         "apn": "114-355-005-0063"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12678,7 +12714,7 @@
         "owner_occupied": false,
         "apn": "123-385-003-0055"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12771,7 +12807,7 @@
         "owner_occupied": false,
         "apn": "127-316-001-0020"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -12812,7 +12848,7 @@
         "Named owner": 8
       },
       "score": 54,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297732",
@@ -12852,7 +12888,7 @@
         "Named owner": 8
       },
       "score": 54,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296671",
@@ -13467,8 +13503,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVa7y2AcNlHIB66ZYDwu96Wquej3HsTFJKu2MND/+L8tBRktE6WjOTriB7g4QVQjpefI8QEqtHrrJSY+fLkbyVBSmyxEJhK40A8Z3FHQTF7ZuswAMZyE18fyB9T9ms6ug9w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SIBIRTZEFF+ANNA+MAE+EST",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): SIBIRTZEFF ANNA MAE",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): SIBIRTZEFF ANNA",
       "prop_address": "10507 SAGEFOREST DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -13492,7 +13528,7 @@
         "Named owner": 8
       },
       "score": 51,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298459",
@@ -13532,7 +13568,7 @@
         "Named owner": 8
       },
       "score": 51,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296512",
@@ -13667,8 +13703,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVeFhsGHlDBcNeDteFDXWCARMkvkYMGJuEAr1TPUSy6nzB4vIqP5gnfskq6EWBuOc476ZXSFJ8U8nvPBlOCEKZEIJJl7bPfd8cSl9kO6XF8bz/lCMe+fBENRu0z1Gjpo4cw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SWAILES+MOIRA+J+EST",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): SWAILES MOIRA J",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): SWAILES MOIRA",
       "prop_address": "4242 BERMUDA DR",
       "prop_city": "PASADENA",
       "prop_state": "TX",
@@ -13976,7 +14012,7 @@
         "owner_occupied": true,
         "apn": "115-630-007-0051"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -14524,8 +14560,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVf1yojVp9vbqNZ7QbfiKEpoeo/RSkRMA7wbZLwlZp6YJHnnQKYO6toTxxjQTk0+JcwZdaXhO8ijxr+pGlLNG0waHMyIUJBmB3bVOhK1OZmgkIOOuo+PyizoOnI3YssOlsw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SPURLOCK+NORA+T%2C+SPURLOCK+REGINALD+S",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): SPURLOCK NORA",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): SPURLOCK NORA T",
       "prop_address": "15214 EMBER GLEN CT",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -14562,8 +14598,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbb5harXWLBIOAFManw6yIcncXtFXWyEi0Mo/LUXyyQZdT/qKto0YDCTtUerI1Qj0LooJlAFDfpmK9Dx6VZ7DpIC/12tog2w+aO28eZAOja4TBbn1O9aA+HE6ZPo0MvUHg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FAUSSET+WENDY+JO%2C+HUDSON+JEREMY%2C+PEIRCE+GARY+C+EST",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): PEIRCE GARY",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): PEIRCE GARY C",
       "prop_address": "1917 NEW ORLEANS ST",
       "prop_city": "DEER PARK",
       "prop_state": "TX",
@@ -14677,7 +14713,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWKM3n/zYfMQikdCepj/bYSICO741NxM7BHuoB/rwXJYpsVwO4Ab//iYpC8F/U/o2dir4XqmWmeNZMBl//oEAOlCVRYG1EACvOO0BLebr/9sQewK4f8+JjB9Q06u4dqcag==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SIMON+DEBRA%2C+SIMON+TIMOTHY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): TIMOTHY SIMON",
+      "match_reason": "Name \u2192 single property (2w): TIMOTHY, SIMON",
       "prop_address": "6814 ANDORRA COVE CIR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -14828,8 +14864,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYUJkrupmZi1T2wt8KRZ8ClhPZD9K3+mYa6U+Ahcwtyy+XDzUUyn05n4XH1Id4TOn9WLv2UW/8HuzqwsNq9PC0BRHJRy9cXICWNmVpjV6/PxoaigD2AdiRNhVKxNCCGvpQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=KEENA+ANA+MARIA%2C+NGUYEN+HUYDA%2C+VU+DAO+D",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): KEENA ANA",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): KEENA ANA MARIA",
       "prop_address": "8707 BEXAR DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -14887,7 +14923,7 @@
         "owner_occupied": true,
         "apn": "117-422-002-0039"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -15703,7 +15739,7 @@
         "owner_occupied": false,
         "apn": "073-100-056-0040"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -15854,8 +15890,8 @@
         "owner_occupied": true,
         "apn": "020-205-000-0014"
       },
-      "dm_enriched_date": "2026-07-25",
-      "is_new": true
+      "dm_enriched_date": "2026-07-26",
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-277125",
@@ -15870,8 +15906,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVToeqHB6pSQ2BK9QnTGkAgeX0htGCnPwZMtvmbN0nw23Z0oxHBjzPf/9fdbmdi0mICdNRoUUFRcWxMGP7v+Ah/bv0Wu/7OKpv091OF82S1SLTDkD0aRJwCs8+U3nLLdAkA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HERNANDEZ+DILSIA+CAROLINA+BENITEZ%2C+MARQUINES+CHRISTIAN+JOSUE",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): HERNANDEZ DILSIA CAROLINA",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): HERNANDEZ DILSIA",
       "prop_address": "13106 CHIPMAN GLEN DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -16024,7 +16060,7 @@
         "owner_occupied": true,
         "apn": "081-313-001-0003"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -16099,7 +16135,7 @@
         "owner_occupied": true,
         "apn": "109-896-000-0030"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -16194,7 +16230,7 @@
         "owner_occupied": true,
         "apn": "117-588-003-0027"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -16379,7 +16415,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): SHAUN XABIERE",
+      "match_reason": "Name \u2192 single property (2w): SHAUN, XABIERE",
       "prop_address": "12306 CHUTE FOREST DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -16612,7 +16648,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300308",
@@ -16651,7 +16687,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300258",
@@ -16690,7 +16726,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300191",
@@ -16729,7 +16765,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300185",
@@ -16768,7 +16804,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300064",
@@ -16807,7 +16843,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300045",
@@ -16846,7 +16882,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299905",
@@ -16885,7 +16921,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299895",
@@ -16924,7 +16960,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299879",
@@ -16963,7 +16999,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299736",
@@ -17002,7 +17038,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299730",
@@ -17041,7 +17077,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299572",
@@ -17080,7 +17116,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299528",
@@ -17119,7 +17155,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299465",
@@ -17158,7 +17194,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299362",
@@ -17197,7 +17233,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299276",
@@ -17236,7 +17272,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299240",
@@ -17275,7 +17311,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299044",
@@ -17314,7 +17350,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299040",
@@ -17353,7 +17389,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298964",
@@ -17392,7 +17428,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298921",
@@ -17431,7 +17467,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298779",
@@ -17470,7 +17506,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298756",
@@ -17509,7 +17545,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298748",
@@ -17548,7 +17584,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298739",
@@ -17587,7 +17623,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298735",
@@ -17626,7 +17662,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298728",
@@ -17665,7 +17701,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298717",
@@ -17704,7 +17740,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298626",
@@ -17743,7 +17779,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298623",
@@ -17782,7 +17818,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298605",
@@ -17821,7 +17857,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298585",
@@ -17860,7 +17896,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298559",
@@ -17899,7 +17935,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298543",
@@ -17938,7 +17974,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298439",
@@ -17977,7 +18013,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298435",
@@ -18016,7 +18052,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298414",
@@ -18055,7 +18091,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298391",
@@ -18094,7 +18130,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298386",
@@ -18133,7 +18169,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298250",
@@ -18172,7 +18208,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298152",
@@ -18211,7 +18247,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298100",
@@ -18250,7 +18286,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298084",
@@ -18289,7 +18325,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298083",
@@ -18328,7 +18364,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298056",
@@ -18367,7 +18403,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298031",
@@ -18406,7 +18442,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297997",
@@ -18445,7 +18481,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297996",
@@ -18484,7 +18520,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297974",
@@ -18523,7 +18559,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297936",
@@ -18562,7 +18598,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297928",
@@ -18601,7 +18637,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297743",
@@ -18796,7 +18832,7 @@
         "Named owner": 8
       },
       "score": 48,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297487",
@@ -25116,7 +25152,7 @@
         "Named owner": 8
       },
       "score": 44,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296128",
@@ -25252,7 +25288,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbsfBqOxJzPEZZffqeHZBeFGJhuVz34+5Y/273dTyHGPkprNULsoJ9V0/bj3eu0gUaznUvKw1TzQk1aTfMUQiMc29lVFJWNlOylMLzBH8nUDvhmiIikhE0HqYJ6CmxoImA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DUPONT+LA+PORTE+FCU",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ILDEFONSO ZERMENO",
+      "match_reason": "Name \u2192 single property (2w): ILDEFONSO, ZERMENO",
       "prop_address": "3301 W COUNTRY CLUB DR",
       "prop_city": "SHOREACRES",
       "prop_state": "TX",
@@ -25439,7 +25475,7 @@
         "Institutional owner": -25
       },
       "score": 43,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299381",
@@ -25482,7 +25518,7 @@
         "Institutional owner": -25
       },
       "score": 43,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297498",
@@ -25568,7 +25604,7 @@
         "Institutional owner": -25
       },
       "score": 43,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-290612",
@@ -25779,7 +25815,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JONES+ROGER",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ROGER JONES",
+      "match_reason": "Name \u2192 single property (2w): ROGER, JONES",
       "prop_address": "10119 CHATTERTON DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -26369,7 +26405,7 @@
         "owner_occupied": true,
         "apn": "061-134-051-0013"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -26802,7 +26838,7 @@
         "owner_occupied": true,
         "apn": "137-949-003-0004"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -26897,7 +26933,7 @@
         "owner_occupied": true,
         "apn": "117-882-002-0006"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -26987,7 +27023,7 @@
         "owner_occupied": true,
         "apn": "130-862-001-0020"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27062,7 +27098,7 @@
         "owner_occupied": true,
         "apn": "150-118-003-0001"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27137,7 +27173,7 @@
         "owner_occupied": true,
         "apn": "092-230-000-0027"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27232,7 +27268,7 @@
         "owner_occupied": true,
         "apn": "098-563-000-0022"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27307,7 +27343,7 @@
         "owner_occupied": true,
         "apn": "116-152-003-0056"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27382,7 +27418,7 @@
         "owner_occupied": true,
         "apn": "104-259-000-0012"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27459,7 +27495,7 @@
         "owner_occupied": true,
         "apn": "146-855-005-0019"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27554,7 +27590,7 @@
         "owner_occupied": true,
         "apn": "106-075-000-0004"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27649,7 +27685,7 @@
         "owner_occupied": true,
         "apn": "114-046-001-0030"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27744,7 +27780,7 @@
         "owner_occupied": true,
         "apn": "115-901-002-0013"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27839,7 +27875,7 @@
         "owner_occupied": true,
         "apn": "135-513-002-0024"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -27930,7 +27966,7 @@
         "owner_occupied": true,
         "apn": "084-334-000-0018"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28017,7 +28053,7 @@
         "owner_occupied": true,
         "apn": "115-377-001-0006"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28112,7 +28148,7 @@
         "owner_occupied": true,
         "apn": "120-956-000-0018"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28199,7 +28235,7 @@
         "owner_occupied": true,
         "apn": "112-304-000-0031"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28285,7 +28321,7 @@
         "owner_occupied": false,
         "apn": "077-182-026-0012"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28360,7 +28396,7 @@
         "owner_occupied": true,
         "apn": "114-252-001-0001"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28435,7 +28471,7 @@
         "owner_occupied": true,
         "apn": "097-381-000-0005"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28509,7 +28545,7 @@
         "owner_occupied": false,
         "apn": "120-988-004-0029"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28599,7 +28635,7 @@
         "owner_occupied": true,
         "apn": "102-104-000-0017"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28694,7 +28730,7 @@
         "owner_occupied": true,
         "apn": "134-210-002-0011"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28780,7 +28816,7 @@
         "owner_occupied": true,
         "apn": "128-166-001-0013"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28855,7 +28891,7 @@
         "owner_occupied": true,
         "apn": "035-109-084-0027"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28945,7 +28981,7 @@
         "owner_occupied": true,
         "apn": "073-064-009-0002"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -28962,7 +28998,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JAMES+LISA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): LISA JAMES",
+      "match_reason": "Name \u2192 single property (2w): LISA, JAMES",
       "prop_address": "12211 WESTLOCK DR",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -29039,7 +29075,7 @@
         "owner_occupied": true,
         "apn": "114-395-003-0029"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29114,7 +29150,7 @@
         "owner_occupied": true,
         "apn": "060-085-011-0006"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29209,7 +29245,7 @@
         "owner_occupied": true,
         "apn": "111-523-000-0044"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29226,7 +29262,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SALAZAR+TERESA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): TERESA, SALAZAR",
+      "match_reason": "Name \u2192 single property (2w): TERESA SALAZAR",
       "prop_address": "3716 MINGLEWOOD BLVD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -29295,7 +29331,7 @@
         "owner_occupied": true,
         "apn": "076-126-019-0003"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29386,7 +29422,7 @@
         "owner_occupied": true,
         "apn": "060-097-001-0015"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29481,7 +29517,7 @@
         "owner_occupied": true,
         "apn": "113-578-004-0048"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29560,7 +29596,7 @@
         "owner_occupied": true,
         "apn": "116-162-003-0031"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29647,7 +29683,7 @@
         "owner_occupied": true,
         "apn": "114-671-016-0022"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29742,7 +29778,7 @@
         "owner_occupied": true,
         "apn": "075-139-012-0006"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29817,7 +29853,7 @@
         "owner_occupied": true,
         "apn": "039-082-000-0041"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29903,7 +29939,7 @@
         "owner_occupied": true,
         "apn": "123-080-002-0029"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -29994,7 +30030,7 @@
         "owner_occupied": true,
         "apn": "130-618-003-0021"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30069,7 +30105,7 @@
         "owner_occupied": true,
         "apn": "106-229-000-0019"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30158,7 +30194,7 @@
         "owner_occupied": true,
         "apn": "111-861-000-0025"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30233,7 +30269,7 @@
         "owner_occupied": true,
         "apn": "124-733-001-0006"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30328,7 +30364,7 @@
         "owner_occupied": true,
         "apn": "118-774-001-0039"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30423,7 +30459,7 @@
         "owner_occupied": true,
         "apn": "116-659-001-0003"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30518,7 +30554,7 @@
         "owner_occupied": true,
         "apn": "115-080-054-0060"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30612,7 +30648,7 @@
         "owner_occupied": true,
         "apn": "092-210-000-0020"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30687,7 +30723,7 @@
         "owner_occupied": true,
         "apn": "123-430-003-0018"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30704,7 +30740,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=VILLANUEVA+YOLANDA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): YOLANDA VILLANUEVA",
+      "match_reason": "Name \u2192 single property (2w): YOLANDA, VILLANUEVA",
       "prop_address": "5301 PALMETTO ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -30782,7 +30818,7 @@
         "owner_occupied": true,
         "apn": "125-715-001-0001"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30873,7 +30909,7 @@
         "owner_occupied": true,
         "apn": "137-824-001-0025"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -30967,7 +31003,7 @@
         "owner_occupied": true,
         "apn": "114-418-001-0005"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31060,7 +31096,7 @@
         "owner_occupied": true,
         "apn": "119-186-001-0054"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31135,7 +31171,7 @@
         "owner_occupied": true,
         "apn": "115-853-005-0003"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31230,7 +31266,7 @@
         "owner_occupied": true,
         "apn": "036-119-007-0007"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31325,7 +31361,7 @@
         "owner_occupied": true,
         "apn": "123-665-003-0012"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31418,7 +31454,7 @@
         "owner_occupied": true,
         "apn": "124-404-001-0036"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31512,7 +31548,7 @@
         "owner_occupied": true,
         "apn": "100-039-000-0011"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31607,7 +31643,7 @@
         "owner_occupied": true,
         "apn": "120-633-002-0037"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31701,7 +31737,7 @@
         "owner_occupied": true,
         "apn": "117-825-036-0025"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31796,7 +31832,7 @@
         "owner_occupied": true,
         "apn": "141-053-001-0006"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31813,7 +31849,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SAAVEDRA+JOSE+A",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): A, SAAVEDRA JOSE",
+      "match_reason": "Name \u2192 single property (3w): A SAAVEDRA JOSE",
       "prop_address": "14019 ALDERSON ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -31868,7 +31904,7 @@
         "owner_occupied": true,
         "apn": "600-000-301-9731"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -31959,7 +31995,7 @@
         "owner_occupied": true,
         "apn": "016-263-000-1120"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32054,7 +32090,7 @@
         "owner_occupied": true,
         "apn": "114-317-012-0492"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32129,7 +32165,7 @@
         "owner_occupied": true,
         "apn": "123-870-003-0007"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32254,7 +32290,7 @@
         "owner_occupied": true,
         "apn": "114-134-003-0032"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32349,7 +32385,7 @@
         "owner_occupied": true,
         "apn": "117-012-001-0027"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32436,7 +32472,7 @@
         "owner_occupied": true,
         "apn": "110-590-000-0006"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32531,7 +32567,7 @@
         "owner_occupied": true,
         "apn": "106-254-000-0003"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32606,7 +32642,7 @@
         "owner_occupied": true,
         "apn": "121-294-010-0019"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32681,7 +32717,7 @@
         "owner_occupied": true,
         "apn": "122-239-002-0044"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32776,7 +32812,7 @@
         "owner_occupied": false,
         "apn": "114-297-013-0052"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32851,7 +32887,7 @@
         "owner_occupied": true,
         "apn": "118-749-001-0003"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -32938,7 +32974,7 @@
         "owner_occupied": true,
         "apn": "133-780-001-0011"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -33031,7 +33067,7 @@
         "owner_occupied": true,
         "apn": "084-434-000-0008"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -33118,7 +33154,7 @@
         "owner_occupied": true,
         "apn": "042-230-000-0115"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -33193,7 +33229,7 @@
         "owner_occupied": true,
         "apn": "130-610-002-0006"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -33288,7 +33324,7 @@
         "owner_occupied": true,
         "apn": "089-132-000-0370"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -33375,7 +33411,7 @@
         "owner_occupied": true,
         "apn": "101-397-000-0024"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -33466,7 +33502,7 @@
         "owner_occupied": true,
         "apn": "115-639-006-0026"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -37289,7 +37325,7 @@
         "Named owner": 8
       },
       "score": 41,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298162",
@@ -37328,7 +37364,7 @@
         "Named owner": 8
       },
       "score": 41,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296985",
@@ -40387,7 +40423,7 @@
         "Named owner": 8
       },
       "score": 38,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-295668",
@@ -40482,7 +40518,7 @@
         "owner_occupied": true,
         "apn": "125-324-001-0010"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -41179,7 +41215,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): PREBO, BARANGO",
+      "match_reason": "Name \u2192 single property (2w): PREBO BARANGO",
       "prop_address": "5823 WICKOVER LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -41658,8 +41694,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): COLEMAN KRISTAL",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): COLEMAN KRISTAL D",
       "prop_address": "10210 INWOOD SHADOWS ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -42243,7 +42279,7 @@
         "Named owner": 8
       },
       "score": 38,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299468",
@@ -42283,7 +42319,7 @@
         "Named owner": 8
       },
       "score": 38,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297548",
@@ -42439,7 +42475,7 @@
         "owner_occupied": false,
         "apn": "069-106-013-0013"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -43096,7 +43132,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVU8TLDdERiiG+K05VVv7bqwbe2f6somPzsfei2VC0wz8dohggkRojYs4hB/EWRrwhrxirG50z3HGpRWoC4zqXaVj7sqtGGASjS4tBCeowUDjmD7YOQh1YQeAxjYh3hESJA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CASALE+STELLA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): STELLA CASALE",
+      "match_reason": "Name \u2192 single property (2w): STELLA, CASALE",
       "prop_address": "9423 BAUMAN RD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -43999,7 +44035,7 @@
         "Named owner": 8
       },
       "score": 34,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297007",
@@ -44038,7 +44074,7 @@
         "Named owner": 8
       },
       "score": 34,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296780",
@@ -129298,7 +129334,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299900",
@@ -129336,7 +129372,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296248",
@@ -129410,8 +129446,8 @@
         "owner_occupied": true,
         "apn": "073-100-032-0042"
       },
-      "dm_enriched_date": "2026-07-25",
-      "is_new": true
+      "dm_enriched_date": "2026-07-26",
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299829",
@@ -129449,7 +129485,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299642",
@@ -129487,7 +129523,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299523",
@@ -129525,7 +129561,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299522",
@@ -129563,7 +129599,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299404",
@@ -129579,7 +129615,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUkQZWDtVSQuy3onXMgEVzdbDZN9k6E1LidDxZJYDlyJt+Zg9vq8rPM57z5L3p5xbS0/bJAgjX4uCtI7Uq7ZoNj2qPTk0IWkc0/5K+dhM0lGpePTZgasjJKai+zLAYRshg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AGUIRRE+DELIA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DELIA, AGUIRRE",
+      "match_reason": "Name \u2192 single property (2w): DELIA AGUIRRE",
       "prop_address": "12370 S SAN CIR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -129601,7 +129637,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299124",
@@ -129639,7 +129675,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299094",
@@ -129677,7 +129713,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299091",
@@ -129715,7 +129751,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299066",
@@ -129753,7 +129789,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298936",
@@ -129791,7 +129827,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298794",
@@ -129829,7 +129865,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298793",
@@ -129867,7 +129903,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298689",
@@ -129905,7 +129941,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298665",
@@ -129943,7 +129979,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298609",
@@ -129981,7 +130017,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298577",
@@ -130019,7 +130055,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298536",
@@ -130057,7 +130093,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298466",
@@ -130095,7 +130131,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298307",
@@ -130133,7 +130169,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298265",
@@ -130171,7 +130207,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298253",
@@ -130209,7 +130245,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298238",
@@ -130247,7 +130283,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298159",
@@ -130285,7 +130321,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298125",
@@ -130323,7 +130359,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298105",
@@ -130338,8 +130374,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfReIdxbGMoNP9uVEwRY3SSuQN2CgaybvT1e9QVD1EfcAeA4J34d/9BDDJqchwvviT6J2SdQivjVhwzhbw12r6kyZMWYUWSbhJ/XWlWUe3u19jLYUveZQCklp9GomBVR8Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=KOCHEL+MARILYN+LOUISE+EST",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): KOCHEL MARILYN LOUISE",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): KOCHEL MARILYN",
       "prop_address": "1435 SHILLINGTON DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -130361,7 +130397,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298033",
@@ -130399,7 +130435,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297792",
@@ -130437,7 +130473,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297778",
@@ -130551,7 +130587,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297687",
@@ -130589,7 +130625,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297683",
@@ -130665,7 +130701,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297630",
@@ -130817,7 +130853,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297439",
@@ -130855,7 +130891,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297431",
@@ -130969,7 +131005,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297243",
@@ -131007,7 +131043,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297242",
@@ -131327,7 +131363,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcjQ1/WO6iIntjVpyQpDpzXgU9Oio767iedUJuSkU0m0MYPKqVXISqwfBplQTlhfNJWngJDVhOGe3Y4PlApXAD8k3UAQXayYo7YFocpdiAE38ith74pzONgARJ68VLyZ4Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LOPEZ+MELINDA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MELINDA LOPEZ",
+      "match_reason": "Name \u2192 single property (2w): MELINDA, LOPEZ",
       "prop_address": "3022 GROTON DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -132353,7 +132389,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVSEicAxwTLIzF7vqLniSn+6ZvccLQp6FVu6AM7rgnhSWIHXwe74JuvmMKNZV62uXY8TamLvdPxJkgGVU9x9vhOm2Hd1apazsCdn4rTWtd78NfP054l8xB1AeV9ZRplvatQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CORRO+CATALINA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CATALINA, CORRO",
+      "match_reason": "Name \u2192 single property (2w): CATALINA CORRO",
       "prop_address": "6618 MISTY DALE DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -132732,8 +132768,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWfOYUCio+cT2NfzO//nEhevgQo/K2c5lSOP25ELSxjhnbdkgWfcxA0GduWWOsB88AqAYABBezMEDSzOfUHqx5ESnNAKfjx946rYTofZsmXLAHPLMoil2j3L/u5jbn2p0A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=TRAN+DUYEN+THI",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DO CON",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): DO CON KIM",
       "prop_address": "10430 IRIS LAKE CT",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -134137,7 +134173,7 @@
         "owner_occupied": true,
         "apn": "094-195-000-0028"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -134936,7 +134972,7 @@
         "Named owner": 8
       },
       "score": 26,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-291030",
@@ -135332,7 +135368,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVO0IMDiO/lWX28eiEopjV9a4jfLjKvyp2umPxzmcAftACAHF0gNIi2UTjbbLIMLkkMXtEnR/JeB3MgqlLdIbVc5m560FIHjQCe8ZLBW9hVIDrabZw7fRejghjzUVqI5Gw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CRUMP+PHILLIP",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): PHILLIP, CRUMP",
+      "match_reason": "Name \u2192 single property (2w): PHILLIP CRUMP",
       "prop_address": "12322 BOWSMAN DR",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -135737,7 +135773,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299814",
@@ -135778,7 +135814,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299756",
@@ -135819,7 +135855,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299542",
@@ -135860,7 +135896,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299207",
@@ -135901,7 +135937,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299188",
@@ -135942,7 +135978,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299098",
@@ -135957,8 +135993,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZmzzhQF4FDqNz/HdHomWTFcD37me7tdFvyHrpo7jhTLoBeYuju7YyDU8ZBmESllNrDWWTWpEWYdsL+dCFCkGZrZs8qtrL7RhGAEu965H7sDsyb9DMrty74EYEJLZ9QOmQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CRUZ+CARMEN+GLORIA%2C+DEUTSCHE+BANK+TRUST+COMPANY+AMERICAS%2C+GR",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): RESIDENTIAL ACCREDIT",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): RESIDENTIAL ACCREDIT LOANS",
       "prop_address": "4922 REDWING BROOK TRL",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -135983,7 +136019,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-289452",
@@ -136054,8 +136090,8 @@
         "owner_occupied": false,
         "apn": "109-792-000-0012"
       },
-      "dm_enriched_date": "2026-07-25",
-      "is_new": true
+      "dm_enriched_date": "2026-07-26",
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298986",
@@ -136130,8 +136166,8 @@
         "owner_occupied": false,
         "apn": "127-796-004-0032"
       },
-      "dm_enriched_date": "2026-07-25",
-      "is_new": true
+      "dm_enriched_date": "2026-07-26",
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298856",
@@ -136172,7 +136208,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298712",
@@ -136213,7 +136249,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298646",
@@ -136254,7 +136290,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298408",
@@ -136295,7 +136331,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298313",
@@ -136336,7 +136372,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-294327",
@@ -136412,7 +136448,7 @@
         "owner_occupied": false,
         "apn": "142-753-005-0045"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -136454,7 +136490,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298026",
@@ -136495,7 +136531,7 @@
         "Institutional owner": -25
       },
       "score": 25,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297612",
@@ -136652,7 +136688,7 @@
         "owner_occupied": false,
         "apn": "128-883-001-0001"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -136710,7 +136746,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVf8zhu+GlMc9Q6nL6IRDdmqdtROt8bPYdPXKsNwjZ1wjCbxKJbamBpL1PZzfM+IY3+TzM+wpNYWxdJ4B4ixiuN/dw7xO3WuExI2EWkxoFqJpGtjgEoz9EkZ/zaBbtQ3/IQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=VASCO+SERVICES+LLC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): RANCH REMINGTON",
+      "match_reason": "Name \u2192 single property (2w): RANCH, REMINGTON",
       "prop_address": "1255 GRASSY VIEW DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -136765,7 +136801,7 @@
         "owner_occupied": false,
         "apn": "128-661-002-0008"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -137929,8 +137965,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVd0Us2gcsVJwAd7QdNtERUos5QDinhYBd2ZRRbM3OkE8hYxdy5yOK9UFd0ucdi+CrCz3CitXAZ9ZNc0mKYDR58iEjI/AUmLF9Sf5lA+Lal75IAUkOl8Bhs8VdwEUFEv1rw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=D%27AUNOY+CHRISTOPHER+K%2C+D%27AUNOY+ELIZABETH%2C+KD+HEIGHTS+PROPERT",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): D AUNOY CHRISTOPHER",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): D AUNOY",
       "prop_address": "1525 DOROTHY ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -138011,8 +138047,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVeXWJreGdgZgTkgJfYqeFce4CXByz1NHhHN1fT/bJQOn2DFyr6mQTKtOcx6qTU70O7iLdA2AtakaTtqYUGqvwtnlozqrhHRIGgEUbTBDUZKXZ6PGZO3Xr5VOAd/IJA/7UQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=EAMANI+ARUN+KUMAR%2C+TOLL+SOUTHWEST+LLC",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): EAMANI ARUN KUMAR",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): EAMANI ARUN",
       "prop_address": "10306 GRAPE CREEK GROVE LN",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -138093,8 +138129,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZwTegCx1diNKnwO6SWE7qH8a0iqePevqoj9YV1yHSLUfyRTZ15vhtaIygvI159lIXcZbBnqEgZryzQVJ+wIfSzSG3jSpoFMpdGzsit4p3EhlzMvj5WPfM7fYWwdL8oO6Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FULKERSON+MANDY+L%2C+JOHNSON+DEDRICK+L%2C+OPENDOOR+PROPERTY+TRUS",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): FULKERSON MANDY",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): FULKERSON MANDY L",
       "prop_address": "23130 WILLOW CANYON DR",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -138314,7 +138350,7 @@
         "owner_occupied": false,
         "apn": "105-493-000-0028"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -138371,8 +138407,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZz5GsV1o1MFGbs0NdWr9Fql/v5Gjt8iEkteKDZFSelyb+gU8uA6UyELHnePstyyJDLfXdWsiye1y5/iENNIHKcpuc9oKex1L5P2i7ahwpLlliaX6KMLyjixlrTsvGn0sw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ALBA+KARLA+M%2C+BAEZA+OMAR%2C+ONYX+LAND+PARTNERS+LLC",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): ALBA KARLA M",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): ALBA KARLA",
       "prop_address": "4122 ECHO MOUNTAIN DR",
       "prop_city": "KINGWOOD",
       "prop_state": "TX",
@@ -138717,7 +138753,7 @@
         "Institutional owner": -25
       },
       "score": 23,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297492",
@@ -138801,7 +138837,7 @@
         "Institutional owner": -25
       },
       "score": 21,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299783",
@@ -138842,7 +138878,7 @@
         "Institutional owner": -25
       },
       "score": 21,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299782",
@@ -138883,7 +138919,7 @@
         "Institutional owner": -25
       },
       "score": 21,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299781",
@@ -138924,7 +138960,7 @@
         "Institutional owner": -25
       },
       "score": 21,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298982",
@@ -138965,7 +139001,7 @@
         "Institutional owner": -25
       },
       "score": 21,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298018",
@@ -139006,7 +139042,7 @@
         "Institutional owner": -25
       },
       "score": 21,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297717",
@@ -139614,7 +139650,7 @@
         "owner_occupied": false,
         "apn": "116-331-006-0022"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -139750,7 +139786,7 @@
         "owner_occupied": false,
         "apn": "099-110-000-0060"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -140273,8 +140309,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfUsbhw1ZpACNjKhAVraI+5gVz3IM+epfEZccz7nJL6qpwBQ8pcCgHiDIyL35Y071rhG51Hgn7SNGQIxMRzc6w5Iw7MxZ1Xl44xkrVoYDx+Ujzp0LPt4jxhdgSuj7Cy9hA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HENRY+KEATON+HAYES%2C+LEE+ALEXIS+NICOLE%2C+NORTHSTONE+BUILDERS+L",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): HENRY KEATON HAYES",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): HENRY KEATON",
       "prop_address": "7203 HOUSMAN ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -140663,8 +140699,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVR+C8GbDTNf1YFzUFOFBa4l7DSk5V2MQT0wKpRj3356GVx8oUHP6ePnpgzpjAUi5Tn51K3uiTuISeljXyIzz84MPcj3ukVBxfB5wtNVQzaRrHPfBou5NJrfWnx6d6/PwMw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ALBANO+IVAN%2C+JORDAN+LYDIA%2C+JORDAN+WARNER%2C+WARNER+AND+LYDIA+J",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): WARNER AND",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): WARNER AND LYDIA",
       "prop_address": "10522 NORTHVIEW DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -140855,7 +140891,7 @@
         "owner_occupied": true,
         "apn": "060-105-002-0001"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -140930,7 +140966,7 @@
         "owner_occupied": false,
         "apn": "114-928-010-0005"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -141005,7 +141041,7 @@
         "owner_occupied": false,
         "apn": "086-227-000-0017"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -141093,7 +141129,7 @@
         "owner_occupied": true,
         "apn": "131-104-004-0021"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -141131,7 +141167,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299702",
@@ -141168,7 +141204,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299532",
@@ -141205,7 +141241,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299505",
@@ -141242,7 +141278,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299181",
@@ -141279,7 +141315,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299125",
@@ -141316,7 +141352,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299077",
@@ -141353,7 +141389,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298666",
@@ -141390,7 +141426,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298588",
@@ -141427,7 +141463,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298444",
@@ -141464,7 +141500,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298442",
@@ -141501,7 +141537,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298393",
@@ -141538,7 +141574,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298319",
@@ -141575,7 +141611,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298289",
@@ -141612,7 +141648,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298216",
@@ -141649,7 +141685,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298199",
@@ -141686,7 +141722,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298185",
@@ -141723,7 +141759,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298013",
@@ -141760,7 +141796,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297947",
@@ -141797,7 +141833,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297923",
@@ -141834,7 +141870,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297878",
@@ -141908,7 +141944,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297828",
@@ -141945,7 +141981,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297804",
@@ -142019,7 +142055,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297578",
@@ -142056,7 +142092,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297555",
@@ -142167,7 +142203,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297456",
@@ -142204,7 +142240,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297441",
@@ -142241,7 +142277,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297370",
@@ -142389,7 +142425,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297229",
@@ -142463,7 +142499,7 @@
         "Named owner": 8
       },
       "score": 16,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296712",
@@ -146166,7 +146202,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300194",
@@ -146206,7 +146242,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299831",
@@ -146246,7 +146282,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299350",
@@ -146286,7 +146322,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299277",
@@ -146326,7 +146362,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299255",
@@ -146366,7 +146402,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299168",
@@ -146406,7 +146442,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299132",
@@ -146446,7 +146482,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298685",
@@ -146486,7 +146522,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298677",
@@ -146526,7 +146562,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298652",
@@ -146566,7 +146602,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298595",
@@ -146606,7 +146642,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298272",
@@ -146646,7 +146682,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298215",
@@ -146686,7 +146722,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298189",
@@ -146726,7 +146762,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298167",
@@ -146766,7 +146802,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298158",
@@ -146806,7 +146842,7 @@
         "Institutional owner": -25
       },
       "score": 15,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297622",
@@ -150006,7 +150042,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298981",
@@ -150046,7 +150082,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298037",
@@ -150086,7 +150122,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297734",
@@ -150447,7 +150483,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299501",
@@ -150463,7 +150499,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZQ16IbDaIaMlzUeukojN2UuNear29w+QEfi1K4a1Qhfq5ebI1DsGH7E4NtdtFUNW+ks7VTtMiKf4HsdzX6fGTwuQt8aoa1zLf7txwMGxzriShDVKgdv65o8CQet5FT+Iw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FLAGSHIP+FINANCIAL+GROUP+LLC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JORGE LIMON",
+      "match_reason": "Name \u2192 single property (2w): JORGE, LIMON",
       "prop_address": "1405 MCDUGALD RD",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -150488,7 +150524,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299099",
@@ -150529,7 +150565,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298050",
@@ -150570,7 +150606,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297956",
@@ -150585,8 +150621,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbCFxoihnePbYpf/RqOultBLJz2UomXBB9FZgkiqCdwZ8WiO5pyFEBI8ABnN2FvUcbO71G+xV5DNa2iOB4zJBZWF1rzadhyu9nN2UwiJE6Ad7K/Eu1+/hgS7UNh8PML7SQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=COLES+CROSSING+COMMUNITY+ASSOCIATION+INC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): STEIN DANIEL",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): STEIN DANIEL A",
       "prop_address": "15810 BUHLER CT",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -150611,7 +150647,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297910",
@@ -150652,7 +150688,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297891",
@@ -150750,7 +150786,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVU1gP4uLLTsA7A0HwUTH97U/Mn+4za3K1wVd3VskWG2W1Cwg+E0FkW9x2dNETlGe5enWwGR9uoAvW6fItQ9xksCh+zg0jxKLe/c9wQZQv/vlUNaBpLfE97yFFHrnvSo4Vg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CAPITAL+ONE+N+A",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): S, HARDIN KIMBERLY",
+      "match_reason": "Name \u2192 single property (3w): S HARDIN KIMBERLY",
       "prop_address": "20203 POWERSCOURT DR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -150775,7 +150811,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297317",
@@ -150816,7 +150852,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297311",
@@ -150857,7 +150893,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297310",
@@ -150898,7 +150934,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297307",
@@ -150939,7 +150975,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297301",
@@ -150980,7 +151016,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297291",
@@ -151021,7 +151057,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297289",
@@ -151062,7 +151098,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297288",
@@ -151103,7 +151139,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297287",
@@ -151144,7 +151180,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297284",
@@ -151185,7 +151221,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297283",
@@ -151226,7 +151262,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297282",
@@ -151267,7 +151303,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297279",
@@ -151308,7 +151344,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297278",
@@ -151431,7 +151467,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297255",
@@ -151472,7 +151508,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297249",
@@ -151554,7 +151590,7 @@
         "Institutional owner": -25
       },
       "score": 11,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296306",
@@ -152568,7 +152604,7 @@
         "owner_occupied": false,
         "apn": "130-903-001-0003"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -152954,7 +152990,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQEz2eAiKwr895STR+X7k6s3+ngmL42PCNMCJLBN6Bx55xrNDmq1RcUENLuOnEGclkPMDnpJvYd5KFo0K5O9BOgRXDfnB9/wQQN7219KTJC7s+EyXyki4cgYvIZPSS8ssA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CAMDEN+PROPERTY+TRUST",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DEBBIE ESPINOSA",
+      "match_reason": "Name \u2192 single property (2w): DEBBIE, ESPINOSA",
       "prop_address": "6950 AVENUE L",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -154676,7 +154712,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVadBlBvD+NnOg4d06FbVHGA8Kcb0bYzXGLBxXaraTpFHCqt6hwEyionw6n7X0h0Mn/Xc3/brO0DfQcfYnfIB3q6ttrMEXKxomEMpGqYLhypvgQ6TtusmTE2UU5HoTYtFSg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DNF+ASSOCIATES+LLC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): BERTHA FERNANDEZ",
+      "match_reason": "Name \u2192 single property (2w): BERTHA, FERNANDEZ",
       "prop_address": "2626 FENNELL ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -155660,7 +155696,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVrW8+a1Glj6loNFA45xHtTYeHbAow3H4zZxf2aUy5nRKoVRIo5DsyJ4dFbg4MOKXyQNIjFxKpZFH1yjbT4BqSKbpsE9C1vOpNHOPcix38TeSBdDUUz53P02WRbjfRe+1Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=REGIONS+BANK",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CLARENCE, DAVIS",
+      "match_reason": "Name \u2192 single property (2w): CLARENCE DAVIS",
       "prop_address": "3306 CANDLELON DR",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -156223,7 +156259,7 @@
         "owner_occupied": false,
         "apn": "038-278-000-0017"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -156374,7 +156410,7 @@
         "owner_occupied": false,
         "apn": "118-809-001-0001"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -156445,7 +156481,7 @@
         "owner_occupied": false,
         "apn": "043-217-000-0029"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -156517,7 +156553,7 @@
         "owner_occupied": true,
         "apn": "042-075-003-0103"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -156603,7 +156639,7 @@
         "owner_occupied": false,
         "apn": "041-056-000-0058"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -156716,7 +156752,7 @@
         "owner_occupied": false,
         "apn": "117-174-000-0001"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -156830,7 +156866,7 @@
         "owner_occupied": false,
         "apn": "117-568-001-0002"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -156905,7 +156941,7 @@
         "owner_occupied": false,
         "apn": "084-148-000-0423"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -157037,7 +157073,7 @@
         "owner_occupied": false,
         "apn": "068-124-002-0002"
       },
-      "dm_enriched_date": "2026-07-25",
+      "dm_enriched_date": "2026-07-26",
       "is_new": false
     },
     {
@@ -160444,8 +160480,8 @@
         "owner_occupied": false,
         "apn": "123-824-001-0002"
       },
-      "dm_enriched_date": "2026-07-25",
-      "is_new": true
+      "dm_enriched_date": "2026-07-26",
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299401",
@@ -160486,7 +160522,7 @@
         "Institutional owner": -25
       },
       "score": 5,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299393",
@@ -160527,7 +160563,7 @@
         "Institutional owner": -25
       },
       "score": 5,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299390",
@@ -160568,7 +160604,7 @@
         "Institutional owner": -25
       },
       "score": 5,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299389",
@@ -160609,7 +160645,7 @@
         "Institutional owner": -25
       },
       "score": 5,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299388",
@@ -160650,7 +160686,7 @@
         "Institutional owner": -25
       },
       "score": 5,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299386",
@@ -160691,7 +160727,7 @@
         "Institutional owner": -25
       },
       "score": 5,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298822",
@@ -160732,7 +160768,7 @@
         "Institutional owner": -25
       },
       "score": 5,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298384",
@@ -160773,7 +160809,7 @@
         "Institutional owner": -25
       },
       "score": 5,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297765",
@@ -162182,8 +162218,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=OAKS+OF+DEVONSHIRE+HOA+INC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): LY BICH",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): LY BICH PHUONG",
       "prop_address": "20010 PINE RUN CT",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -162822,7 +162858,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299869",
@@ -162862,7 +162898,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299691",
@@ -162902,7 +162938,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299568",
@@ -162942,7 +162978,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299379",
@@ -162982,7 +163018,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299047",
@@ -163022,7 +163058,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298338",
@@ -163062,7 +163098,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298232",
@@ -163102,7 +163138,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298124",
@@ -163142,7 +163178,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297843",
@@ -163382,7 +163418,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297320",
@@ -163422,7 +163458,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297300",
@@ -163462,7 +163498,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297258",
@@ -163502,7 +163538,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297257",
@@ -163542,7 +163578,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297253",
@@ -163582,7 +163618,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297145",
@@ -163662,7 +163698,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297031",
@@ -163702,7 +163738,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297009",
@@ -163742,7 +163778,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297005",
@@ -163782,7 +163818,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297004",
@@ -163822,7 +163858,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297003",
@@ -163862,7 +163898,7 @@
         "Institutional owner": -25
       },
       "score": 1,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296616",
@@ -167062,7 +167098,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299392",
@@ -167102,7 +167138,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-299387",
@@ -167142,7 +167178,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298821",
@@ -167182,7 +167218,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298820",
@@ -167222,7 +167258,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298819",
@@ -167262,7 +167298,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298818",
@@ -167302,7 +167338,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-295357",
@@ -178826,7 +178862,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-300153",
@@ -178865,7 +178901,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-298217",
@@ -178903,7 +178939,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297895",
@@ -178942,7 +178978,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-297607",
@@ -178996,7 +179032,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVT/dCwOaPr7M5htWhCCb6VW8JtPIDh5mABr6DXiJHlBI20WuT/Ntt6UAfTv9FifZ+4SGviBGkAwNvphag5Gzkc0OVCFo1Nz7FzdnLV9+IhEO8mAMAVDIObZmuhwlp6cFmA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ZEEM+CAPITAL+LLC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CAPITAL, ZEEM",
+      "match_reason": "Name \u2192 single property (2w): CAPITAL ZEEM",
       "prop_address": "3818 ALMEDA ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -179057,7 +179093,7 @@
         "Institutional owner": -25
       },
       "score": 0,
-      "is_new": true
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-296655",
