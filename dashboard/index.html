@@ -801,6 +801,7 @@
   <button class="btn-tool" onclick="openImport()">📂 Import Tax List</button>
   <button class="btn-tool" onclick="exportSkipTrace()">⬇ Skip Trace CSV</button>
   <button class="btn-tool" onclick="exportGHL()">⬇ GHL CSV</button>
+  <button class="btn-tool gold" onclick="exportCallList()">📞 Call List CSV</button>
   <div style="margin-left:auto; font-family:var(--font-mono); font-size:11px; color:var(--grey); display:flex; align-items:center; gap:8px;">
     <span id="taxImportBadge" style="display:none; background:rgba(212,160,23,0.15); border:1px solid rgba(212,160,23,0.3); color:var(--gold2); padding:2px 8px; border-radius:2px; font-size:10px;"></span>
     <span id="stackedBadge" style="display:none; background:rgba(255,196,0,0.12); border:1px solid rgba(255,196,0,0.3); color:#ffc400; padding:2px 8px; border-radius:2px; font-size:10px;"></span>
@@ -1919,6 +1920,47 @@ function exportGHL() {
   });
 
   downloadCSV(rows, `harris_ghl_${new Date().toISOString().slice(0,10)}.csv`);
+}
+
+// ── Call List CSV ──────────────────────────────────────────────
+// A ready-to-dial list: ONLY rows that have a skip-traced phone, with
+// Owner / Phone(s) / Address as the leading columns so nothing important
+// is hidden off to the right. Rows without a phone are dropped entirely.
+function exportCallList() {
+  const src = (filtered.length ? filtered : ALL_RECORDS).filter(r => dmPhone(r, 0));
+  const cols = [
+    'Owner Name',
+    'Phone 1','Phone 1 DNC','Phone 2','Phone 2 DNC','Phone 3','Phone 3 DNC',
+    'Email 1','Email 2',
+    'Property Address','Property City','Property Zip',
+    'Lead Type','Amount Due',
+    'DM Est Value','DM Equity %','DM Equity $',
+    'Mailing Address','Match Confidence','Flags',
+    'Doc Link','HCAD Link',
+  ];
+
+  const rows = [cols];
+  src.forEach(r => {
+    const owner = r.dm_owner_name || r.contact || r.owner || '';
+    rows.push([
+      owner,
+      dmPhone(r,0), dmPhoneDNC(r,0), dmPhone(r,1), dmPhoneDNC(r,1), dmPhone(r,2), dmPhoneDNC(r,2),
+      dmEmail(r,0), dmEmail(r,1),
+      r.prop_address||'', r.prop_city||'', r.prop_zip||'',
+      r.cat_label||r.cat||'',
+      r.amount ? Number(r.amount).toFixed(2) : '',
+      r.dm_estimated_value ?? '', r.dm_equity_percent ?? '', r.dm_equity_dollars ?? '',
+      r.mail_address||'', r.match_confidence||'',
+      (r.flags||[]).join('; '),
+      r.clerk_url||'', r.hcad_url||'',
+    ]);
+  });
+
+  if (src.length === 0) {
+    alert('No skip-traced phone numbers in the current view yet. Try the "All" filter, or wait for the next enrichment run.');
+    return;
+  }
+  downloadCSV(rows, `harris_call_list_${new Date().toISOString().slice(0,10)}.csv`);
 }
 
 function downloadCSV(rows, filename) {
