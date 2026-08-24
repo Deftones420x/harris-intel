@@ -1,13 +1,13 @@
 {
-  "fetched_at": "2026-08-23T07:16:35.157342",
+  "fetched_at": "2026-08-24T07:27:21.401623",
   "source": "Harris County Clerk / HCAD",
   "date_range": {
-    "from": "2026-08-16",
-    "to": "2026-08-23"
+    "from": "2026-08-17",
+    "to": "2026-08-24"
   },
-  "total": 4268,
-  "with_address": 1038,
-  "new_count": 2,
+  "total": 4263,
+  "with_address": 1036,
+  "new_count": 0,
   "records": [
     {
       "doc_num": "RP-2026-340182",
@@ -87,7 +87,7 @@
         "owner_occupied": false,
         "apn": "137-757-002-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -172,7 +172,7 @@
         "owner_occupied": false,
         "apn": "115-075-001-0020"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -253,7 +253,7 @@
         "owner_occupied": true,
         "apn": "132-824-005-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -342,7 +342,7 @@
         "owner_occupied": true,
         "apn": "125-053-001-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -437,7 +437,7 @@
         "owner_occupied": true,
         "apn": "115-763-004-0046"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -527,7 +527,7 @@
         "owner_occupied": true,
         "apn": "102-386-000-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -617,7 +617,7 @@
         "owner_occupied": true,
         "apn": "116-802-009-0020"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -712,7 +712,7 @@
         "owner_occupied": true,
         "apn": "124-193-001-0017"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -728,8 +728,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVXVZMFczhvHuCvv27dpyJKePWD1cPyL728GfQ6Z4Q9UWFoEA/C4i0vUz9LIzpOxOK1cdTlqwzyOQ5P+JaiE3m1YXR02URgNdF5DUk840Ae1aHnxGs5k3CVjIS7jNGQmT+w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ANWAR+HAIDY+W%2C+ANWAR+RAFIK+W%2C+JOHAR+OMAR",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): ANWAR HAIDY W",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): ANWAR HAIDY",
       "prop_address": "18103 BLUES POINT DR",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -790,7 +790,7 @@
         "owner_occupied": false,
         "apn": "128-422-002-0023"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -881,7 +881,7 @@
         "owner_occupied": true,
         "apn": "066-045-008-0030"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -924,6 +924,45 @@
         "Named owner": 8
       },
       "score": 70,
+      "dm_enriched": true,
+      "dm_matched": true,
+      "dm_owner_name": "AMPARO DELEON",
+      "dm_email": [
+        "DE_LEON_DIANA@HOTMAIL.COM"
+      ],
+      "dm_property_id": "prop_131570871",
+      "dm_estimated_value": 151000,
+      "dm_equity_percent": 100,
+      "dm_equity_dollars": 151000,
+      "dm_sale_date": "2023-02-10T00:00:00.000Z",
+      "dm_data": {
+        "matched": true,
+        "dm_property_id": "prop_131570871",
+        "full_address": "8229 Woodlyn Rd Houston, TX, 77028",
+        "address": "8229 Woodlyn Rd",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77028",
+        "latitude": 29.841796377,
+        "longitude": -95.27554502,
+        "estimated_value": 151000,
+        "estimated_equity_amount": 151000,
+        "estimated_equity_percentage": 100,
+        "year_built": 1955,
+        "living_area_sqft": 1024,
+        "lot_size_sqft": 9100,
+        "num_bedrooms": 3,
+        "last_sale_date": "2023-02-10T00:00:00.000Z",
+        "last_sale_amount": 0,
+        "total_assessed_value": 51730,
+        "annual_property_tax_amount": 1099,
+        "num_mortgages": 0,
+        "total_original_loan_amount": 0,
+        "total_estimated_loan_balance": 0,
+        "owner_occupied": false,
+        "apn": "077-273-000-0001"
+      },
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -939,8 +978,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVRXwk5OnSCBRAbHv/NswMfr90bDA8mk9h4Q5tKh1jii4BQ+MHRaPqmPDBqe8PWgYmC+B/R4tBQsjmeqoMTMfknLeJI36f6gQc5qhMXu4YTRSQf3plTd9Do2gTN6Jz3Kvdw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CASA+MICHAEL+A+EST%2C+CURRY+PATRICIA+M%2C+FUENTES+KENNER+JOSE+RA",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): FUENTES KENNER",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): FUENTES KENNER JOSE",
       "prop_address": "7610 GREENSTONE ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -966,6 +1005,54 @@
         "Named owner": 8
       },
       "score": 70,
+      "dm_enriched": true,
+      "dm_matched": true,
+      "dm_owner_name": "KENNER RAMOS",
+      "dm_phone": [
+        {
+          "number": "8324875562",
+          "dnc": false
+        }
+      ],
+      "dm_email": [
+        "NOEMAI@DISH.COM",
+        "MANZANAREZELVA3@GMAIL.COM"
+      ],
+      "dm_property_id": "prop_131507136",
+      "dm_estimated_value": 206000,
+      "dm_equity_percent": 62,
+      "dm_equity_dollars": 117248,
+      "dm_sale_price": 219450,
+      "dm_sale_date": "2023-03-15T00:00:00.000Z",
+      "dm_data": {
+        "matched": true,
+        "dm_property_id": "prop_131507136",
+        "full_address": "7610 Greenstone St Houston, TX, 77087",
+        "address": "7610 Greenstone St",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77087",
+        "latitude": 29.689571,
+        "longitude": -95.289913,
+        "estimated_value": 206000,
+        "estimated_equity_amount": 117248,
+        "estimated_equity_percentage": 62,
+        "year_built": 1951,
+        "living_area_sqft": 1224,
+        "lot_size_sqft": 6000,
+        "num_bedrooms": 3,
+        "num_bathrooms": 1,
+        "last_sale_date": "2023-03-15T00:00:00.000Z",
+        "last_sale_amount": 219450,
+        "total_assessed_value": 191450,
+        "annual_property_tax_amount": 4069,
+        "num_mortgages": 1,
+        "total_original_loan_amount": 165000,
+        "total_estimated_loan_balance": 88752,
+        "owner_occupied": false,
+        "apn": "072-031-001-0002"
+      },
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -1008,6 +1095,42 @@
         "Named owner": 8
       },
       "score": 70,
+      "dm_enriched": true,
+      "dm_matched": true,
+      "dm_property_id": "prop_130829533",
+      "dm_estimated_value": 260000,
+      "dm_equity_percent": 100,
+      "dm_equity_dollars": 260000,
+      "dm_sale_date": "2004-06-16T00:00:00.000Z",
+      "dm_data": {
+        "matched": true,
+        "dm_property_id": "prop_130829533",
+        "full_address": "17919 Magenta Springs Dr Humble, TX, 77346",
+        "address": "17919 Magenta Springs Dr",
+        "city": "Humble",
+        "state": "TX",
+        "zip": "77346",
+        "latitude": 29.979032,
+        "longitude": -95.178884,
+        "estimated_value": 260000,
+        "estimated_equity_amount": 260000,
+        "estimated_equity_percentage": 100,
+        "year_built": 2003,
+        "living_area_sqft": 1576,
+        "lot_size_sqft": 6496,
+        "num_bedrooms": 3,
+        "num_bathrooms": 2,
+        "last_sale_date": "2004-06-16T00:00:00.000Z",
+        "last_sale_amount": 0,
+        "total_assessed_value": 229892,
+        "annual_property_tax_amount": 1687,
+        "num_mortgages": 0,
+        "total_original_loan_amount": 0,
+        "total_estimated_loan_balance": 0,
+        "owner_occupied": true,
+        "apn": "124-008-002-0033"
+      },
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -1276,7 +1399,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVa/7Dh2AvAZDfuiJ+mhir+ZcIRRtusfCDDbQ38mnf8Jt7lOKcappDyfF8wWDbh9QMvmEYgPYmz7fGWzl3S/JLEKoemAtp4mzCd5kwk9KGkapXD7gzB9OizENj/BH6cXBTQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=COMMONWEALTH+COMMERCIAL+LLC%2C+RIFAAT+SHAFIK+I",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): I, RIFAAT SHAFIK",
+      "match_reason": "Name \u2192 single property (3w): I RIFAAT SHAFIK",
       "prop_address": "2402 COMMONWEALTH ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -2283,8 +2406,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQQ5Z1CuPDp0WTGAgkXdTG1OlsZijAlqTM/1PLk8ZXlf+rlaCg87shQd48/KjcArV8FmIa5oorqYVeh8x8LSiqe+VlQOph7GFiD1DtRqVJgFSTHyp85Mk/TvO2u+niTpWg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BRABAND+WILLIAM+KIRBY%2C+OTHOLD+MARGARET+ANN%2C+ROCHA+ALYSSA",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): BRABAND WILLIAM",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): BRABAND WILLIAM KIRBY",
       "prop_address": "710 REDAN ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -2361,7 +2484,7 @@
         "owner_occupied": true,
         "apn": "037-316-011-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -2446,7 +2569,7 @@
         "owner_occupied": false,
         "apn": "122-766-002-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -2524,7 +2647,7 @@
         "owner_occupied": false,
         "apn": "089-064-000-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -2540,8 +2663,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfL+DQx1SUQLa1q3fa5+581Ur4y/b7e6pvdqjawDiBEGOElMYuqKlI5IvpMKDiqwKzgrDmX1ZfUyiTWBk3HdwH5XBlNrcigaUsVCyS/B7AYtAgwg7mvBeHMieEV1te+S+A==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=2316+NORTH+HOLDINGS+LLC%2C+STREET+HANSON+DOUGLAS%2C+STREET+ROME",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): 2316 NORTH",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): 2316 NORTH HOLDINGS",
       "prop_address": "2316 NORTH BLVD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -2789,7 +2912,7 @@
         "owner_occupied": true,
         "apn": "056-018-000-0146"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -2805,8 +2928,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVaNvABmnnzleh9RY9nsWaQbm852O8PYhP3VO79WthrXC493sRBjcGrsvE/vE863PZ9JPwH1yxOb5XQS9Rufp1IUDt0JlsINgaKOA3TwTjHyXYINMwqT7jpFdXbILLYsCuw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=COLLUM+CHRISTOPHER+S%2C+COLLUM+KAYLA%2C+DAVIS+BLAYNE+ALAN%2C+DAVIS",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): COLLUM CHRISTOPHER",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): COLLUM CHRISTOPHER S",
       "prop_address": "5127 SHADY MAPLE DR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -2876,7 +2999,7 @@
         "owner_occupied": true,
         "apn": "115-283-033-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -2965,7 +3088,7 @@
         "owner_occupied": true,
         "apn": "117-494-003-0055"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -3268,7 +3391,7 @@
         "owner_occupied": false,
         "apn": "114-355-005-0063"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -3914,8 +4037,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWxDcBW/OsbQSHxDy0H+9+eVk8GEEklKsURU0A4iRu0o+X3yxJPrqDq7lRqjZAsFzIX3VQwPXHP3NlDLza6XvvuiGgPaDHVIJ/naKgzELfC4QyvI8CoS0B2NPQMbGe67WQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=2+TWIN+CIRCLE+LLC%2C+BUDINSCAK+CORY%2C+BUDINSCAK+JENNIFER",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): 2 TWIN CIRCLE",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): 2 TWIN",
       "prop_address": "2 TWIN CIRCLE DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -3954,8 +4077,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVVQ/15nnkHyU8mnvk1MPAFyQz6fF2IVoYqScEG9mOiujr8EZeTtRHNdYSom8dx9JgQ+gn6OMb97HfXjt7h4MPYSZdKii6u61Ns24lNkEzMdsyT1x7MnXvw29JMaHeAblQA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=F%26K+REAL+ESTATE+LLC%2C+SWEENEY+ARIANE",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): F&K REAL",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): F&K REAL ESTATE",
       "prop_address": "18506 LIPPIZANER DR",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -4025,7 +4148,7 @@
         "owner_occupied": true,
         "apn": "114-442-004-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4141,7 +4264,7 @@
         "owner_occupied": false,
         "apn": "118-172-001-0031"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4233,7 +4356,7 @@
         "owner_occupied": false,
         "apn": "113-779-000-0018"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4410,7 +4533,7 @@
         "owner_occupied": true,
         "apn": "132-781-002-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4537,7 +4660,7 @@
         "owner_occupied": false,
         "apn": "035-082-024-0025"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4628,7 +4751,7 @@
         "owner_occupied": false,
         "apn": "150-376-003-0023"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4704,7 +4827,7 @@
         "owner_occupied": true,
         "apn": "096-394-000-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4778,7 +4901,7 @@
         "owner_occupied": false,
         "apn": "038-290-001-0045"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4864,7 +4987,7 @@
         "owner_occupied": false,
         "apn": "073-111-008-0479"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -4953,7 +5076,7 @@
         "owner_occupied": false,
         "apn": "134-877-001-0092"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -5279,7 +5402,7 @@
         "owner_occupied": false,
         "apn": "107-809-000-0008"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -5372,7 +5495,7 @@
         "owner_occupied": false,
         "apn": "070-051-013-0011"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -5745,7 +5868,7 @@
         "owner_occupied": false,
         "apn": "074-153-016-0019"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -5771,86 +5894,6 @@
       "mail_city": "SEABROOK",
       "mail_state": "TX",
       "mail_zip": "77586-4302",
-      "stack_count": 1,
-      "sources": [
-        "FC"
-      ],
-      "flags": [
-        "Foreclosure auction scheduled",
-        "Absentee owner"
-      ],
-      "score_breakdown": {
-        "Foreclosure auction scheduled": 32,
-        "Absentee owner": 12,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 62,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-275800",
-      "doc_type": "TRSALE",
-      "filed": "2026-07-09",
-      "cat": "fc",
-      "cat_label": "Trustee Sale",
-      "owner": "BROWN MEGAN",
-      "grantee": "FALLS OF POINT WEST LP",
-      "contact": "BROWN MEGAN",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVe4k1MJxdnElyfN6nIS6U5aD20Rbko27nkh1TuqWjSULAGNz9/56DIP7mFeqkgSG79cRvPyQK1L/yUriEbEugoXbhSsrErjn4GxYBEvSTeu+LH+T+cxTnckfwn5VeYQWjg==",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FALLS+OF+POINT+WEST+LP",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: FALLS OF POINT WEST",
-      "prop_address": "5850 PARKFRONT 364",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77036",
-      "mail_address": "9303 TOWN PARK DR FL 2",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77036-2441",
-      "stack_count": 1,
-      "sources": [
-        "FC"
-      ],
-      "flags": [
-        "Foreclosure auction scheduled",
-        "Absentee owner"
-      ],
-      "score_breakdown": {
-        "Foreclosure auction scheduled": 32,
-        "Absentee owner": 12,
-        "Has address": 10,
-        "Named owner": 8
-      },
-      "score": 62,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-275799",
-      "doc_type": "TRSALE",
-      "filed": "2026-07-09",
-      "cat": "fc",
-      "cat_label": "Trustee Sale",
-      "owner": "FANNIE MAE",
-      "grantee": "FALLS OF GESSNER LP",
-      "contact": "FANNIE MAE",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZsgdyqNhkFsYlRJKUUkn1wndqntHF6Ip9BTTckf+OnxOJimuuYG6A1bpfTgRoAEUstKUciVgO3b73oPnw7sdrgOyTmpKhwnUBLDv2KBZtRepRiBLCDotEeLnA4/UM4zGw==",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FALLS+OF+GESSNER+LP",
-      "match_confidence": "HIGH",
-      "match_reason": "Exact name \u2192 single property: FALLS OF GESSNER",
-      "prop_address": "3230 S GESSNER RD 424",
-      "prop_city": "HOUSTON",
-      "prop_state": "TX",
-      "prop_zip": "77063",
-      "mail_address": "9303 TOWN PARK DR 2ND FLR",
-      "mail_city": "HOUSTON",
-      "mail_state": "TX",
-      "mail_zip": "77036-2441",
       "stack_count": 1,
       "sources": [
         "FC"
@@ -5944,7 +5987,7 @@
         "owner_occupied": false,
         "apn": "116-331-006-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -6041,7 +6084,7 @@
         "owner_occupied": true,
         "apn": "110-449-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -6378,7 +6421,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVc5kx0qH/lAmAsWlY46gp2TtSXRvVtQWSJJekdPDT9hJAHMIWUsrsyp8hAom7Jk1Unyz0KYhUodX9sqoAnJY0yVmL4IM2uwNygqK33VQgMmbMTZ8MmM0F/ccbV5N67Dpww==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=RIVERA+ASHLEY+LEBRON%2C+RIVERA+ELBERT+LEBRON%2C+TORRES+IVETTE+RI",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ROBERT, WEBB",
+      "match_reason": "Name \u2192 single property (2w): ROBERT WEBB",
       "prop_address": "1303 ASHLAND ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -6418,7 +6461,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfGk/TWsXPLwqZiCF6wrKbiEkksA1XTXqWsWrw9PQ6jHEmpbTmIDJ8yRYKYwfc+tvA+4i3p7kQDnKH8PFQBweMciIsdtt4qAyd/1gGiPvOsBDuUCVVvFJkyKIIbb8tVjyg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=NUWAY+HOMES+L+L+C%2C+NUWAY+HOMES+TEXAS+L+P%2C+RIVERA+ISAAC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ISAAC RIVERA",
+      "match_reason": "Name \u2192 single property (2w): ISAAC, RIVERA",
       "prop_address": "2910 HOLLY GREEN DR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -7418,7 +7461,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfT60tq7kQeirQMVZ7dmvmkt92G8E11GLrtlH79ewDF5bRIF49AGo4shTbmNcAyQO5u1ny8sXaSgmaG698WdKv97OGrvFp9LjQm+Z3w0G90yv4iNACWdG7WrHhLOxFqu+Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DCF+BUILDERS+LLC%2C+WHITE+PAMELA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): PAMELA, WHITE",
+      "match_reason": "Name \u2192 single property (2w): PAMELA WHITE",
       "prop_address": "213 N 4TH ST",
       "prop_city": "HIGHLANDS",
       "prop_state": "TX",
@@ -8337,8 +8380,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVafSBIsVL72p6xz2R1OrBOXFpngN3zWmOXrBSDPePjo0AjjfupxgpINZ5A4LT0LoZ7WoiDb4z8YOoRkxzy5RlznZy514SyGqzbR+VrsaHZLr8urEeJqdmdGZiXuiKfcRpg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HEBERT-SCHOENER+STACY+D%2C+SCHOENER+KYLE+D%2C+ZALL+BRIAN+J%2C+ZALL",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): HEBERT-SCHOENER STACY",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): HEBERT-SCHOENER STACY D",
       "prop_address": "6230 QUEENSLOCH DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -8817,8 +8860,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZFbmKrLy5yOmJgmmqjXiWMzafsI5i/MOO8wO0FMgTBuDoEdaumKvx4q/7RzhQjPTTZ5jCokoEdfkTKQhqCRTWeMOlmp1lMKOOATHfFIixXWhHWPwOlEwkQ+PYx463okmw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AYYASH+HEYAM+A%2C+HEILIG+CHARLOTTE%2C+HEILIG+SPENCER",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): AYYASH HEYAM A",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): AYYASH HEYAM",
       "prop_address": "1402 THORNWOOD LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -8857,8 +8900,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVayMwGGLP2KaTeTZFPoBlnMfqwYEicHBISOVE0KrVeZQDLczy+P1py3IkYkuccnfC+ClISF1vL7lM0CdXaprlQTEIFlKTMvDID8byWV5wpZ8emyMboOApZMJO8Xy+IWzBQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AYYASH+HEYAM+A%2C+HEILIG+CHARLOTTE+D%2C+HEILIG+SPENCER+D",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): AYYASH HEYAM A",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): AYYASH HEYAM",
       "prop_address": "1402 THORNWOOD LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -10418,7 +10461,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfTz+ihDJ5dccYdfhhzNjedQ4TlvLQltIwiidmEe9+34Wiiy4ohQROeC4zSzDPrUeXSo7f2h+wuRcE66J1hA06j+tHg6gPl7wNzOCWXFPPpoyr4BJDLF3dTX007z2FeDiA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BENSON+GEORGE%2C+BLANKET+TRUST%2C+WILLIAMS+SAFARI+L%2C+WILSON+TONI",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): TONI WILSON",
+      "match_reason": "Name \u2192 single property (2w): TONI, WILSON",
       "prop_address": "815 S CHAMFER WAY",
       "prop_city": "CROSBY",
       "prop_state": "TX",
@@ -10497,8 +10540,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVY8FAqrUGC/1xyZjLbdyNlL06dwQQXgHCMIpSZqHsUGwO9VfzulURzkue7QnJXXppJUywReQn5oxP0HQjhDc4kJAHsn+RdrJjb9EbPIgFw5B7FyHjPu3udV0uBv8Kacu+w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BERNARD+ERNST+ALEXANDRE+JR%2C+BERNARD+VERONICA+BATISTA%2C+KEGLAR",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): KEGLAR WILLIAM H",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): KEGLAR WILLIAM",
       "prop_address": "23911 PRIMROSE GARDEN RD",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -10698,7 +10741,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYF8w7qwQMT+DzyC+UCai9noxMQ8hCfQHz5hpJ8anf4AWBNUzj49qKZZIsD9nSM66opcChhi012e4Hd5ipCsInQASUvLA79qlkVJUHgg7v7Na7rcYxDDh4paE/Si3iSUOg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FLIPPIN+REALITY+HOMES+LLC%2C+PEREIRA+KARLA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): KARLA, PEREIRA",
+      "match_reason": "Name \u2192 single property (2w): KARLA PEREIRA",
       "prop_address": "4722 WESTGARDEN PL",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -11258,7 +11301,7 @@
         "owner_occupied": true,
         "apn": "076-224-004-0110"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -11394,8 +11437,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVazpuuR56GzcpTrF7jAJEmSl/2zHE/AS7bvY4eDlUiouAjEVSuK6Mkv/4uvTMvZNrYX4MMx0WoOsw4OXz1X+Fc667kPRTzOh83URUwid2yyMtYQ6/ssBGDVUsvhLPSuDmA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GIAMANCO+DONALD+L%2C+MUELLER+BOBBI+JEAN",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): GIAMANCO DONALD",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): GIAMANCO DONALD L",
       "prop_address": "8311 SILVAN WIND LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -11514,8 +11557,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUOGdug0RszE75Hoa/hsq6iK2VP3qxwSm/g4Yeewwqm43BLwb4QLM8B5TMMX/unPrpCr1N3eZVHGheduNvNVKviPeVRK//ePTanU/4tT9ZyX7KTR2Xx9b04x9UGeqXkBlg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JUAREZ+GERARDO+MARTINEZ%2C+SHEPHERD+DUMPSTER+RENTALS+LLC%2C+VELA",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): VELA ROSA",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): VELA ROSA L",
       "prop_address": "21630 FALVEL SUNSET CT",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -11795,7 +11838,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVXxT029HojHD5jRIIWD/zYzdKPmZ8/eUS9cPDqH6AtuMii6nLIwwdTiCRADpG5IGJy5IO21xCMiAY/hBcGdnXFq5mNvquNo48+Optj2UwW4Yht1dvdiFP4N7FSthgLSS7Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GILLELAND+HANNAH+LEE%2C+LAUTH+ANDREW+V%2C+PRITCHARD+JOHN+JR",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JOHN, PRITCHARD",
+      "match_reason": "Name \u2192 single property (2w): JOHN PRITCHARD",
       "prop_address": "18111 MALLARD ESTATES CT",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -12023,7 +12066,7 @@
         "owner_occupied": false,
         "apn": "054-140-000-0010"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12097,7 +12140,7 @@
         "owner_occupied": false,
         "apn": "089-213-000-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12233,7 +12276,7 @@
         "owner_occupied": true,
         "apn": "084-056-000-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12347,7 +12390,7 @@
         "owner_occupied": false,
         "apn": "116-276-000-0014"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12440,7 +12483,7 @@
         "owner_occupied": false,
         "apn": "137-670-001-0038"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12570,7 +12613,7 @@
         "owner_occupied": false,
         "apn": "038-107-050-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12665,7 +12708,7 @@
         "owner_occupied": false,
         "apn": "038-119-075-0011"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12761,7 +12804,7 @@
         "owner_occupied": true,
         "apn": "054-068-000-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12837,7 +12880,7 @@
         "owner_occupied": false,
         "apn": "124-912-002-0046"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -12924,7 +12967,7 @@
         "owner_occupied": false,
         "apn": "116-212-001-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13021,7 +13064,7 @@
         "owner_occupied": false,
         "apn": "105-038-000-0023"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13112,7 +13155,7 @@
         "owner_occupied": true,
         "apn": "130-346-001-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13129,7 +13172,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=CHANG+SAMUEL",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): SAMUEL, CHANG",
+      "match_reason": "Name \u2192 single property (2w): SAMUEL CHANG",
       "prop_address": "10101 S GESSNER RD 104",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -13245,7 +13288,7 @@
         "owner_occupied": true,
         "apn": "137-012-002-0010"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13362,7 +13405,7 @@
         "owner_occupied": true,
         "apn": "057-296-019-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13449,7 +13492,7 @@
         "owner_occupied": false,
         "apn": "078-009-019-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13577,7 +13620,7 @@
         "owner_occupied": false,
         "apn": "005-176-000-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13654,7 +13697,7 @@
         "owner_occupied": false,
         "apn": "107-956-000-0018"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13791,7 +13834,7 @@
         "owner_occupied": true,
         "apn": "110-449-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -13870,7 +13913,7 @@
         "owner_occupied": false,
         "apn": "092-356-000-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -14007,7 +14050,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ARRIAGA+ANTONIO",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ANTONIO ARRIAGA",
+      "match_reason": "Name \u2192 single property (2w): ANTONIO, ARRIAGA",
       "prop_address": "5138 SPREY DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -14407,7 +14450,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FERNANDEZ+ERIKA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ERIKA, FERNANDEZ",
+      "match_reason": "Name \u2192 single property (2w): ERIKA FERNANDEZ",
       "prop_address": "10802 SAGEPARK LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -14647,7 +14690,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LAMBERT+CHARLES+JR",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CHARLES LAMBERT",
+      "match_reason": "Name \u2192 single property (2w): CHARLES, LAMBERT",
       "prop_address": "117 CABANISS AVE",
       "prop_city": "BAYTOWN",
       "prop_state": "TX",
@@ -15360,8 +15403,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUnh4hVNPJ/NFtrSJ93B56i5+P7/COo5Y2IAL8CBa8/o89Eiy0YOALV7t2mpArscaOLys78U2kDITBhIaK1ehb1mRTyZsg5BNmmzU05Q3wae/zz8kawFxspKzLIuqno+gw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HOOPER+EVELYN+E%2C+HOOPER+MATTHEW+R%2C+WOFFORD+LISA+M%2C+WOFFORD+T",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): HOOPER EVELYN",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): HOOPER EVELYN E",
       "prop_address": "3643 OLYMPIA DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -15477,7 +15520,7 @@
         "owner_occupied": true,
         "apn": "137-950-002-0014"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -15552,7 +15595,7 @@
         "owner_occupied": true,
         "apn": "129-831-003-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -15623,7 +15666,7 @@
         "owner_occupied": true,
         "apn": "600-000-075-6559"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -15717,7 +15760,7 @@
         "owner_occupied": true,
         "apn": "129-523-003-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -15733,8 +15776,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQXVvrCBgEORLdk3vnfe8twx9X3VAbiIyvNSmJon7TfQ1UIRG4JbkOPK5hOpYISiBvUVNZ/ZDNOUJ1uhAmapa+dSRpWj0kVpLPDFICQUYUgPey/4wJPfv+NlC6CA2emN+w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FLENER+DAVID+RAY%2C+FLENER+SAMANTHA+LUCILLE%2C+MCENERY+KAYLA",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): FLENER DAVID",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): FLENER DAVID RAY",
       "prop_address": "26 S PINTO POINT CIR",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -15808,7 +15851,7 @@
         "owner_occupied": true,
         "apn": "131-257-001-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -15825,7 +15868,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVeNzYlUpoin+3N2epMGapZMzivs7YiJWA1hXxLXyzjnXimNlbciz+eKxHlLSjQbVtGBeqTQxZtvSVWCO9iQGgyKFZ0VeZMAJHtCYDVd+FMgkciI6PZt0cSi+Z5Qjhaudmg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GILES+AMANDA+RAY%2C+GUAJARDO+FERNANDO%2C+GUAJARDO+KRISTI%2C+MIRAND",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): HECTOR, MIRANDA",
+      "match_reason": "Name \u2192 single property (2w): HECTOR MIRANDA",
       "prop_address": "8027 BUNKER WOOD LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -15883,7 +15926,7 @@
         "owner_occupied": true,
         "apn": "108-201-000-0010"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -15978,7 +16021,7 @@
         "owner_occupied": true,
         "apn": "091-566-000-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16065,7 +16108,7 @@
         "owner_occupied": true,
         "apn": "106-852-000-0045"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16159,7 +16202,7 @@
         "owner_occupied": true,
         "apn": "030-275-000-0014"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16234,7 +16277,7 @@
         "owner_occupied": true,
         "apn": "124-265-001-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16329,7 +16372,7 @@
         "owner_occupied": true,
         "apn": "124-594-003-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16419,7 +16462,7 @@
         "owner_occupied": true,
         "apn": "112-710-000-0029"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16514,7 +16557,7 @@
         "owner_occupied": true,
         "apn": "114-618-007-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16602,7 +16645,7 @@
         "owner_occupied": true,
         "apn": "125-103-002-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16725,7 +16768,7 @@
         "owner_occupied": true,
         "apn": "129-880-001-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16741,8 +16784,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWVj/qgJ9NgsxvRU29g5GAkePTnSuJVlM8T7IwyDE85hrp4wnCVo8VnsMfdA0jNnIbv4gtMI9wnIBVH+Vv7W9K0fwhfMAICmkDxqsveII81QydqzgCMsAdgk43IatDj63Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GALLEGOS+RAQUEL+GARCIA%2C+GARCIA+FRANCISCO+OROZCO%2C+MILLER+GINA",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): GALLEGOS RAQUEL",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): GALLEGOS RAQUEL GARCIA",
       "prop_address": "13934 HOLLYPARK DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -16801,7 +16844,7 @@
         "owner_occupied": true,
         "apn": "094-085-000-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16875,7 +16918,7 @@
         "owner_occupied": true,
         "apn": "125-406-004-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -16970,7 +17013,7 @@
         "owner_occupied": true,
         "apn": "115-979-007-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17065,7 +17108,7 @@
         "owner_occupied": true,
         "apn": "105-086-000-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17152,7 +17195,7 @@
         "owner_occupied": false,
         "apn": "119-639-001-0024"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17243,7 +17286,7 @@
         "owner_occupied": false,
         "apn": "030-017-012-0049"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17337,7 +17380,7 @@
         "owner_occupied": true,
         "apn": "114-726-006-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17468,7 +17511,7 @@
         "owner_occupied": true,
         "apn": "133-692-003-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17543,7 +17586,7 @@
         "owner_occupied": false,
         "apn": "138-409-001-0056"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17618,7 +17661,7 @@
         "owner_occupied": true,
         "apn": "136-406-002-0027"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17704,7 +17747,7 @@
         "owner_occupied": true,
         "apn": "125-979-001-0066"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17779,7 +17822,7 @@
         "owner_occupied": true,
         "apn": "105-186-000-0018"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17868,7 +17911,7 @@
         "owner_occupied": true,
         "apn": "093-540-000-0025"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -17943,7 +17986,7 @@
         "owner_occupied": true,
         "apn": "146-297-001-0065"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18028,7 +18071,7 @@
         "owner_occupied": true,
         "apn": "099-260-000-0071"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18150,7 +18193,7 @@
         "owner_occupied": true,
         "apn": "134-883-001-0030"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18245,7 +18288,7 @@
         "owner_occupied": true,
         "apn": "059-045-000-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18329,7 +18372,7 @@
         "owner_occupied": true,
         "apn": "076-184-007-0032"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18420,7 +18463,7 @@
         "owner_occupied": true,
         "apn": "117-949-002-0005"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18509,7 +18552,7 @@
         "owner_occupied": true,
         "apn": "130-399-001-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18585,7 +18628,7 @@
         "owner_occupied": true,
         "apn": "135-990-002-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18672,7 +18715,7 @@
         "owner_occupied": true,
         "apn": "115-080-054-0011"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18767,7 +18810,7 @@
         "owner_occupied": true,
         "apn": "141-393-001-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18857,7 +18900,7 @@
         "owner_occupied": true,
         "apn": "137-042-001-0019"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -18944,7 +18987,7 @@
         "owner_occupied": true,
         "apn": "020-186-000-0026"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19014,7 +19057,7 @@
         "owner_occupied": true,
         "apn": "147-901-002-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19105,7 +19148,7 @@
         "owner_occupied": true,
         "apn": "122-524-003-0044"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19186,7 +19229,7 @@
         "owner_occupied": true,
         "apn": "098-550-000-0052"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19273,7 +19316,7 @@
         "owner_occupied": true,
         "apn": "097-418-000-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19348,7 +19391,7 @@
         "owner_occupied": true,
         "apn": "113-679-000-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19442,7 +19485,7 @@
         "owner_occupied": true,
         "apn": "120-177-001-0023"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19536,7 +19579,7 @@
         "owner_occupied": true,
         "apn": "111-502-000-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19615,7 +19658,7 @@
         "owner_occupied": true,
         "apn": "046-171-034-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19632,7 +19675,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUGBgilC86o048fqSU79EPNnlQzNmUPRQayhW4g4wLAQrQSQTfi2bFdGx0ynksPUsq+Ejv2mnlgWFBTlbjh/ahez9lMIQlelTUqXuolkvn7lelkaQBoJtfk8VQh9lce2Fw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BUTLER+BRICE+N%2C+BUTLER+TAYLOR+N%2C+SERRANO+TANIA%2C+SERRANO+WILF",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): WILFREDO SERRANO",
+      "match_reason": "Name \u2192 single property (2w): WILFREDO, SERRANO",
       "prop_address": "422 REMINGTON RIDGE DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -19710,7 +19753,7 @@
         "owner_occupied": true,
         "apn": "125-395-002-0035"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19796,7 +19839,7 @@
         "owner_occupied": true,
         "apn": "115-982-008-0005"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19887,7 +19930,7 @@
         "owner_occupied": true,
         "apn": "088-245-000-0016"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -19973,7 +20016,7 @@
         "owner_occupied": true,
         "apn": "116-737-003-0038"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20048,7 +20091,7 @@
         "owner_occupied": true,
         "apn": "116-140-008-0005"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20134,7 +20177,7 @@
         "owner_occupied": true,
         "apn": "110-757-000-0014"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20223,7 +20266,7 @@
         "owner_occupied": true,
         "apn": "103-517-000-0021"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20298,7 +20341,7 @@
         "owner_occupied": true,
         "apn": "130-850-002-0034"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20392,7 +20435,7 @@
         "owner_occupied": true,
         "apn": "114-718-100-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20467,7 +20510,7 @@
         "owner_occupied": true,
         "apn": "020-205-000-0014"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20562,7 +20605,7 @@
         "owner_occupied": true,
         "apn": "116-893-002-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20653,7 +20696,7 @@
         "owner_occupied": true,
         "apn": "130-293-001-0021"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20728,7 +20771,7 @@
         "owner_occupied": true,
         "apn": "078-057-002-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -20744,8 +20787,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVToeqHB6pSQ2BK9QnTGkAgeX0htGCnPwZMtvmbN0nw23Z0oxHBjzPf/9fdbmdi0mICdNRoUUFRcWxMGP7v+Ah/bv0Wu/7OKpv091OF82S1SLTDkD0aRJwCs8+U3nLLdAkA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HERNANDEZ+DILSIA+CAROLINA+BENITEZ%2C+MARQUINES+CHRISTIAN+JOSUE",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): HERNANDEZ DILSIA CAROLINA",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): HERNANDEZ DILSIA",
       "prop_address": "13106 CHIPMAN GLEN DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -20823,7 +20866,7 @@
         "owner_occupied": true,
         "apn": "113-820-000-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -27994,7 +28037,7 @@
         "owner_occupied": false,
         "apn": "116-331-006-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -28431,7 +28474,7 @@
         "owner_occupied": false,
         "apn": "044-040-000-0154"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -28506,7 +28549,7 @@
         "owner_occupied": false,
         "apn": "108-766-000-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -28720,7 +28763,7 @@
         "owner_occupied": true,
         "apn": "114-240-036-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -28810,7 +28853,7 @@
         "owner_occupied": true,
         "apn": "106-186-000-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -28901,7 +28944,7 @@
         "owner_occupied": true,
         "apn": "123-638-001-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -28988,8 +29031,8 @@
         "owner_occupied": true,
         "apn": "115-377-001-0006"
       },
-      "dm_enriched_date": "2026-08-23",
-      "is_new": true
+      "dm_enriched_date": "2026-08-24",
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-328696",
@@ -29005,7 +29048,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MURRAY+MICHAEL",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MICHAEL, MURRAY",
+      "match_reason": "Name \u2192 single property (2w): MICHAEL MURRAY",
       "prop_address": "14723 DAUBERN CT",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -29067,7 +29110,7 @@
         "owner_occupied": true,
         "apn": "119-017-002-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29157,7 +29200,7 @@
         "owner_occupied": true,
         "apn": "105-799-000-0018"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29252,7 +29295,7 @@
         "owner_occupied": true,
         "apn": "114-377-006-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29343,7 +29386,7 @@
         "owner_occupied": true,
         "apn": "115-775-002-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29424,7 +29467,7 @@
         "owner_occupied": true,
         "apn": "141-336-001-0010"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29519,7 +29562,7 @@
         "owner_occupied": true,
         "apn": "095-102-000-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29614,7 +29657,7 @@
         "owner_occupied": true,
         "apn": "141-053-001-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29705,7 +29748,7 @@
         "owner_occupied": true,
         "apn": "104-708-003-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29794,7 +29837,7 @@
         "owner_occupied": true,
         "apn": "111-861-000-0025"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29885,7 +29928,7 @@
         "owner_occupied": true,
         "apn": "140-836-001-0024"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -29959,7 +30002,7 @@
         "owner_occupied": true,
         "apn": "066-045-015-0005"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30054,7 +30097,7 @@
         "owner_occupied": true,
         "apn": "098-360-000-0017"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30149,7 +30192,7 @@
         "owner_occupied": true,
         "apn": "090-105-000-0011"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30166,7 +30209,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LUNA+YOLANDA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): YOLANDA LUNA",
+      "match_reason": "Name \u2192 single property (2w): YOLANDA, LUNA",
       "prop_address": "2614 CHERRY LN",
       "prop_city": "PASADENA",
       "prop_state": "TX",
@@ -30223,7 +30266,7 @@
         "owner_occupied": true,
         "apn": "098-099-000-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30309,7 +30352,7 @@
         "owner_occupied": true,
         "apn": "137-307-002-0014"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30394,7 +30437,7 @@
         "owner_occupied": true,
         "apn": "129-665-001-0041"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30485,7 +30528,7 @@
         "owner_occupied": true,
         "apn": "080-056-000-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30579,7 +30622,7 @@
         "owner_occupied": true,
         "apn": "117-229-001-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30673,7 +30716,7 @@
         "owner_occupied": true,
         "apn": "115-385-044-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30760,7 +30803,7 @@
         "owner_occupied": true,
         "apn": "077-046-005-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30777,7 +30820,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=MONTOYA+MARTIN",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MARTIN MONTOYA",
+      "match_reason": "Name \u2192 single property (2w): MARTIN, MONTOYA",
       "prop_address": "115 S MAGNOLIA ST",
       "prop_city": "HIGHLANDS",
       "prop_state": "TX",
@@ -30851,7 +30894,7 @@
         "owner_occupied": true,
         "apn": "058-254-003-0018"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -30926,7 +30969,7 @@
         "owner_occupied": true,
         "apn": "108-496-000-0035"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31021,7 +31064,7 @@
         "owner_occupied": true,
         "apn": "117-759-002-0005"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31096,7 +31139,7 @@
         "owner_occupied": true,
         "apn": "141-199-001-0005"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31176,7 +31219,7 @@
         "owner_occupied": true,
         "apn": "028-291-000-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31267,7 +31310,7 @@
         "owner_occupied": true,
         "apn": "145-026-001-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31361,7 +31404,7 @@
         "owner_occupied": true,
         "apn": "130-005-001-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31454,7 +31497,7 @@
         "owner_occupied": true,
         "apn": "119-299-003-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31549,7 +31592,7 @@
         "owner_occupied": true,
         "apn": "075-206-002-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31644,7 +31687,7 @@
         "owner_occupied": true,
         "apn": "119-973-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31733,7 +31776,7 @@
         "owner_occupied": true,
         "apn": "116-013-003-0055"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31822,7 +31865,7 @@
         "owner_occupied": true,
         "apn": "131-061-003-0042"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -31913,7 +31956,7 @@
         "owner_occupied": true,
         "apn": "128-617-006-0021"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32008,7 +32051,7 @@
         "owner_occupied": true,
         "apn": "140-072-001-0017"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32083,7 +32126,7 @@
         "owner_occupied": true,
         "apn": "142-638-001-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32158,7 +32201,7 @@
         "owner_occupied": true,
         "apn": "142-638-001-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32251,7 +32294,7 @@
         "owner_occupied": true,
         "apn": "144-587-001-0019"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32326,7 +32369,7 @@
         "owner_occupied": true,
         "apn": "082-391-000-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32413,7 +32456,7 @@
         "owner_occupied": true,
         "apn": "060-003-000-0032"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32508,7 +32551,7 @@
         "owner_occupied": true,
         "apn": "126-058-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32603,7 +32646,7 @@
         "owner_occupied": true,
         "apn": "097-225-000-0011"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32698,7 +32741,7 @@
         "owner_occupied": true,
         "apn": "117-638-001-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32776,7 +32819,7 @@
         "owner_occupied": true,
         "apn": "086-021-000-0023"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32851,7 +32894,7 @@
         "owner_occupied": true,
         "apn": "141-432-002-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -32942,7 +32985,7 @@
         "owner_occupied": true,
         "apn": "003-180-000-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33037,7 +33080,7 @@
         "owner_occupied": true,
         "apn": "121-089-042-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33112,7 +33155,7 @@
         "owner_occupied": true,
         "apn": "123-822-002-0025"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33187,7 +33230,7 @@
         "owner_occupied": true,
         "apn": "071-090-065-0184"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33268,7 +33311,7 @@
         "owner_occupied": true,
         "apn": "065-123-023-0399"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33354,7 +33397,7 @@
         "owner_occupied": true,
         "apn": "145-032-002-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33449,7 +33492,7 @@
         "owner_occupied": false,
         "apn": "105-564-000-0017"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33517,7 +33560,7 @@
         "owner_occupied": false,
         "apn": "064-045-000-0228"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33644,7 +33687,7 @@
         "owner_occupied": true,
         "apn": "098-245-000-0020"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33735,7 +33778,7 @@
         "owner_occupied": true,
         "apn": "115-189-030-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33830,7 +33873,7 @@
         "owner_occupied": true,
         "apn": "105-036-001-0037"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33901,7 +33944,7 @@
         "owner_occupied": true,
         "apn": "145-012-003-0008"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -33996,7 +34039,7 @@
         "owner_occupied": true,
         "apn": "116-237-001-0034"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34083,7 +34126,7 @@
         "owner_occupied": true,
         "apn": "128-653-001-0011"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34165,7 +34208,7 @@
         "owner_occupied": true,
         "apn": "107-867-000-0017"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34182,7 +34225,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WILSON+RONALD+R",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): R, WILSON RONALD",
+      "match_reason": "Name \u2192 single property (3w): R WILSON RONALD",
       "prop_address": "20731 WINDY BRIAR LN",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -34259,7 +34302,7 @@
         "owner_occupied": true,
         "apn": "123-570-004-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34350,7 +34393,7 @@
         "owner_occupied": true,
         "apn": "115-470-005-0156"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34444,7 +34487,7 @@
         "owner_occupied": true,
         "apn": "140-692-005-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34535,7 +34578,7 @@
         "owner_occupied": true,
         "apn": "116-239-006-0033"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34629,7 +34672,7 @@
         "owner_occupied": true,
         "apn": "113-604-000-0080"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34646,7 +34689,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JONES+ROGER",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ROGER, JONES",
+      "match_reason": "Name \u2192 single property (2w): ROGER JONES",
       "prop_address": "10119 CHATTERTON DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -34720,7 +34763,7 @@
         "owner_occupied": true,
         "apn": "091-564-000-0008"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34811,7 +34854,7 @@
         "owner_occupied": true,
         "apn": "132-106-002-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34906,7 +34949,7 @@
         "owner_occupied": true,
         "apn": "095-115-000-0030"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -34988,7 +35031,7 @@
         "owner_occupied": true,
         "apn": "118-746-002-0010"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35083,7 +35126,7 @@
         "owner_occupied": true,
         "apn": "060-160-069-0023"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35176,7 +35219,7 @@
         "owner_occupied": true,
         "apn": "126-456-002-0018"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35257,7 +35300,7 @@
         "owner_occupied": true,
         "apn": "141-006-001-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35332,7 +35375,7 @@
         "owner_occupied": true,
         "apn": "120-989-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35407,7 +35450,7 @@
         "owner_occupied": true,
         "apn": "141-108-003-0042"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35482,7 +35525,7 @@
         "owner_occupied": true,
         "apn": "054-107-000-0016"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35557,7 +35600,7 @@
         "owner_occupied": true,
         "apn": "037-034-000-0017"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35652,7 +35695,7 @@
         "owner_occupied": true,
         "apn": "130-670-002-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35727,7 +35770,7 @@
         "owner_occupied": true,
         "apn": "061-134-051-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35822,7 +35865,7 @@
         "owner_occupied": true,
         "apn": "105-231-001-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -35917,7 +35960,7 @@
         "owner_occupied": true,
         "apn": "115-977-015-0056"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36003,7 +36046,7 @@
         "owner_occupied": true,
         "apn": "125-941-003-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36098,7 +36141,7 @@
         "owner_occupied": true,
         "apn": "123-981-001-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36173,7 +36216,7 @@
         "owner_occupied": true,
         "apn": "125-652-001-0034"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36260,7 +36303,7 @@
         "owner_occupied": true,
         "apn": "100-008-000-0009"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36346,7 +36389,7 @@
         "owner_occupied": true,
         "apn": "066-055-007-0282"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36437,7 +36480,7 @@
         "owner_occupied": true,
         "apn": "123-831-004-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36532,7 +36575,7 @@
         "owner_occupied": true,
         "apn": "138-621-001-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36623,7 +36666,7 @@
         "owner_occupied": true,
         "apn": "137-949-003-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36718,7 +36761,7 @@
         "owner_occupied": true,
         "apn": "117-882-002-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36808,7 +36851,7 @@
         "owner_occupied": true,
         "apn": "130-862-001-0020"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36883,7 +36926,7 @@
         "owner_occupied": true,
         "apn": "150-118-003-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -36958,7 +37001,7 @@
         "owner_occupied": true,
         "apn": "092-230-000-0027"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37053,7 +37096,7 @@
         "owner_occupied": true,
         "apn": "098-563-000-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37128,7 +37171,7 @@
         "owner_occupied": true,
         "apn": "116-152-003-0056"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37203,7 +37246,7 @@
         "owner_occupied": true,
         "apn": "104-259-000-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37280,7 +37323,7 @@
         "owner_occupied": true,
         "apn": "146-855-005-0019"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37375,7 +37418,7 @@
         "owner_occupied": true,
         "apn": "106-075-000-0004"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37470,7 +37513,7 @@
         "owner_occupied": true,
         "apn": "114-046-001-0030"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37565,7 +37608,7 @@
         "owner_occupied": true,
         "apn": "115-901-002-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37660,7 +37703,7 @@
         "owner_occupied": true,
         "apn": "135-513-002-0024"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -37751,7 +37794,7 @@
         "owner_occupied": true,
         "apn": "084-334-000-0018"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -43995,117 +44038,6 @@
       "is_new": false
     },
     {
-      "doc_num": "RP-2026-275285",
-      "doc_type": "TRSALE",
-      "filed": "2026-07-09",
-      "cat": "fc",
-      "cat_label": "Trustee Sale",
-      "owner": "TURBYFILL DONALD L",
-      "grantee": "BEJJANI ZEINA",
-      "contact": "TURBYFILL DONALD L",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbfzo9DGgaUPTpTMb+4LUXyeRCDWBuObtsqOwa/Ui5JUgF/sWwegUMUUKE8tm9L1ulCrTS6Zmu9ZA0BTh8kjWPbqV8cwguzvs5QOWv5HNRLzogCE0wuhhucpAtSF4LLpbw==",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BEJJANI+ZEINA",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "FC"
-      ],
-      "flags": [
-        "Foreclosure auction scheduled"
-      ],
-      "score_breakdown": {
-        "Foreclosure auction scheduled": 32,
-        "Named owner": 8
-      },
-      "score": 40,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-274603",
-      "doc_type": "TRSALE",
-      "filed": "2026-07-09",
-      "cat": "fc",
-      "cat_label": "Trustee Sale",
-      "owner": "PIXEL SERVICING",
-      "grantee": "TORRES MENJIVAR MARIA VICENTA",
-      "contact": "PIXEL SERVICING",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWhpXL4IqxnZpfQZYK0a8fc0ByHJ5Q9u8D4P0xzrilLN63JFYoQ0rseynfFrO1xP3p8u4luIftoJd3DUj+v1geLgtyfXcGhIuFqu44EEzHrCPoTt6op/Qw81nZ0ZuJHLcQ==",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=TORRES+MENJIVAR+MARIA+VICENTA",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "FC"
-      ],
-      "flags": [
-        "Foreclosure auction scheduled"
-      ],
-      "score_breakdown": {
-        "Foreclosure auction scheduled": 32,
-        "Named owner": 8
-      },
-      "score": 40,
-      "is_new": false
-    },
-    {
-      "doc_num": "RP-2026-274570",
-      "doc_type": "TRSALE",
-      "filed": "2026-07-09",
-      "cat": "fc",
-      "cat_label": "Trustee Sale",
-      "owner": "TOWELL JONATHAN",
-      "grantee": "TAMEZ MARIO GUADALUPE HERRERA",
-      "contact": "TOWELL JONATHAN",
-      "amount": null,
-      "legal": "",
-      "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcZiVo5k2FFbwvz/g+TRqPd84Gh/XuRJ7sQIiFgPU8/cN/oSFDrwxq3CZ0HbnUJRn4mqATgDIZ0HmR6+Aw6I0BLWGpbR1cM/84b4pMdWeIirGTEf905rR6topNIZ59bIgQ==",
-      "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=TAMEZ+MARIO+GUADALUPE+HERRERA",
-      "match_confidence": "NONE",
-      "match_reason": "No match found",
-      "prop_address": "",
-      "prop_city": "",
-      "prop_state": "TX",
-      "prop_zip": "",
-      "mail_address": "",
-      "mail_city": "",
-      "mail_state": "TX",
-      "mail_zip": "",
-      "stack_count": 1,
-      "sources": [
-        "FC"
-      ],
-      "flags": [
-        "Foreclosure auction scheduled"
-      ],
-      "score_breakdown": {
-        "Foreclosure auction scheduled": 32,
-        "Named owner": 8
-      },
-      "score": 40,
-      "is_new": false
-    },
-    {
       "doc_num": "RP-2026-339172",
       "doc_type": "L/P",
       "filed": "2026-08-20",
@@ -44176,7 +44108,7 @@
         "owner_occupied": false,
         "apn": "044-040-000-0154"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -44253,7 +44185,7 @@
         "owner_occupied": false,
         "apn": "116-331-006-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -44869,8 +44801,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WYATT+BRADY+T+III",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): JUAREZ ETNI ABIGAIL",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): JUAREZ ETNI",
       "prop_address": "14819 CASCADE BEND LN",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -45989,8 +45921,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQPtHoPp8Hu5YW9NvVF1V4As//JfFQFrAGN/5dQsL5LQA7gzXEjRT3orHxVInFxE0dT20WVFwyi9rVs78+0JPcIyDvhY3HK9t9aXRdT5qtlUdYUh/tvFXFWSK5xbMaUYVA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AMARO+MARLIO",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): AMARO CRISTINA C",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): AMARO CRISTINA",
       "prop_address": "3910 VAUGHN ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -46090,7 +46022,7 @@
         "owner_occupied": false,
         "apn": "069-106-013-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -46547,7 +46479,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVfTu4c/O7gWm8dXz1yvqgC7tqQPn++6oG1RHkkzPKVUCxhTOqlegb03UYdFlbiInHpCMKQE1FncBc3jKX9eHrlmgqVuCgN8OdRd0m1T1idNpSCgzFotNNPpMMGck3a6+zw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=PARKER+CHRISTOPHER",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CHRISTOPHER, PARKER",
+      "match_reason": "Name \u2192 single property (2w): CHRISTOPHER PARKER",
       "prop_address": "18800 EGRET BAY BLVD 209",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -47145,7 +47077,7 @@
         "owner_occupied": true,
         "apn": "117-825-038-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -47322,7 +47254,7 @@
         "owner_occupied": true,
         "apn": "121-365-002-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -133801,7 +133733,7 @@
         "owner_occupied": false,
         "apn": "126-564-007-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -133880,7 +133812,7 @@
         "owner_occupied": false,
         "apn": "092-356-000-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -136151,8 +136083,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVeVrVXL5VeCvqbQ9qiWctpSr/8X9lJuTJ1ho5/V07LT5CbjdjXr44sQkPxXRFATMvjHvJykw9VozVKEwA6olksPOGH37QMzSFpO7j48DZ5fz8c0lmup/UwL3WHoAdi7pIw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=JACKSON+JEFFREY+EUGENE",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): JACKSON ADA ALEJANDRA",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): JACKSON ADA",
       "prop_address": "9810 RICABY DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -136836,7 +136768,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVZgrldXTGwhBa/iUK3U9VNzyPMOVVm1Lf+pIJ3DIpwdI1I+xgwmZqyC6WlWlzK3KOb1IRwecSoxbdvRGA0PWMrA6zNvvsdGkQ9m5OP7+rA++JfRQlL5/BSvPyPCzJqBkeQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LOPEZ+LUIS+ALBERTO",
       "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): ALBERTO LOPEZ LUIS",
+      "match_reason": "Name \u2192 single property (3w): ALBERTO, LOPEZ LUIS",
       "prop_address": "102 E SPREADING OAK DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -137026,7 +136958,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWOvWKPcLFActBrMpD0Z7rKGMkDtPRikYdjzPtfT8OPQJSAA5wA/pozgkxVIR2qW+VwDG80jih0Cb8R0CjlYyma6XRUoW8sH+Elf+38o1qbDG0PMENqaxz49lZPI0ZpCOQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=FONG+CATHERINE",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CATHERINE, FONG",
+      "match_reason": "Name \u2192 single property (2w): CATHERINE FONG",
       "prop_address": "1014 ALLSTON ST",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -137214,7 +137146,7 @@
         "owner_occupied": true,
         "apn": "123-716-001-0008"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -138245,7 +138177,7 @@
         "owner_occupied": true,
         "apn": "094-362-000-0011"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -138793,8 +138725,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVWMXlzhBOR9HgMakChoIj5gT8eP1FNNDbcbMaLpF4NVJPGuKbDqAvaEwi04oczUJwXHmMkaV/WuASp0Gz69lhjqfgUf5yE9QFTND+hdrnwtQwygM0V3yGWrS1s5kgRu/Hg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=LONGORIA+JOYCE+CHAMPION",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): KEYES LEE E",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): KEYES LEE",
       "prop_address": "16714 EMPIRE GOLD DR",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -139288,7 +139220,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUUT9D46ioJLgoOCJWDqPtaGIdaWClMTpE+k7apIwmyL9l8+uLVgkNRsXVeGzORuVmJ0YTzJ5PVa9gUroC/mzPn8mqsnfCHzaTIuvzGCYnmPA7OO9VVAhdGeAMgVRUmF2Q==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=VAZQUEZ+CHRISTIAN",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CHRISTIAN, VAZQUEZ",
+      "match_reason": "Name \u2192 single property (2w): CHRISTIAN VAZQUEZ",
       "prop_address": "6410 ROSE WILLOW LN",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -140655,8 +140587,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVU2EpXYcb2plPLyOAR/i6RPPSpkw6UWVJ9lTPYLCsjot7UCBslr0cGdwFyTqLhj3AbUvL+3Qz4fvv1zQa55c5KEceE3nEfrT51ZrxRX4euUVAvYU+K4m1hCvaVZAzWLF8w==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BALE+DAVID+M%2C+BALE+MARY+E%2C+LAIRD+CUSTOM+HOMES+INC",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): BALE DAVID M",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): BALE DAVID",
       "prop_address": "310 LONGWOODS LN",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -140819,7 +140751,7 @@
         "owner_occupied": false,
         "apn": "135-905-003-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -141014,7 +140946,7 @@
         "owner_occupied": false,
         "apn": "136-108-004-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -141086,7 +141018,7 @@
         "owner_occupied": false,
         "apn": "109-792-000-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -141226,7 +141158,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVSYFu/Efv5txzJ364h7kwIzlTqQfEiyy1RPorJDogskBR6iueT80lE56ZJRv6x08fdyqVE1PctgtOo1fxqz+0UVgVg9KeNrGQYRsinISBlzf9TMS7ASo5uWQpwAJl6hcLw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DAVIS+TONYA",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): TONYA, DAVIS",
+      "match_reason": "Name \u2192 single property (2w): TONYA DAVIS",
       "prop_address": "2511 TOMS BROOK DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -141676,8 +141608,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVSZlvY5kgdsg5eFQG6FJ6kDgKsAkigjBlXM0ffUOqFL4BNEGvWUmeU+oKHpyszNmGNXyIFInzaUlFQM5PpH4TOBS7af9+kLvt9onjde2Vw3JXuIydlbOduDOh21/jsAdeA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DEBERRY+ANDREA+S+EST%2C+DEBERRY+MARK%2C+WEST+RICHARDS+WHOLESALE+",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DEBERRY ANDREA",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): DEBERRY ANDREA S",
       "prop_address": "17518 HAMILWOOD DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -141815,7 +141747,7 @@
         "owner_occupied": false,
         "apn": "116-167-007-0030"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -142877,7 +142809,7 @@
         "owner_occupied": true,
         "apn": "108-391-000-0025"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -143160,7 +143092,7 @@
         "owner_occupied": true,
         "apn": "133-015-001-0046"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -143247,7 +143179,7 @@
         "owner_occupied": false,
         "apn": "041-094-000-0030"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -143671,7 +143603,7 @@
         "owner_occupied": false,
         "apn": "078-031-002-0018"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -143871,7 +143803,7 @@
         "owner_occupied": false,
         "apn": "112-648-000-0029"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -143984,7 +143916,7 @@
         "owner_occupied": false,
         "apn": "128-661-002-0008"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -144041,8 +143973,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVe+QqdAuCmeHoaGI3IVR9/Ty7oll0Wmdc00R/nPmbfzQFk0w5QFySxdPBLkXkMQjrgyQ+y8MJ28thyGKiRVaydxD7ppznY6raW/lJlsb7Yw7XAzi7MmwkLrB0ge2DxHfhw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BUTLER+STACI+J%2C+MCELYEA+ARNOLD+P%2C+MCELYEA+LYNDA+L%2C+RUSSELL+P",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): BUTLER STACI",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): BUTLER STACI J",
       "prop_address": "20627 WHITE BERRY CT",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -144082,8 +144014,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVb1eTK7/PptMihKSAF4nVDnsOWpW0Kc1eMib3kYMycg/EBKcZv0V1rCRGiCKFDrf07xTc6OhJKY/kGYZtGexu11DNFylbQp8XDRmQbA/q3bqO5Q6NprNBe1KeiN/uCtKrg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=AMBROSE+AMBER+LYNESE%2C+OPENDOOR+PROPERTY+TRUST+I",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): AMBROSE AMBER",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): AMBROSE AMBER LYNESE",
       "prop_address": "17810 ASPHODEL LN",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -144218,7 +144150,7 @@
         "owner_occupied": false,
         "apn": "108-766-000-0022"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -144331,7 +144263,7 @@
         "owner_occupied": false,
         "apn": "109-265-000-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -145168,7 +145100,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVQft7WB6bW+z9uaOKBcuqY3RjKxVwh+AM/A5sd0b8uVghQ2/HFnSUSbfc/O7PMBBDHnOVKqMYVibQc2AWiTAnOCEG8vHVxPozmHOcdvMXh3BEdyjqfEogh+slQRVIk2RFQ==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=WILLIAMS+SHELLY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): SHELLY, WILLIAMS",
+      "match_reason": "Name \u2192 single property (2w): SHELLY WILLIAMS",
       "prop_address": "9963 SOUTHERN BAYBERRY DR",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -145389,8 +145321,8 @@
         "owner_occupied": true,
         "apn": "042-075-003-0103"
       },
-      "dm_enriched_date": "2026-08-23",
-      "is_new": true
+      "dm_enriched_date": "2026-08-24",
+      "is_new": false
     },
     {
       "doc_num": "RP-2026-335038",
@@ -145601,7 +145533,7 @@
         "owner_occupied": false,
         "apn": "124-928-001-0069"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -145617,8 +145549,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVbLcBsm1Ag1oFFI/Kjwg5BgcTo7YBSwst1wfoZCskvMGGE3LyzlWR4RrkgDD1CljeKi5mfpsGXFR09849/Nn9ysttvOujEN3h90TQuAYUv/E/x4XgFV4IbRsIDKm1VMIvw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HAMANN+CLAUDIA+ELENA%2C+M%2FI+HOMES+OF+HOUSTON+LLC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): HAMANN CLAUDIA",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): HAMANN CLAUDIA ELENA",
       "prop_address": "13014 RED LAUREL CT",
       "prop_city": "CYPRESS",
       "prop_state": "TX",
@@ -145693,7 +145625,7 @@
         "owner_occupied": true,
         "apn": "122-524-003-0044"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -145784,7 +145716,7 @@
         "owner_occupied": true,
         "apn": "117-450-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -145913,7 +145845,7 @@
         "owner_occupied": true,
         "apn": "112-406-000-0650"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146005,7 +145937,7 @@
         "owner_occupied": true,
         "apn": "114-693-043-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146077,7 +146009,7 @@
         "owner_occupied": false,
         "apn": "600-000-078-9887"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146191,7 +146123,7 @@
         "owner_occupied": false,
         "apn": "142-753-005-0045"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146286,7 +146218,7 @@
         "owner_occupied": false,
         "apn": "075-219-014-0036"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146357,7 +146289,7 @@
         "owner_occupied": false,
         "apn": "114-433-016-0030"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146445,7 +146377,7 @@
         "owner_occupied": true,
         "apn": "109-606-000-0031"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146540,7 +146472,7 @@
         "owner_occupied": false,
         "apn": "111-161-000-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146674,7 +146606,7 @@
         "owner_occupied": false,
         "apn": "116-046-008-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146765,7 +146697,7 @@
         "owner_occupied": true,
         "apn": "119-639-005-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146848,7 +146780,7 @@
         "owner_occupied": false,
         "apn": "042-177-000-0023"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -146944,7 +146876,7 @@
         "owner_occupied": false,
         "apn": "077-102-012-0030"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147092,7 +147024,7 @@
         "owner_occupied": false,
         "apn": "139-646-001-0006"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147165,7 +147097,7 @@
         "owner_occupied": false,
         "apn": "041-031-034-0015"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147240,7 +147172,7 @@
         "owner_occupied": false,
         "apn": "040-189-000-0050"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147295,8 +147227,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVU6XSrUVc3RPjbqQG0TxCYu85VrnZbRIZtGTQceRiS8CLWOGi0kTfPBPtzk4GEvApsjHxsK/UZUyhCOsPpJz1Tm/uQ+I6R4Qc/UK/S5HibVokFInD0Ap4B9eURlObXYqog==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=NORTH+LEXINGTON+REALTY+LLC%2C+NVP+PROPERTY+MANAGEMENT+LLC",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): NORTH LEXINGTON REALTY",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): NORTH LEXINGTON",
       "prop_address": "727 E LOUETTA RD",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -147352,7 +147284,7 @@
         "owner_occupied": false,
         "apn": "137-300-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147424,7 +147356,7 @@
         "owner_occupied": false,
         "apn": "146-618-004-0013"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147514,7 +147446,7 @@
         "owner_occupied": true,
         "apn": "125-514-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147588,7 +147520,7 @@
         "owner_occupied": false,
         "apn": "073-188-000-0200"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147676,7 +147608,7 @@
         "owner_occupied": true,
         "apn": "132-506-001-0038"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147772,7 +147704,7 @@
         "owner_occupied": true,
         "apn": "121-732-008-0041"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -147985,7 +147917,7 @@
         "owner_occupied": true,
         "apn": "132-976-001-0048"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -157947,7 +157879,7 @@
         "owner_occupied": false,
         "apn": "128-883-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -157964,7 +157896,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVe2sShLauVTRY33m3Hq5t6eCcUqLSMdq52SbHh+etkEoDfr2YhgsJY6hiU/WLMNDsyDE2HdE6QFsO5thw95SstIs1AYMnUwPsO012wzDq6W9BOG8YG+SJPoT6GAMgMMXaA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=BAA+INC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JUSTIN JORDAN",
+      "match_reason": "Name \u2192 single property (2w): JUSTIN, JORDAN",
       "prop_address": "10225 SHADOW OAKS DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -158743,7 +158675,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVRdEBznXIyWKsy9yuQbf/Q71gn25FKeQL6lY6RM7QnU8Z12vWa55t5wDjNicPHziBSrY9SZvK3+Y+6aoBbEa7esA8qTPVxi113bWomK21+VkUn3pxFEvmmsvLmzoc0pWVg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=VELOCITY+INVESTMENTS+LLC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): SHANITA, JACKSON",
+      "match_reason": "Name \u2192 single property (2w): SHANITA JACKSON",
       "prop_address": "10246 VALLEY WIND DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -158947,8 +158879,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVdblQplXTTOO4Q1J+yxQ1fkRywemHA/Xku5GXtBgBh5UAbO6mKcIUP5cRUuqtpztJpNdt86Q/nS7UUe8dtuzF9LM1yk3BGC5WLuE1/cbbyv96pgKDgd9A01l73N0j+aPtg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=STELLAR+BANK",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): DURUIKE UGOCHUKWU",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): DURUIKE UGOCHUKWU N",
       "prop_address": "22418 LAVACA RANCH LN",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -159030,7 +158962,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVcoppzbamlim/o+7HHuh+SSQcUBdAZyEXSRnu7RE8tICogkvsxn43rvqx4seB6O7qvBkEfSG6eiyP4uXhEJ11mtyF36iBD0rZSMObCDqcTk84P7IH6DFjFA9v35YYNRvOg==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=DEUTSCHE+BANK+NATIONAL+TRUST+COMPANY",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): MICHAEL PRICE",
+      "match_reason": "Name \u2192 single property (2w): MICHAEL, PRICE",
       "prop_address": "5827 STRONG CREEK DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -159317,7 +159249,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVYoOKB0EhM5iXPYvMzNrXwPsxWlFh/xSHsnnfXNMlvLilSjEtPWcEmH7gtJ/XSS6LJpRNl0+kqUowNh5yhbA3o8Hyh2Kbkx78m8r4IAQ3f8BcO/CQfGpHBt+fVnHJo7ImA==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SYNCHRONY+BANK",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): JOSEPH HARRISON",
+      "match_reason": "Name \u2192 single property (2w): JOSEPH, HARRISON",
       "prop_address": "5023 CHANTRY DR",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -159440,7 +159372,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVUuuPFWN0rPRGjNCG81PEHKKdLZW5HZxJfIJLw7Ox5zD/+iW4unJTZI4NlGXqYBqIxCm8k5J3S6CTejQYiEQk6CwWiWNKGju0BnUXfYPvxZ+gRv3EtjJsdxwe0FF1YpDog==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SYNCHRONY+BANK",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): FABIOLA ROCHA",
+      "match_reason": "Name \u2192 single property (2w): FABIOLA, ROCHA",
       "prop_address": "21639 BUTTONSAGE LN",
       "prop_city": "KATY",
       "prop_state": "TX",
@@ -159481,7 +159413,7 @@
       "clerk_url": "https://www.cclerk.hctx.netEComm/ViewEdocs.aspx?ID=ihpahpMbvcoWkF5RdbzIVSYEdyvUPZxNgBOd9Bt4HGmkY05SSlsvHz7DUH7b3E+Tq4fxFpedP4HiIchxArxL4k1wQyHwqzCjr1gSvGi9ELFfubvKCN6qWx3ca4hbNFJdU2qxIlTKHij45PjyyxN8Nw==",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=SYNCHRONY+BANK",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): SUSANA, JIMENEZ",
+      "match_reason": "Name \u2192 single property (2w): SUSANA JIMENEZ",
       "prop_address": "700 W GREENS RD 183",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -160048,7 +159980,7 @@
         "owner_occupied": false,
         "apn": "114-843-005-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160141,7 +160073,7 @@
         "owner_occupied": false,
         "apn": "055-228-025-0003"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160215,7 +160147,7 @@
         "owner_occupied": false,
         "apn": "147-601-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160307,7 +160239,7 @@
         "owner_occupied": false,
         "apn": "125-461-003-0014"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160403,7 +160335,7 @@
         "owner_occupied": true,
         "apn": "100-145-000-0012"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160478,7 +160410,7 @@
         "owner_occupied": false,
         "apn": "011-319-000-0201"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160494,8 +160426,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=C+JOHNSON+FUNERAL+HOME+INC",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): C JOHNSON FUNERAL",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): C JOHNSON",
       "prop_address": "5730 CALHOUN RD",
       "prop_city": "HOUSTON",
       "prop_state": "TX",
@@ -160549,7 +160481,7 @@
         "owner_occupied": false,
         "apn": "041-007-016-0014"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160645,7 +160577,7 @@
         "owner_occupied": false,
         "apn": "077-182-031-0002"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160738,7 +160670,7 @@
         "owner_occupied": false,
         "apn": "099-110-000-0060"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -160930,7 +160862,7 @@
         "owner_occupied": false,
         "apn": "046-163-000-0095"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -161025,7 +160957,7 @@
         "owner_occupied": false,
         "apn": "111-767-000-0041"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -161041,8 +160973,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=STEP+BY+STEP+CHRISTIAN+SCHOOL+INC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): STEP BY",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): STEP BY STEP",
       "prop_address": "1119 S CHERRY ST",
       "prop_city": "TOMBALL",
       "prop_state": "TX",
@@ -161098,7 +161030,7 @@
         "owner_occupied": false,
         "apn": "035-286-000-0437"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -161210,7 +161142,7 @@
         "owner_occupied": false,
         "apn": "118-809-001-0001"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -164685,7 +164617,7 @@
         "owner_occupied": false,
         "apn": "041-089-000-0640"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -165070,8 +165002,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=GROVES+COMMUNITY+ASSOCIATION+INC",
-      "match_confidence": "MEDIUM",
-      "match_reason": "Name \u2192 single property (3w): COOLEY MORGAN ANTOINETTE",
+      "match_confidence": "LOW",
+      "match_reason": "Name \u2192 single property (2w): COOLEY MORGAN",
       "prop_address": "16822 OLYMPIC NATIONAL DR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -165316,8 +165248,8 @@
       "legal": "",
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=OAKS+OF+DEVONSHIRE+HOA+INC",
-      "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): CEH CROWN",
+      "match_confidence": "MEDIUM",
+      "match_reason": "Name \u2192 single property (3w): CEH CROWN REALTY",
       "prop_address": "2611 LIGURIA LN",
       "prop_city": "SPRING",
       "prop_state": "TX",
@@ -165358,7 +165290,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=ATASCOCITA+TRAILS+HOMEOWNERS+ASSOCIATION+INC",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): TRAILS, ATASCOCITA",
+      "match_reason": "Name \u2192 single property (2w): TRAILS ATASCOCITA",
       "prop_address": "5722 FM 1960 RD E",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -165414,7 +165346,7 @@
         "owner_occupied": false,
         "apn": "110-586-000-0032"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -165585,7 +165517,7 @@
         "owner_occupied": true,
         "apn": "138-309-002-0007"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
@@ -165807,7 +165739,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HOMEOWNERS+ASSOCIATION+OF+TIMBER+FOREST",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): HOWARD MOORE",
+      "match_reason": "Name \u2192 single property (2w): HOWARD, MOORE",
       "prop_address": "4817 FALCON FOREST DR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -166381,7 +166313,7 @@
       "clerk_url": "https://www.cclerk.hctx.net/applications/websearch/RP.aspx",
       "hcad_url": "https://hcad.org/property-search/real-property/search-by-owner-name/?name=HOMEOWNERS+ASSOCIATION+OF+TIMBER+FOREST",
       "match_confidence": "LOW",
-      "match_reason": "Name \u2192 single property (2w): ANTHONY BELL",
+      "match_reason": "Name \u2192 single property (2w): ANTHONY, BELL",
       "prop_address": "4906 WINDING TIMBERS CIR",
       "prop_city": "HUMBLE",
       "prop_state": "TX",
@@ -166950,7 +166882,7 @@
         "owner_occupied": false,
         "apn": "082-418-000-0005"
       },
-      "dm_enriched_date": "2026-08-23",
+      "dm_enriched_date": "2026-08-24",
       "is_new": false
     },
     {
